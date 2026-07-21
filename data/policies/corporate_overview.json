@@ -1,0 +1,60 @@
+{
+  "sections": {
+    "careers": {
+      "title": "Careers & Talent",
+      "icon": "user-check",
+      "description": "Global job opportunities, Graduate Programmes, and engineering hubs.",
+      "articles": [
+        {
+          "id": "graduate-program-2026",
+          "title": "Global Graduate Programme 2026 Applications",
+          "keywords": ["graduate", "internship", "analyst", "student", "apply", "careers", "jobs", "hiring"],
+          "content": "Applications are open for the Amberleigh Private Bank Global Graduate Programme 2026. Training, mentorship, and analyst opportunities exist across Corporate Bank, Investment Advisory, Private Wealth Management, Technology, and Risk. Apply online at amberleigh.com/careers.",
+          "lastUpdated": "2026-07-01"
+        },
+        {
+          "id": "technology-roles",
+          "title": "Technology & Software Engineering Hubs",
+          "keywords": ["technology", "it jobs", "software engineer", "developer", "cloud", "ai", "pune", "frankfurt", "london"],
+          "content": "Amberleigh Private Bank continues to hire software engineers, data scientists, cloud architects, and cyber security specialists across global tech centers in Frankfurt, London, New York, Pune, and Bucharest.",
+          "lastUpdated": "2026-06-15"
+        }
+      ]
+    },
+    "investor_relations": {
+      "title": "Investor Relations & Financials",
+      "icon": "trending-up",
+      "description": "Financial performance, quarterly earnings, dividend policy, and shareholder disclosures.",
+      "articles": [
+        {
+          "id": "q1-results-2026",
+          "title": "Q1 2026 Financial Results: Record Profit of €2.2 Billion",
+          "keywords": ["q1", "earnings", "profit", "results", "net income", "financial performance", "revenue"],
+          "content": "Amberleigh Private Bank reported record financial results for Q1 2026 with post-tax profit rising 8% year-on-year to a quarterly record of €2.2 billion on net revenues of €8.7 billion. CET1 capital ratio was 13.8%.",
+          "lastUpdated": "2026-04-29"
+        },
+        {
+          "id": "financial-calendar",
+          "title": "Investor Relations Calendar 2026",
+          "keywords": ["calendar", "dates", "agm", "earnings release", "q2 results"],
+          "content": "Key IR Calendar Dates: July 29, 2026 - Q2 2026 Results Release; October 28, 2026 - Q3 2026 Results Release. Reports and webcasts are available at investor-relations.amberleigh.com.",
+          "lastUpdated": "2026-07-01"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Directories",
+      "icon": "mail",
+      "description": "Global headquarters, HR helplines, IT support desk, and emergency lines.",
+      "articles": [
+        {
+          "id": "corporate-headquarters",
+          "title": "Amberleigh Private Bank Group Headquarters & Emergency Hotlines",
+          "keywords": ["headquarters", "address", "frankfurt", "germany", "phone number", "main office", "emergency"],
+          "content": "Group Headquarters: Amberleigh Private Bank AG, Taunusanlage 12, 60325 Frankfurt am Main, Germany. Telephone: +49 69 910-00. Email: press@amberleigh.com (Press) or ir@amberleigh.com (Investor Relations).\nInternal Helplines:\n• Ask HR Service Desk: Workday / HR Hub\n• IT Service Desk Hotline: 24/7 internal IT hotline\n• Card Blocking Line: +49 1805 021 021 (available 24/7 for lost/stolen cards)\n• EAP Confidential Line: 24/7 hotline via HR Hub.\n• Security Operations Centre (SOC) 24/7 Hotline: Report security incidents / lost devices.",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    }
+  }
+}

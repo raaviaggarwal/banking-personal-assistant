@@ -1,0 +1,30 @@
+{
+  "sectionKey": "medical_health",
+  "title": "Medical & Health Benefits",
+  "icon": "shield",
+  "documentRef": "HR-POL-006",
+  "description": "Health insurance plan tiers, dental & vision cover, sick pay schedule, and EAP support.",
+  "articles": [
+    {
+      "id": "medical-plan-tiers",
+      "title": "Medical Insurance Tiers, Deductibles, and Enrolment",
+      "keywords": ["medical", "health insurance", "tiers", "essential", "standard", "premium", "deductible", "out of pocket", "enrolment"],
+      "content": "Eligibility & Enrolment: Permanent employees eligible from date of hire; fixed-term contractors (6+ months) eligible from 2nd month. Enrol during November Annual Enrolment or within 30 days of a qualifying life event in Workday Benefits module.\nPlan Tiers:\n1. Essential Tier: 0% employee contribution (100% Bank-funded). Deductible: GBP 500 individual / GBP 1,000 family. Max out-of-pocket: GBP 2,500.\n2. Standard Tier: 15% employee contribution. Deductible: GBP 250 individual / GBP 500 family. Max out-of-pocket: GBP 1,500.\n3. Premium Tier: 30% employee contribution. Deductible: GBP 0. Max out-of-pocket: GBP 750 (includes single-room hospitalisation & expanded international network).\nCoverage: All tiers include hospitalisation, outpatient, prescription drugs, maternity care, and mental health. Pre-existing conditions are covered from Day 1.",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "eap-occupational-health-wellbeing",
+      "title": "Employee Assistance Programme (EAP) & Sick Leave Pay Schedule",
+      "keywords": ["eap", "counselling", "sick leave", "sick pay", "occupational health", "mental health", "long term absence"],
+      "content": "Employee Assistance Programme (EAP):\n• Free 24/7 confidential phone and web portal access for employees and household members.\n• Up to 8 confidential counselling sessions per issue per year (mental health, family, legal, financial). Usage is completely anonymous and not shared with managers.\nSick Leave & Absence Pay Schedule:\n• Absences >3 days require a medical certificate; notify manager before start time in Workday.\n• Weeks 1 - 4: Full Pay\n• Weeks 5 - 12: Full Pay (subject to Occupational Health engagement)\n• Weeks 13 - 26: Half Pay (topped up by statutory/insured benefit)\n• Beyond 26 weeks: Statutory pay / Income Protection Insurance.",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "dental-vision-parental-support",
+      "title": "Dental, Vision, Health Screenings, and Fertility Cover",
+      "keywords": ["dental", "vision", "health screening", "flu vaccine", "fertility", "parental", "retirees"],
+      "content": "Dental & Vision Add-Ons (Selectable during Annual Enrolment):\n• Dental Cover (GBP 12/month): 2 free check-ups/year; 50% co-pay on restorative work up to GBP 1,000/year.\n• Vision Cover (GBP 6/month): Free annual eye test; GBP 150 allowance toward glasses or lenses.\nHealth Screenings & Flu Shots: Free annual preventive screening for Standard/Premium tiers; subsidised autumn flu shots on-site for all tiers.\nParental & Fertility Support: Standard and Premium tiers include up to GBP 5,000 lifetime allowance toward fertility treatment and adoption costs, plus returner coaching.\nLeavers & Retirees: Cover continuation up to 3 months via COBRA-equivalent option. Retirees (10+ years service at retirement age) eligible for Retiree Medical Plan.",
+      "lastUpdated": "2026-01-01"
+    }
+  ]
+}

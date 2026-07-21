@@ -1,0 +1,30 @@
+{
+  "sectionKey": "infosec_privacy",
+  "title": "Information Security & Data Privacy",
+  "icon": "lock",
+  "documentRef": "ISEC-POL-005",
+  "description": "Data classification, password standards, MFA, GDPR privacy principles, and security incident reporting.",
+  "articles": [
+    {
+      "id": "data-classification-handling",
+      "title": "Data Classification Tiers & Handling Standards",
+      "keywords": ["infosec", "classification", "public", "internal", "confidential", "restricted", "mnpi", "encryption", "dlp"],
+      "content": "Data Classification Tiers:\n1. Public: Approved for external release (press releases, public rates).\n2. Internal: For internal Bank use only (memos, org charts). No external distribution.\n3. Confidential: Sensitive business data (client portfolios, deal terms). Minimum control: Encryption at rest and in transit, access logging.\n4. Restricted: Highest sensitivity (client identity documents, MNPI, credentials). Minimum control: Encryption, need-to-know access, DLP monitoring.\nAccess Management: Granted strictly on need-to-know basis via IAM. Access reviewed quarterly (UAR). Revoked within 24 hours of exit (immediately for involuntary termination).",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "password-authentication-standards",
+      "title": "Password Standards, MFA & Remote Access Controls",
+      "keywords": ["password", "mfa", "lockout", "session timeout", "authentication", "remote access", "byod", "vpn"],
+      "content": "Password & Authentication Controls:\n• Minimum Password Length: 14 characters.\n• Multi-Factor Authentication (MFA): Mandatory for all remote access and privileged (admin) accounts.\n• Password History: Last 12 passwords cannot be reused.\n• Account Lockout: Locked after 5 failed attempts within 15 minutes.\n• Session Timeout: 15 minutes of inactivity for systems handling Confidential or Restricted data.\nAcceptable Use & Remote Work: Use Bank devices for business. Personal email or unsanctioned cloud storage (personal Dropbox/Gmail) to store/send Restricted data is strictly prohibited. Remote workers must connect via approved VPN / Zero Trust and lock screens when unattended.",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "privacy-gdpr-incident-reporting",
+      "title": "Data Privacy Rights (GDPR) & SOC Incident Reporting",
+      "keywords": ["gdpr", "privacy", "data subject rights", "soc", "incident", "phishing", "breach", "lost device", "hotline"],
+      "content": "Data Privacy Principles (GDPR):\n• Processing must follow lawfulness, purpose limitation, data minimisation, accuracy, storage limitation, and integrity.\n• Data Subject Rights: Any request (access, rectification, erasure) must be forwarded to the Data Privacy Office within 24 hours.\nSecurity Incident Reporting (Report to Security Operations Centre / SOC 24/7 Hotline):\n• Suspected Phishing / Malware: Report immediately to SOC.\n• Lost or Stolen Device: Report within 1 hour to SOC + IT Service Desk for remote wipe.\n• Confirmed Personal Data Breach: Report immediately to Data Privacy Office + SOC + MLRO.\n• Unauthorised Restricted Access: Report immediately to SOC + Data Owner.\nNote: Do NOT use unapproved AI tools or browser extensions for Confidential/Restricted data.",
+      "lastUpdated": "2026-01-01"
+    }
+  ]
+}

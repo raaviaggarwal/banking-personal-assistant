@@ -1,0 +1,30 @@
+{
+  "sectionKey": "onboarding",
+  "title": "New Joiner Onboarding",
+  "icon": "briefcase",
+  "documentRef": "HR-GDE-009",
+  "description": "First weeks checklist, portal quick-reference map, mandatory training, and buddy system.",
+  "articles": [
+    {
+      "id": "onboarding-portals-map",
+      "title": "Internal Systems & Portals Quick Reference Map",
+      "keywords": ["portal", "workday", "ask hr", "it service desk", "policy hub", "expense system", "learning hub", "risk event", "system", "login", "access"],
+      "content": "Amberleigh Private Bank Core Internal Portals:\n• Workday: Request leave, check payslips, update personal details, view org charts, enrol in benefits, track probation.\n• Ask HR: Submit general HR questions to the HR Service Desk.\n• IT Service Desk Portal: Report IT issues, request devices, order hardware, and request building access pass extensions.\n• Policy Hub: Access the HR Policy Handbook, Code of Conduct & Ethics, and business unit policies.\n• Expense System: Submit and track business expense claims within 30 days.\n• Learning Hub: Complete mandatory compliance training (Code of Conduct, AML/CTF, InfoSec).\n• Compliance Advisory Mailbox / Speak-Up Line: Raise compliance concerns or report ethics violations anonymously.\n• Risk Event System: Report and understand risk escalation for an operational incident.",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "onboarding-first-week-checklist",
+      "title": "First Week & Day 1 Checklist for New Joiners",
+      "keywords": ["first day", "first week", "checklist", "day 1", "welcome email", "buddy", "mfa", "orientation", "pad"],
+      "content": "Before Day 1: You will receive a Welcome Email 1 week prior with start location, reporting time, and dress code. Pre-employment screening must be finalized. Your IT account and device are provisioned automatically via Workday.\nDay 1: Report to Reception to meet your assigned Buddy or HR Onboarding representative. Collect building access pass, verify right-to-work, and attend New Joiner Orientation.\nFirst Week Checklist:\n1. Complete Day 1 compliance training on Learning Hub within 10 working days.\n2. Set up Multi-Factor Authentication (MFA) for Bank systems.\n3. Meet line manager for 30/60/90-day objectives.\n4. Review HR Policy Handbook and Code of Conduct on Policy Hub.\n5. Enrol in medical/health benefits via Workday within 30 days of start date.\n6. Set up Personal Account Dealing (PAD) profile before trading personal securities.",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "onboarding-buddy-probation",
+      "title": "Buddy System, Line Manager, and Probation Milestones",
+      "keywords": ["buddy", "manager", "probation", "6 months", "review", "check-in", "milestones", "90 days"],
+      "content": "Buddy & Manager: Every new joiner is assigned a Buddy (an experienced colleague outside your reporting line for informal questions) and a Line Manager (responsible for formal onboarding, objectives, and probation reviews). Check Workday Inbox or Ask HR for your assigned Buddy.\nProbation Period: Permanent employees serve a 6-month probation period; fixed-term contracts serve 3 months.\nFirst 90 Days Milestones:\n• Day 10: Complete all mandatory training on Learning Hub.\n• Day 30: Benefits enrolment deadline in Workday & initial objectives agreed with manager.\n• Week 4-6: First informal check-in with line manager.\n• Month 3: Mid-probation review with Line Manager & HR.",
+      "lastUpdated": "2026-01-01"
+    }
+  ]
+}

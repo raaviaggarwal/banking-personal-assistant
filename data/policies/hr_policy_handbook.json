@@ -1,0 +1,30 @@
+{
+  "sectionKey": "hr_policies",
+  "title": "HR Policy & Employment Terms",
+  "icon": "user-check",
+  "documentRef": "HR-POL-001",
+  "description": "Leave entitlements, working hours, performance ratings, notice periods, and HR escalation matrix.",
+  "articles": [
+    {
+      "id": "employment-terms-notice-working-hours",
+      "title": "Employment Classifications, Notice Periods & Working Hours",
+      "keywords": ["notice period", "working hours", "full time", "part time", "fixed term", "hybrid", "remote work", "probation"],
+      "content": "Employment Classifications & Notice Periods:\n• Permanent Full Time / Part Time: 6 months probation | 3 months notice period.\n• Fixed-Term Contract (6-24 mos): 3 months probation | 1 month notice period.\n• Graduate / Intern: N/A probation | 2 weeks notice period.\nWorking Hours & Hybrid Policy:\n• Standard working week is 40 hours (9:00 - 17:30, Mon-Fri).\n• Hybrid Working: Minimum 3 days per week in the office. Permanent remote work outside country of employment requires HR, Legal, and Tax sign-off.\nOvertime: Non-exempt staff must record overtime in timesheets with prior manager approval.",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "leave-entitlements-schedule",
+      "title": "Leave Entitlements & Carry-Over Rules",
+      "keywords": ["vacation", "annual leave", "sick leave", "maternity", "paternity", "parental leave", "sabbatical", "study leave", "compassionate"],
+      "content": "Leave Entitlements (Requested via Workday):\n• Annual Leave: 25 working days per calendar year. Carry-over max 5 days into Q1 of following year.\n• Sick Leave: Up to 20 days on full pay per rolling 12 months. Self-certify up to 3 days; medical certificate required beyond.\n• Primary Carer Parental Leave: 16 weeks paid + statutory entitlement.\n• Secondary Carer Parental Leave: 4 weeks paid.\n• Compassionate Leave: Up to 5 days paid per event.\n• Study Leave: Up to 5 days paid (subject to L&D approval).\n• Sabbatical: Unpaid 1-6 months (minimum 3 years service required).",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "performance-management-grievance",
+      "title": "Performance Rating Scale, Grievance & Disciplinary Matrix",
+      "keywords": ["performance", "rating", "pip", "grievance", "disciplinary", "escalation matrix", "response time", "payroll"],
+      "content": "Performance Ratings (Workday Talent):\n• Exceptional: Consistently exceeds expectations.\n• Strong: Meets and frequently exceeds expectations.\n• Solid: Meets expectations.\n• Development Needed: Meets some expectations; formal development plan required.\n• Unsatisfactory: Managed via Performance Improvement Plan (PIP).\nGrievances & Escalation Response Times:\n• Payroll discrepancy: Ask HR Service Desk (2 working days)\n• Leave balance query: Workday / Ask HR (1 working day)\n• Benefits enrolment: Benefits Team via HR Hub (3 working days)\n• Formal Grievance: HR Advisory via Grievance Portal (3 working days to acknowledge)\n• Harassment / Discrimination: Speak-Up Line or HR Advisory (24 hours to acknowledge)",
+      "lastUpdated": "2026-01-01"
+    }
+  ]
+}

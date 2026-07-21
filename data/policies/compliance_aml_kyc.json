@@ -1,0 +1,23 @@
+{
+  "sectionKey": "compliance_aml",
+  "title": "Compliance & AML / KYC",
+  "icon": "shield-alert",
+  "documentRef": "COMP-POL-003",
+  "description": "Client Due Diligence (CDD), risk ratings, Enhanced Due Diligence (EDD), SARs, and sanctions.",
+  "articles": [
+    {
+      "id": "cdd-risk-ratings-review",
+      "title": "Client Due Diligence (CDD) Risk Ratings & Review Frequency",
+      "keywords": ["aml", "kyc", "cdd", "risk rating", "pep", "politically exposed person", "low risk", "high risk", "review frequency"],
+      "content": "Client Due Diligence (CDD) Review Schedule:\n• Low Risk Clients: Review every 5 years (Approval: Relationship Manager + KYC Analyst).\n• Standard Risk Clients: Review every 3 years (Approval: Relationship Manager + Team Head).\n• High Risk Clients: Review annually (Approval: Team Head + Compliance / MLRO delegate).\n• Politically Exposed Persons (PEPs): Review annually (Approval: Senior Management + MLRO).\n• Prohibited / Restricted: Relationships strictly not permitted.\nEnhanced Due Diligence (EDD): Mandatory for High Risk, PEPs, Higher-Risk Country List jurisdictions, and complex trust/foundation structures. Requires verified source of wealth/funds documentary evidence and senior management approval prior to onboarding.",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "kyc-docs-sar-sanctions",
+      "title": "KYC Documentation, Transaction Monitoring, SARs & Sanctions",
+      "keywords": ["kyc docs", "proof of address", "sar", "suspicious activity", "tipping off", "sanctions", "record retention", "5 years"],
+      "content": "Required KYC Documentation:\n• Certified ID for all account holders, beneficial owners (25%+), and authorised signatories.\n• Proof of address dated within the last 3 months.\n• Legal entities: Certificate of incorporation, register of directors/shareholders, tax self-certification (CRS/FATCA).\nSuspicious Activity Reports (SARs) & Tipping Off:\n• Unusual activity must be reported via an internal SAR in the Compliance Case Management tool without delay.\n• Tipping Off: Informing a client or third party that a SAR was filed is a criminal offence.\nSanctions & Record Retention:\n• Real-time screening of all payment transactions. Escalation of matches to Sanctions team.\n• Record Retention: KYC, transaction, and SAR filings must be retained for a minimum of 5 years post-relationship.",
+      "lastUpdated": "2026-01-01"
+    }
+  ]
+}

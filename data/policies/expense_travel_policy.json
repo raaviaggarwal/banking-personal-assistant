@@ -1,0 +1,37 @@
+{
+  "sectionKey": "expenses_travel",
+  "title": "Expense & Travel Policy",
+  "icon": "credit-card",
+  "documentRef": "FIN-POL-008",
+  "description": "Business expense standards, air/rail travel entitlements, approval thresholds, and meal caps.",
+  "articles": [
+    {
+      "id": "expense-approval-thresholds",
+      "title": "Expense Approval Thresholds & General Principles",
+      "keywords": ["expense", "approval", "threshold", "receipt", "claim", "limit", "finance director", "30 days"],
+      "content": "General Principles:\n• Claims must be submitted in the Expense system within 30 days of incurring the cost. Claims past 90 days require Finance Director approval and may be treated as taxable income.\n• Itemised original receipts are required for all expenses over GBP 25 (card statements are insufficient).\n• Claims must never be split into smaller amounts to circumvent approval limits.\nApproval Thresholds:\n• Up to GBP 500: Line Manager approval.\n• GBP 500 - GBP 2,500: Line Manager + Department Head approval.\n• Above GBP 2,500: Department Head + Finance Business Partner approval.\n• Client Entertainment > GBP 500/head: Department Head + Compliance (Gifts & Hospitality Register).",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "travel-booking-entitlements",
+      "title": "Air Travel, Rail, Hotel, and Ground Transport Policy",
+      "keywords": ["travel", "flight", "air travel", "economy", "business class", "hotel", "rail", "taxi", "tmc", "mileage"],
+      "content": "Travel Booking: All travel must be booked through the Travel Management Company (TMC) portal.\nFlight Entitlements:\n• Flights under 6 hours: Economy Class.\n• Flights 6 - 9 hours: Premium Economy Class.\n• Flights over 9 hours: Business Class.\n• Managing Director (MD) and above: Business Class for any flight duration.\nRail & Ground Transport: Standard Class rail is default (First Class allowed if journey exceeds 3 hours or for confidential work with manager approval). Taxis/ride-hailing reimbursable outside public transport hours or with heavy client materials.\nHotel Accommodation: Booked via TMC portal subject to city nightly rate caps.\nMileage Rates: GBP 0.45 per mile for the first 10,000 miles in a tax year; GBP 0.25 per mile thereafter. Commuting is not reimbursable.",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "meals-entertainment-nonreimbursable",
+      "title": "Daily Meal Caps, Client Entertainment, and Non-Reimbursable Items",
+      "keywords": ["meals", "breakfast", "lunch", "dinner", "entertainment", "non-reimbursable", "corporate card", "daily cap"],
+      "content": "Daily Meal Caps (per person, inclusive of tax/service, exclusive of alcohol):\n• Breakfast: Domestic GBP 15 | International GBP 20\n• Lunch: Domestic GBP 20 | International GBP 30\n• Dinner: Domestic GBP 40 | International GBP 60\nClient Entertainment: Must have genuine business purpose. Claims must log names, organisations of attendees, and meeting purpose.\nNon-Reimbursable Items:\n• Mini-bar, in-room movies, personal entertainment.\n• Traffic fines, parking fines, penalty fares.\n• Travel insurance for personal trip extensions.\n• Spa, gym, or wellness billed to hotel room.\n• Unapproved First Class flights or family member expenses.\nCorporate Card: Must be used exclusively for business expenses. Statements reconciled monthly in Expense system.",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "expense-faqs",
+      "title": "Expense & Travel FAQs",
+      "keywords": ["expense faq", "lost receipt", "working lunch", "delayed flight", "loyalty points"],
+      "content": "Expense & Travel FAQs:\n• Lost receipt: A signed Missing Receipt Declaration can be used for claims under GBP 25. Above GBP 25 requires approver discretion with Finance sign-off.\n• Working lunch with colleague: Internal working meals are NOT reimbursable except during approved offsite events.\n• Delayed flight extra costs: Reasonable additional costs directly caused by flight delays are reimbursable; keep documentation.\n• Loyalty points: Personal loyalty points from business travel may be retained, provided booking choices do not increase cost to the Bank.",
+      "lastUpdated": "2026-01-01"
+    }
+  ]
+}

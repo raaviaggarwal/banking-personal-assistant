@@ -1,0 +1,23 @@
+{
+  "sectionKey": "code_of_conduct",
+  "title": "Code of Conduct & Ethics",
+  "icon": "award",
+  "documentRef": "COMP-POL-002",
+  "description": "Core ethics, gifts & hospitality thresholds, Personal Account Dealing (PAD), and Whistleblowing.",
+  "articles": [
+    {
+      "id": "gifts-hospitality-thresholds",
+      "title": "Gifts & Entertainment Disclosure and Pre-Approval Thresholds",
+      "keywords": ["gifts", "hospitality", "entertainment", "threshold", "pre-approval", "public official", "disclosure", "conflicts"],
+      "content": "Core Principles: Integrity, Client Interest, Market Conduct, Confidentiality, Accountability.\nGifts & Hospitality Disclosure & Approval Thresholds:\n• Gift received from client/vendor: Disclosure > GBP 50 | Pre-Approval > GBP 150.\n• Entertainment received (meals/events): Disclosure > GBP 100 | Pre-Approval > GBP 300.\n• Gift or entertainment given to client: Disclosure > GBP 100 | Pre-Approval > GBP 500.\n• Gifts to/from Public Officials: Disclosure ANY value | Pre-Approval MANDATORY for any value.\nNote: Cash or cash equivalent gifts are strictly prohibited. Log all gifts in the Gifts & Hospitality Register on Policy Hub.",
+      "lastUpdated": "2026-01-01"
+    },
+    {
+      "id": "pad-whistleblowing-outside-interests",
+      "title": "Personal Account Dealing (PAD), Outside Interests & Whistleblowing",
+      "keywords": ["pad", "personal account dealing", "insider trading", "mnpi", "whistleblowing", "speak up", "outside business", "relationship"],
+      "content": "Personal Account Dealing (PAD):\n• All personal securities trades must be pre-cleared in the PAD module.\n• Minimum holding period: 30 calendar days. No trading while in possession of MNPI or on Restricted/Insider lists.\nOutside Business Interests & Relationships:\n• External directorships, trusteeships, or family business roles require prior approval from Manager & Compliance in Workday.\n• Personal relationships with colleagues affecting reporting/appraisal lines must be declared to HR.\nSpeak-Up (Whistleblowing) Line:\n• Report misconduct or policy breaches via Line Manager, HR, Compliance Mailbox, or the 24/7 confidential/anonymous Speak-Up Line. Retaliation is strictly prohibited.",
+      "lastUpdated": "2026-01-01"
+    }
+  ]
+}

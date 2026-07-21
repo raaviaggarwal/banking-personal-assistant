@@ -1,0 +1,12 @@
+{
+  "name": "dbomni",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "npm run build && cd server && npm start",
+    "start:server": "cd server && npm start"
+  }
+}

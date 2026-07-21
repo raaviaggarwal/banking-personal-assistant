@@ -15,7 +15,11 @@ const app = express();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 app.use(cors({
-  origin: true,
+  origin: [
+    'https://banking-personal-assistant.vercel.app',
+    'http://localhost:5173',
+    'http://localhost:3001',
+  ],
   credentials: true,
 }));
 app.use(express.json({ limit: '10mb' }));

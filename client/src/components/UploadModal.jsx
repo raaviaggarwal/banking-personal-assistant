@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { api } from '../api.js';
 
 export default function UploadModal({ open, onClose }) {
   const [files, setFiles] = useState([]);
@@ -10,8 +11,7 @@ export default function UploadModal({ open, onClose }) {
 
   async function fetchFiles() {
     try {
-      const res = await fetch('/api/policies');
-      const data = await res.json();
+      const data = await api('/api/policies');
       setFiles(data.files || []);
     } catch {
       setFiles([]);
@@ -20,7 +20,7 @@ export default function UploadModal({ open, onClose }) {
 
   async function handleDelete(filename) {
     try {
-      await fetch(`/api/policies/${encodeURIComponent(filename)}`, { method: 'DELETE' });
+      await api(`/api/policies/${encodeURIComponent(filename)}`, { method: 'DELETE' });
       await fetchFiles();
     } catch (err) {
       setError(err.message);

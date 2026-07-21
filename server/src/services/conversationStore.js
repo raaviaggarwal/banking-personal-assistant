@@ -1,12 +1,10 @@
 import Conversation from '../models/Conversation.js';
 import { isConnected } from './database.js';
 
-const memoryStore = new Map();
-
-export async function createConversation(title, mode) {
+export async function createConversation(userId, title, mode) {
   if (isConnected()) {
     try {
-      const doc = await Conversation.create({ title, mode });
+      const doc = await Conversation.create({ userId, title, mode });
       return mapDoc(doc);
     } catch {
       // fall through to memory
@@ -14,15 +12,14 @@ export async function createConversation(title, mode) {
   }
 
   const id = 'local-' + Date.now();
-  const entry = { id, title, mode, messages: [], createdAt: new Date(), updatedAt: new Date() };
-  memoryStore.set(id, entry);
+  const entry = { id, userId, title, mode, messages: [], createdAt: new Date(), updatedAt: new Date() };
   return { ...entry };
 }
 
-export async function getConversations() {
+export async function getConversations(userId) {
   if (isConnected()) {
     try {
-      const docs = await Conversation.find({}, { messages: 0 })
+      const docs = await Conversation.find({ userId }, { messages: 0 })
         .sort({ updatedAt: -1 })
         .lean();
       return docs.map(mapDoc);
@@ -31,9 +28,7 @@ export async function getConversations() {
     }
   }
 
-  return [...memoryStore.values()]
-    .sort((a, b) => b.updatedAt - a.updatedAt)
-    .map((e) => ({ id: e.id, title: e.title, mode: e.mode, createdAt: e.createdAt, updatedAt: e.updatedAt }));
+  return [];
 }
 
 export async function getConversation(id) {
@@ -47,8 +42,7 @@ export async function getConversation(id) {
     }
   }
 
-  const entry = memoryStore.get(id);
-  return entry ? { ...entry } : null;
+  return null;
 }
 
 export async function updateConversation(id, updates) {
@@ -75,13 +69,7 @@ export async function updateConversation(id, updates) {
     }
   }
 
-  const existing = memoryStore.get(id);
-  if (!existing) return null;
-  if (title !== undefined) existing.title = title;
-  if (mode !== undefined) existing.mode = mode;
-  if (messages !== undefined) existing.messages = messages;
-  existing.updatedAt = new Date();
-  return { ...existing };
+  return null;
 }
 
 export async function deleteConversation(id) {
@@ -91,15 +79,13 @@ export async function deleteConversation(id) {
     } catch {
       // ignore
     }
-    return;
   }
-
-  memoryStore.delete(id);
 }
 
 function mapDoc(doc) {
   return {
     id: doc._id.toString(),
+    userId: doc.userId,
     title: doc.title,
     mode: doc.mode,
     messages: doc.messages || [],

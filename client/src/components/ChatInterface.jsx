@@ -1,11 +1,12 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import MessageBubble from './MessageBubble.jsx';
 import ThinkingIndicator from './ThinkingIndicator.jsx';
+import { apiStream } from '../api.js';
 
 const WELCOME_MESSAGE =
   "Hello! I'm DBomni, your banking personal assistant. How can I help you today?";
 
-export default function ChatInterface({ conversation, messages, onMessagesChange, onTitleChange }) {
+export default function ChatInterface({ conversation, messages, onMessagesChange, onTitleChange, userId, onConversationSaved }) {
   const [input, setInput] = useState('');
   const [streaming, setStreaming] = useState(false);
   const [searching, setSearching] = useState(false);
@@ -13,6 +14,9 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
   const bottomRef = useRef(null);
   const sentTitleRef = useRef(false);
   const abortRef = useRef(null);
+  const prevConversationIdRef = useRef(conversation?.id);
+  const onMessagesChangeRef = useRef(onMessagesChange);
+  onMessagesChangeRef.current = onMessagesChange;
 
   const mode = conversation?.mode || 'general';
 
@@ -25,6 +29,12 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
   }, [messages, searching, scrollToBottom]);
 
   useEffect(() => {
+    const prevId = prevConversationIdRef.current;
+    prevConversationIdRef.current = conversation?.id;
+
+    const isLocalToRealSwap = prevId?.startsWith('local-') && conversation?.id && !conversation?.id.startsWith('local-');
+    if (isLocalToRealSwap) return;
+
     if (abortRef.current) abortRef.current.abort();
     setInput('');
     setStreaming(false);
@@ -44,29 +54,47 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
     }
 
     const userMessage = { role: 'user', content: text };
-    const updatedMessages = [...messages, userMessage];
+    const assistantMessage = { role: 'assistant', content: 'Thinking...' };
+    const updatedMessages = [...messages, userMessage, assistantMessage];
     onMessagesChange(updatedMessages);
     setInput('');
-
-    const assistantMessage = { role: 'assistant', content: '' };
-    onMessagesChange([...updatedMessages, assistantMessage]);
     setStreaming(true);
     setSearching(false);
 
-    const history = updatedMessages.map((m) => ({
-      role: m.role,
-      content: m.content,
-    }));
+    const history = messages
+      .filter((m) => m.role !== 'assistant' || Boolean(m.content))
+      .map((m) => ({ role: m.role, content: m.content }));
 
     if (abortRef.current) abortRef.current.abort();
     const controller = new AbortController();
     abortRef.current = controller;
 
+    let currentConversationId = conversation?.id;
+    let streamingDone = false;
+    let accumulated = '';
+
+    const upsertAssistantMessage = (content) => {
+      onMessagesChangeRef.current((prev) => {
+        const updated = [...prev];
+        if (updated.length === 0 || updated[updated.length - 1].role !== 'assistant') {
+          updated.push({ role: 'assistant', content });
+        } else {
+          updated[updated.length - 1] = { role: 'assistant', content };
+        }
+        return updated;
+      });
+    };
+
     try {
-      const response = await fetch('/api/chat', {
+      const response = await apiStream('/api/chat', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: text, mode, history }),
+        body: JSON.stringify({
+          message: text,
+          mode,
+          history,
+          conversationId: currentConversationId,
+          userId,
+        }),
         signal: controller.signal,
       });
 
@@ -78,8 +106,6 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
       let buffer = '';
-      let accumulated = '';
-      let streamingDone = false;
 
       while (true) {
         const { done, value } = await reader.read();
@@ -99,6 +125,7 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
 
             if (data.error) {
               accumulated = `Error: ${data.error}`;
+              upsertAssistantMessage(accumulated);
               streamingDone = true;
               break;
             }
@@ -115,18 +142,28 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
               continue;
             }
 
+            if (data.saved && data.conversationId) {
+              currentConversationId = data.conversationId;
+              if (onConversationSaved) {
+                onConversationSaved(conversation?.id, data.conversationId);
+              }
+              continue;
+            }
+
             if (data.done) {
+              if (!accumulated) {
+                accumulated = mode === 'policy'
+                  ? "I couldn't find relevant information about that in the policy documents. Please try rephrasing your question with different terms."
+                  : "I wasn't able to generate a response. Please try asking your question again.";
+                upsertAssistantMessage(accumulated);
+              }
               streamingDone = true;
               break;
             }
 
             if (data.content) {
               accumulated += data.content;
-              onMessagesChange((prev) => {
-                const updated = [...prev];
-                updated[updated.length - 1] = { role: 'assistant', content: accumulated };
-                return updated;
-              });
+              upsertAssistantMessage(accumulated);
             }
           } catch {
             // skip malformed JSON
@@ -134,16 +171,10 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
         }
         if (streamingDone) break;
       }
-      onMessagesChange([
-        ...history,
-        { role: 'assistant', content: accumulated },
-      ]);
     } catch (err) {
       if (err.name === 'AbortError') return;
-      onMessagesChange([
-        ...history,
-        { role: 'assistant', content: `Error: ${err.message}` },
-      ]);
+      accumulated = `Error: ${err.message}`;
+      upsertAssistantMessage(accumulated);
     } finally {
       setStreaming(false);
       setSearching(false);
@@ -240,9 +271,8 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
             </p>
           </div>
         )}
-        {searching && <ThinkingIndicator message={searchMessage} />}
-        {streaming && !searching && messages[messages.length - 1]?.content === '' && (
-          <MessageBubble role="assistant" content="" />
+        {(searching || (streaming && messages[messages.length - 1]?.content === '')) && (
+          <ThinkingIndicator message={searching ? searchMessage : 'Thinking'} />
         )}
         <div ref={bottomRef} />
       </div>

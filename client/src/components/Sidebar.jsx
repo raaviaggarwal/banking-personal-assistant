@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 const FILTERS = [
   { key: 'all', label: 'All' },
   { key: 'policy', label: 'Policy' },
@@ -14,7 +16,9 @@ export default function Sidebar({
   onSelect,
   onDelete,
   onManagePolicies,
+  onLogout,
 }) {
+  const navigate = useNavigate();
   const filtered = filter === 'all'
     ? conversations
     : conversations.filter((c) => c.mode === filter);
@@ -37,16 +41,29 @@ export default function Sidebar({
           borderBottom: '1px solid #e5e7eb',
         }}
       >
-        <h1
-          style={{
-            fontSize: 18,
-            fontWeight: 600,
-            color: '#1f2937',
-            marginBottom: 12,
-          }}
-        >
-          DBomni
-        </h1>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
+          <h1 style={{ fontSize: 18, fontWeight: 600, color: '#1f2937' }}>
+            DBomni
+          </h1>
+          <button
+            onClick={() => navigate('/')}
+            style={{
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              color: '#9ca3af',
+              fontSize: 12,
+              fontWeight: 500,
+              padding: '4px 8px',
+              borderRadius: 4,
+              transition: 'all 0.15s',
+            }}
+            onMouseEnter={(e) => { e.currentTarget.style.background = '#e8f0fe'; e.currentTarget.style.color = '#1a73e8'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.background = 'none'; e.currentTarget.style.color = '#9ca3af'; }}
+          >
+            Home
+          </button>
+        </div>
         <div style={{ display: 'flex', gap: 6 }}>
           <button
             onClick={onNewPolicyChat}
@@ -212,7 +229,7 @@ export default function Sidebar({
         )}
       </nav>
 
-      <div style={{ padding: '8px', borderTop: '1px solid #e5e7eb' }}>
+      <div style={{ padding: '8px', borderTop: '1px solid #e5e7eb', display: 'flex', flexDirection: 'column', gap: 4 }}>
         <button
           onClick={onManagePolicies}
           style={{
@@ -237,6 +254,31 @@ export default function Sidebar({
           }}
         >
           Manage Policies
+        </button>
+        <button
+          onClick={onLogout}
+          style={{
+            width: '100%',
+            padding: '8px 14px',
+            background: 'none',
+            color: '#ef4444',
+            border: '1px solid #fecaca',
+            borderRadius: 6,
+            cursor: 'pointer',
+            fontSize: 13,
+            fontWeight: 500,
+            transition: 'all 0.15s',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = '#fef2f2';
+            e.currentTarget.style.borderColor = '#fca5a5';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = 'none';
+            e.currentTarget.style.borderColor = '#fecaca';
+          }}
+        >
+          Logout
         </button>
       </div>
     </aside>

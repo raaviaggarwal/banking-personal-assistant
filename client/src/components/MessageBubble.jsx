@@ -23,8 +23,8 @@ export default function MessageBubble({ role, content }) {
         }}
       >
         {content || (
-          <span style={{ color: isUser ? 'rgba(255,255,255,0.6)' : '#9ca3af', fontStyle: 'italic' }}>
-            {isUser ? 'Typing...' : ''}
+          <span style={{ color: '#9ca3af', fontStyle: 'italic' }}>
+            {isUser ? 'Sending...' : 'Thinking...'}
           </span>
         )}
       </div>

@@ -1,9 +1,17 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import Sidebar from './components/Sidebar.jsx';
 import ChatInterface from './components/ChatInterface.jsx';
 import UploadModal from './components/UploadModal.jsx';
+import HomePage from './components/HomePage.jsx';
+import LoginPage from './components/LoginPage.jsx';
+import { api } from './api.js';
 
 export default function App() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [authenticated, setAuthenticated] = useState(() => !!localStorage.getItem('auth'));
+  const [userId, setUserId] = useState(() => localStorage.getItem('userId') || '');
   const [conversations, setConversations] = useState([]);
   const [activeId, setActiveId] = useState(null);
   const [messages, setMessages] = useState([]);
@@ -13,8 +21,9 @@ export default function App() {
   const messageCache = useRef({});
 
   useEffect(() => {
-    fetchConversations();
-  }, []);
+    if (authenticated && userId) fetchConversations();
+    else setLoaded(true);
+  }, [authenticated, userId]);
 
   function updateConversationInList(id, updates) {
     setConversations((prev) =>
@@ -23,9 +32,9 @@ export default function App() {
   }
 
   async function fetchConversations() {
+    if (!userId) { setLoaded(true); return; }
     try {
-      const res = await fetch('/api/history');
-      const list = await res.json();
+      const list = await api(`/api/history?userId=${encodeURIComponent(userId)}`);
       setConversations(list);
       if (list.length > 0) {
         setActiveId(list[0].id);
@@ -43,60 +52,56 @@ export default function App() {
     }
   }
 
-  function loadConversation(id) {
+  async function loadConversation(id) {
     if (messageCache.current[id]) {
       setMessages(messageCache.current[id]);
       return;
     }
 
-    fetch(`/api/history/${id}`)
-      .then((res) => res.json())
-      .then((convo) => {
-        const msgs = convo.messages || [];
-        messageCache.current[id] = msgs;
-        setMessages(msgs);
-      })
-      .catch(() => setMessages([]));
+    try {
+      const convo = await api(`/api/history/${id}`);
+      const msgs = convo.messages || [];
+      messageCache.current[id] = msgs;
+      setMessages(msgs);
+    } catch {
+      setMessages([]);
+    }
   }
 
   async function createNewChat(mode) {
-    try {
-      const res = await fetch('/api/history', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ title: 'New Chat', mode }),
-      });
-      const convo = await res.json();
-      setConversations((prev) => [convo, ...prev]);
-      setActiveId(convo.id);
-      setMessages([]);
-    } catch {
-      const id = 'local-' + Date.now();
-      const convo = { id, title: 'New Chat', mode };
-      setConversations((prev) => [convo, ...prev]);
-      setActiveId(id);
-      setMessages([]);
+    if (!authenticated) { navigate('/login'); return; }
+    const id = 'local-' + Date.now();
+    const convo = { id, title: 'New Chat', mode };
+    setConversations((prev) => [convo, ...prev]);
+    setActiveId(id);
+    setMessages([]);
+    navigate('/chat');
+  }
+
+  function handleConversationSaved(localId, realId) {
+    setConversations((prev) => prev.map((c) => c.id === localId ? { ...c, id: realId } : c));
+    setActiveId(realId);
+    if (messageCache.current[localId]) {
+      messageCache.current[realId] = messageCache.current[localId];
+      delete messageCache.current[localId];
     }
   }
 
   const saveMessages = useCallback(async (id, msgs) => {
     try {
-      await fetch(`/api/history/${id}`, {
+      await api(`/api/history/${id}`, {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: msgs }),
       });
-    } catch {
-      // silent fallback
-    }
+    } catch {}
   }, []);
 
   async function handleTitleChange(id, title) {
     updateConversationInList(id, { title });
+    if (id.startsWith('local-')) return;
     try {
-      await fetch(`/api/history/${id}`, {
+      await api(`/api/history/${id}`, {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title }),
       });
     } catch {}
@@ -108,9 +113,9 @@ export default function App() {
   }
 
   async function handleDelete(id) {
-    try {
-      await fetch(`/api/history/${id}`, { method: 'DELETE' });
-    } catch {}
+    if (!id.startsWith('local-')) {
+      try { await api(`/api/history/${id}`, { method: 'DELETE' }); } catch {}
+    }
     delete messageCache.current[id];
     setConversations((prev) => prev.filter((c) => c.id !== id));
     if (activeId === id) {
@@ -125,49 +130,105 @@ export default function App() {
   }
 
   function handleMessagesChange(msgs) {
-    if (typeof msgs === 'function') {
-      setMessages(msgs);
-      return;
-    }
-    setMessages(msgs);
-    if (activeId) {
-      messageCache.current[activeId] = msgs;
-      if (!activeId.startsWith('local-')) {
-        saveMessages(activeId, msgs);
+    setMessages((prev) => {
+      const nextMessages = typeof msgs === 'function' ? msgs(prev) : msgs;
+      if (activeId) {
+        messageCache.current[activeId] = nextMessages;
+        if (!activeId.startsWith('local-')) {
+          saveMessages(activeId, nextMessages);
+        }
       }
-    }
+      return nextMessages;
+    });
+  }
+
+  function handleLogin(id, username) {
+    localStorage.setItem('auth', '1');
+    localStorage.setItem('userId', id);
+    setAuthenticated(true);
+    setUserId(id);
+    const next = location.state?.from || '/chat';
+    navigate(next, { replace: true });
+  }
+
+  function handleLogout() {
+    localStorage.removeItem('auth');
+    localStorage.removeItem('userId');
+    setAuthenticated(false);
+    setUserId('');
+    navigate('/');
   }
 
   const activeConversation = conversations.find((c) => c.id === activeId);
 
-  if (!loaded) {
+  if (location.pathname === '/login') {
+    if (authenticated) {
+      navigate('/chat', { replace: true });
+      return null;
+    }
+    return <LoginPage onLogin={handleLogin} />;
+  }
+
+  if (location.pathname === '/' || location.pathname === '') {
     return (
-      <div style={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center', color: '#9ca3af', fontSize: 14 }}>
-        Loading...
+      <HomePage
+        onStartChat={() => {
+          if (authenticated) {
+            if (!activeId) createNewChat('general');
+            else navigate('/chat');
+          } else {
+            navigate('/login');
+          }
+        }}
+      />
+    );
+  }
+
+  if (location.pathname.startsWith('/chat')) {
+    if (!authenticated) {
+      navigate('/login', { state: { from: location.pathname }, replace: true });
+      return null;
+    }
+    if (!loaded) {
+      return (
+        <div style={{ display: 'flex', height: '100vh', alignItems: 'center', justifyContent: 'center', color: '#9ca3af', fontSize: 14 }}>
+          Loading...
+        </div>
+      );
+    }
+    return (
+      <div style={{ display: 'flex', height: '100vh' }}>
+        <Sidebar
+          conversations={conversations}
+          activeId={activeId}
+          filter={filter}
+          onFilterChange={setFilter}
+          onNewPolicyChat={() => createNewChat('policy')}
+          onNewGeneralChat={() => createNewChat('general')}
+          onSelect={handleSelect}
+          onDelete={handleDelete}
+          onManagePolicies={() => setUploadOpen(true)}
+          onLogout={handleLogout}
+        />
+        <ChatInterface
+          conversation={activeConversation}
+          messages={messages}
+          onMessagesChange={handleMessagesChange}
+          onTitleChange={handleTitleChange}
+          userId={userId}
+          onConversationSaved={handleConversationSaved}
+        />
+        <UploadModal open={uploadOpen} onClose={() => setUploadOpen(false)} />
       </div>
     );
   }
 
   return (
-    <div style={{ display: 'flex', height: '100vh' }}>
-      <Sidebar
-        conversations={conversations}
-        activeId={activeId}
-        filter={filter}
-        onFilterChange={setFilter}
-        onNewPolicyChat={() => createNewChat('policy')}
-        onNewGeneralChat={() => createNewChat('general')}
-        onSelect={handleSelect}
-        onDelete={handleDelete}
-        onManagePolicies={() => setUploadOpen(true)}
-      />
-      <ChatInterface
-        conversation={activeConversation}
-        messages={messages}
-        onMessagesChange={handleMessagesChange}
-        onTitleChange={handleTitleChange}
-      />
-      <UploadModal open={uploadOpen} onClose={() => setUploadOpen(false)} />
-    </div>
+    <HomePage
+      onStartChat={() => {
+        if (authenticated) navigate('/chat');
+        else navigate('/login');
+      }}
+    />
   );
 }

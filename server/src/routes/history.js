@@ -9,9 +9,10 @@ import {
 
 const router = Router();
 
-router.get('/history', async (_req, res) => {
+router.get('/history', async (req, res) => {
   try {
-    const list = await getConversations();
+    const userId = req.query.userId || 'admin';
+    const list = await getConversations(userId);
     res.json(list);
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -30,8 +31,8 @@ router.get('/history/:id', async (req, res) => {
 
 router.post('/history', async (req, res) => {
   try {
-    const { title = 'New Chat', mode = 'general' } = req.body;
-    const convo = await createConversation(title, mode);
+    const { userId = 'admin', title = 'New Chat', mode = 'general' } = req.body;
+    const convo = await createConversation(userId, title, mode);
     res.status(201).json(convo);
   } catch (err) {
     res.status(500).json({ error: err.message });

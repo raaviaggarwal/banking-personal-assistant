@@ -8,6 +8,7 @@ import healthRouter from './routes/health.js';
 import chatRouter from './routes/chat.js';
 import policiesRouter from './routes/policies.js';
 import historyRouter from './routes/history.js';
+import authRouter from './routes/auth.js';
 import { load, count, getFiles, addChunks } from './services/vectorStore.js';
 import { generateEmbedding } from './services/nvidia.js';
 import { extractArticles, chunkLongContent } from './services/policyReader.js';
@@ -17,9 +18,12 @@ const app = express();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const POLICIES_DIR = path.resolve(__dirname, '..', '..', 'data', 'policies');
 
-const allowedOrigins = NODE_ENV === 'production'
-  ? ['https://yourdomain.com']
-  : ['http://localhost:5173', 'http://localhost:3001'];
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:3001',
+  'https://banking-personal-assistant.onrender.com',
+  'https://banking-personal-assistant.vercel.app',
+];
 
 app.use(cors({
   origin: (origin, cb) => {
@@ -34,6 +38,7 @@ app.use('/api', healthRouter);
 app.use('/api', chatRouter);
 app.use('/api', policiesRouter);
 app.use('/api', historyRouter);
+app.use('/api', authRouter);
 
 const clientDist = path.resolve(__dirname, '..', '..', 'client', 'dist');
 app.use(express.static(clientDist));

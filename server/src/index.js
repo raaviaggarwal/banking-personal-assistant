@@ -27,10 +27,16 @@ app.use('/api', historyRouter);
 app.use('/api', authRouter);
 
 const clientDist = path.resolve(__dirname, '..', '..', 'client', 'dist');
-app.use(express.static(clientDist));
-app.get('*', (_req, res) => {
-  res.sendFile(path.join(clientDist, 'index.html'));
-});
+if (fs.existsSync(clientDist)) {
+  app.use(express.static(clientDist));
+  app.get('*', (_req, res) => {
+    res.sendFile(path.join(clientDist, 'index.html'));
+  });
+} else {
+  app.get('/', (_req, res) => {
+    res.json({ service: 'DBomni API', status: 'running', docs: '/api/health' });
+  });
+}
 
 app.use((err, _req, res, _next) => {
   console.error('Unhandled error:', err);

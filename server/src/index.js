@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { PORT, NODE_ENV } from './config.js';
@@ -13,18 +14,8 @@ import authRouter from './routes/auth.js';
 const app = express();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const allowedOrigins = [
-  'http://localhost:5173',
-  'http://localhost:3001',
-  'https://banking-personal-assistant.onrender.com',
-  'https://banking-personal-assistant.vercel.app',
-];
-
 app.use(cors({
-  origin: (origin, cb) => {
-    if (!origin || allowedOrigins.includes(origin)) cb(null, true);
-    else cb(null, false);
-  },
+  origin: true,
   credentials: true,
 }));
 app.use(express.json({ limit: '10mb' }));

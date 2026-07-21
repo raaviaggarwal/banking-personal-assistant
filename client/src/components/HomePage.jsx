@@ -1,33 +1,33 @@
 const FEATURES = [
   {
     icon: 'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5',
-    title: 'Policy Intelligence',
-    desc: 'Instant answers from your company policy documents using Retrieval-Augmented Generation. Ask about compliance, HR policies, code of conduct, and more.',
+    title: 'Policy-Aware RAG',
+    desc: 'Instant answers from 8 company policy documents using keyword-based retrieval. Ask about compliance, HR policies, code of conduct, expenses, and benefits.',
   },
   {
     icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
-    title: 'General Assistant',
-    desc: 'A versatile AI assistant for coding help, general knowledge, questions, and everyday tasks — always professional and precise.',
+    title: 'Unified AI Chat',
+    desc: 'A single assistant powered by Google Gemini 2.5 Flash via Langbase pipes. Coding help, policy queries, general knowledge — all in one conversation.',
   },
   {
     icon: 'M13 10V3L4 14h7v7l9-11h-7z',
     title: 'Lightning Fast',
-    desc: 'Optimized with NVIDIA NIM for low-latency responses. General queries use a fast model so you get answers in seconds, not minutes.',
+    desc: 'Optimized with Langbase pipes and Google Gemini 2.5 Flash for low-latency responses. Streaming output means answers arrive as they are generated.',
   },
   {
     icon: 'M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z',
     title: 'Secure by Design',
-    desc: 'Your data stays private. Conversations are encrypted in transit and stored securely in MongoDB. No third-party training on your data.',
+    desc: 'Your conversations are stored in Langbase threads with no third-party training on your data. No database needed — lightweight, private, and self-contained.',
   },
   {
     icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',
-    title: '24/7 Availability',
-    desc: 'Deployed on reliable cloud infrastructure with automatic scaling. Available whenever you need it — day or night.',
+    title: 'Always Available',
+    desc: 'Deployed on reliable infrastructure with automatic scaling. Available whenever you need it — day or night.',
   },
   {
     icon: 'M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7',
-    title: 'Multi-Policy Support',
-    desc: 'Ingest and query multiple policy documents simultaneously. Upload new policies and the assistant learns them automatically.',
+    title: 'Pre-loaded Policy Suite',
+    desc: 'Eight company policy documents ingested and ready — from code of conduct and compliance to HR handbook, medical benefits, and expense travel policy.',
   },
 ];
 
@@ -137,7 +137,7 @@ export default function HomePage({ onStartChat }) {
             onMouseEnter={(e) => (e.currentTarget.style.background = '#1557b0')}
             onMouseLeave={(e) => (e.currentTarget.style.background = '#1a73e8')}
           >
-            Start your chat
+            Get Started
           </button>
         </div>
       </header>
@@ -175,8 +175,8 @@ export default function HomePage({ onStartChat }) {
               letterSpacing: '-0.02em',
             }}
           >
-            Ask, search, and act — <br />
-            <span style={{ color: '#1a73e8' }}>powered by AI</span>
+            Ask anything about <br />
+            <span style={{ color: '#1a73e8' }}>your company policies</span>
           </h1>
           <p
             style={{
@@ -187,9 +187,9 @@ export default function HomePage({ onStartChat }) {
               margin: '0 auto 32px',
             }}
           >
-            DBomni combines NVIDIA NIM AI with your company policies to deliver instant,
-            accurate answers. Chat in general mode or switch to policy mode to query your
-            documents.
+            DBomni combines Langbase AI with keyword-based policy retrieval to deliver instant,
+            accurate answers. Whether it is HR policies, compliance rules, or coding help —
+            just ask.
           </p>
           <button
             onClick={onStartChat}
@@ -214,7 +214,7 @@ export default function HomePage({ onStartChat }) {
               e.currentTarget.style.transform = 'translateY(0)';
             }}
           >
-            Start your chat
+            Get Started
           </button>
         </section>
 

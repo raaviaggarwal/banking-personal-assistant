@@ -1,8 +1,8 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Sidebar from './components/Sidebar.jsx';
 import ChatInterface from './components/ChatInterface.jsx';
-import UploadModal from './components/UploadModal.jsx';
+import PolicyManager from './components/PolicyManager.jsx';
 import HomePage from './components/HomePage.jsx';
 import LoginPage from './components/LoginPage.jsx';
 import { api } from './api.js';
@@ -15,9 +15,8 @@ export default function App() {
   const [conversations, setConversations] = useState([]);
   const [activeId, setActiveId] = useState(null);
   const [messages, setMessages] = useState([]);
-  const [uploadOpen, setUploadOpen] = useState(false);
   const [loaded, setLoaded] = useState(false);
-  const [filter, setFilter] = useState('all');
+  const [policyManagerOpen, setPolicyManagerOpen] = useState(false);
   const messageCache = useRef({});
 
   useEffect(() => {
@@ -40,7 +39,7 @@ export default function App() {
         setActiveId(list[0].id);
         loadConversation(list[0].id);
       } else {
-        createNewChat('general');
+        createNewChat();
       }
       setLoaded(true);
     } catch {
@@ -68,10 +67,10 @@ export default function App() {
     }
   }
 
-  async function createNewChat(mode) {
+  async function createNewChat() {
     if (!authenticated) { navigate('/login'); return; }
     const id = 'local-' + Date.now();
-    const convo = { id, title: 'New Chat', mode };
+    const convo = { id, title: 'New Chat', mode: 'general' };
     setConversations((prev) => [convo, ...prev]);
     setActiveId(id);
     setMessages([]);
@@ -86,15 +85,6 @@ export default function App() {
       delete messageCache.current[localId];
     }
   }
-
-  const saveMessages = useCallback(async (id, msgs) => {
-    try {
-      await api(`/api/history/${id}`, {
-        method: 'PUT',
-        body: JSON.stringify({ messages: msgs }),
-      });
-    } catch {}
-  }, []);
 
   async function handleTitleChange(id, title) {
     updateConversationInList(id, { title });
@@ -124,7 +114,7 @@ export default function App() {
         setActiveId(remaining[0].id);
         loadConversation(remaining[0].id);
       } else {
-        createNewChat('general');
+        createNewChat();
       }
     }
   }
@@ -134,9 +124,6 @@ export default function App() {
       const nextMessages = typeof msgs === 'function' ? msgs(prev) : msgs;
       if (activeId) {
         messageCache.current[activeId] = nextMessages;
-        if (!activeId.startsWith('local-')) {
-          saveMessages(activeId, nextMessages);
-        }
       }
       return nextMessages;
     });
@@ -174,7 +161,7 @@ export default function App() {
       <HomePage
         onStartChat={() => {
           if (authenticated) {
-            if (!activeId) createNewChat('general');
+            if (!activeId) createNewChat();
             else navigate('/chat');
           } else {
             navigate('/login');
@@ -201,15 +188,13 @@ export default function App() {
         <Sidebar
           conversations={conversations}
           activeId={activeId}
-          filter={filter}
-          onFilterChange={setFilter}
-          onNewPolicyChat={() => createNewChat('policy')}
-          onNewGeneralChat={() => createNewChat('general')}
+          onNewChat={() => createNewChat()}
           onSelect={handleSelect}
           onDelete={handleDelete}
-          onManagePolicies={() => setUploadOpen(true)}
+          onManagePolicies={() => setPolicyManagerOpen(true)}
           onLogout={handleLogout}
         />
+        <PolicyManager open={policyManagerOpen} onClose={() => setPolicyManagerOpen(false)} />
         <ChatInterface
           conversation={activeConversation}
           messages={messages}
@@ -218,7 +203,6 @@ export default function App() {
           userId={userId}
           onConversationSaved={handleConversationSaved}
         />
-        <UploadModal open={uploadOpen} onClose={() => setUploadOpen(false)} />
       </div>
     );
   }

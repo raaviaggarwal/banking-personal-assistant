@@ -8,12 +8,9 @@
     "start": "node src/index.js"
   },
   "dependencies": {
-    "axios": "^1.18.1",
     "cors": "^2.8.5",
     "dotenv": "^17.4.2",
     "express": "^4.21.0",
-    "mongodb": "^7.5.0",
-    "mongoose": "^8.24.1",
-    "openai": "^6.48.0"
+    "langbase": "^1.2.4"
   }
 }

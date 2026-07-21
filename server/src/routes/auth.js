@@ -1,6 +1,4 @@
 import { Router } from 'express';
-import User from '../models/User.js';
-import { isConnected } from '../services/database.js';
 
 const router = Router();
 
@@ -12,13 +10,6 @@ router.post('/auth/login', async (req, res) => {
 
     if (!username || !password) {
       return res.status(400).json({ error: 'Username and password are required' });
-    }
-
-    if (isConnected()) {
-      const user = await User.findOne({ username });
-      if (user && user.password === password) {
-        return res.json({ userId: user._id.toString(), username: user.username });
-      }
     }
 
     if (username === HARDCODED_USER.username && password === HARDCODED_USER.password) {

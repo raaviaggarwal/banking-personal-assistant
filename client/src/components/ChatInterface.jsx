@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import MessageBubble from './MessageBubble.jsx';
 import ThinkingIndicator from './ThinkingIndicator.jsx';
 import { apiStream } from '../api.js';
@@ -7,6 +8,7 @@ const WELCOME_MESSAGE =
   "Hello! I'm DBomni, your banking personal assistant. How can I help you today?";
 
 export default function ChatInterface({ conversation, messages, onMessagesChange, onTitleChange, userId, onConversationSaved }) {
+  const navigate = useNavigate();
   const [input, setInput] = useState('');
   const [streaming, setStreaming] = useState(false);
   const [searching, setSearching] = useState(false);
@@ -17,8 +19,6 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
   const prevConversationIdRef = useRef(conversation?.id);
   const onMessagesChangeRef = useRef(onMessagesChange);
   onMessagesChangeRef.current = onMessagesChange;
-
-  const mode = conversation?.mode || 'general';
 
   const scrollToBottom = useCallback(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -90,7 +90,6 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
         method: 'POST',
         body: JSON.stringify({
           message: text,
-          mode,
           history,
           conversationId: currentConversationId,
           userId,
@@ -132,7 +131,7 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
 
             if (data.status === 'searching') {
               setSearching(true);
-              setSearchMessage(data.message || 'Searching policies...');
+              setSearchMessage(data.message || 'Searching...');
               continue;
             }
 
@@ -152,9 +151,7 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
 
             if (data.done) {
               if (!accumulated) {
-                accumulated = mode === 'policy'
-                  ? "I couldn't find relevant information about that in the policy documents. Please try rephrasing your question with different terms."
-                  : "I wasn't able to generate a response. Please try asking your question again.";
+                accumulated = "I wasn't able to generate a response. Please try asking your question again.";
                 upsertAssistantMessage(accumulated);
               }
               streamingDone = true;
@@ -202,37 +199,83 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
     >
       <header
         style={{
-          padding: '12px 24px',
+          padding: '10px 20px',
           borderBottom: '1px solid #e5e7eb',
           display: 'flex',
           alignItems: 'center',
-          gap: 12,
+          gap: 10,
+          background: '#ffffff',
         }}
       >
-        <span
+        <div
           style={{
-            fontSize: 11,
-            fontWeight: 600,
-            color: mode === 'policy' ? '#059669' : '#6366f1',
-            background: mode === 'policy' ? '#d1fae5' : '#e0e7ff',
-            padding: '3px 8px',
-            borderRadius: 4,
+            width: 26,
+            height: 26,
+            borderRadius: 6,
+            background: 'linear-gradient(135deg, #1a73e8 0%, #4f46e5 100%)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: '#ffffff',
+            fontSize: 13,
+            fontWeight: 700,
+            flexShrink: 0,
           }}
         >
-          {mode === 'policy' ? 'Policy Assistant' : 'General Assistant'}
+          D
+        </div>
+        <span style={{ fontSize: 16, fontWeight: 600, color: '#1f2937' }}>
+          DBomni
         </span>
-        <span
+        {conversation?.title && conversation.title !== 'New Chat' && (
+          <>
+            <span style={{ color: '#d1d5db', fontSize: 16 }}>/</span>
+            <span
+              style={{
+                fontSize: 15,
+                fontWeight: 500,
+                color: '#6b7280',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                whiteSpace: 'nowrap',
+                maxWidth: 300,
+              }}
+            >
+              {conversation.title}
+            </span>
+          </>
+        )}
+        <button
+          onClick={() => navigate('/')}
           style={{
-            fontSize: 12,
-            color: '#9ca3af',
             marginLeft: 'auto',
-            overflow: 'hidden',
-            textOverflow: 'ellipsis',
-            whiteSpace: 'nowrap',
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer',
+            color: '#6b7280',
+            padding: '4px 8px',
+            borderRadius: 6,
+            display: 'flex',
+            alignItems: 'center',
+            gap: 5,
+            fontSize: 13,
+            transition: 'all 0.15s',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = '#f3f4f6';
+            e.currentTarget.style.color = '#1f2937';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = 'none';
+            e.currentTarget.style.color = '#6b7280';
           }}
         >
-          {conversation?.title || 'New Chat'}
-        </span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          Home
+        </button>
       </header>
 
       <div
@@ -262,12 +305,10 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
             }}
           >
             <p style={{ fontSize: 20, fontWeight: 600, color: '#1f2937' }}>
-              {mode === 'policy' ? 'Ask about company policies' : 'Ask me anything'}
+              Ask me anything
             </p>
             <p style={{ fontSize: 13, maxWidth: 400 }}>
-              {mode === 'policy'
-                ? 'HR policies, leave entitlements, code of conduct, expenses, and more.'
-                : 'Coding help, general knowledge, questions, and everyday tasks.'}
+              Company policies, coding help, general knowledge — I can help with it all.
             </p>
           </div>
         )}
@@ -301,9 +342,7 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
             placeholder={
               streaming
                 ? 'Waiting for response...'
-                : mode === 'policy'
-                  ? 'Ask about company policies...'
-                  : 'Ask me anything...'
+                : 'Ask me anything...'
             }
             style={{
               flex: 1,

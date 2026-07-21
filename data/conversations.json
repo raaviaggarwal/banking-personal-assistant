@@ -1,0 +1,32 @@
+{
+  "list": [
+    {
+      "id": "conv_24",
+      "threadId": null,
+      "userId": "admin",
+      "title": "hey",
+      "mode": "general",
+      "createdAt": "2026-07-21T18:44:50.125Z",
+      "updatedAt": "2026-07-21T19:26:05.042Z"
+    },
+    {
+      "id": "conv_16",
+      "threadId": "d198e958-3cd0-4b3a-8025-f0e3c4b41335",
+      "userId": "6a5f6a77a59874db36567a17",
+      "title": "explain the new joiner onboarding",
+      "mode": "policy",
+      "createdAt": "2026-07-21T17:38:34.479Z",
+      "updatedAt": "2026-07-21T17:48:14.176Z"
+    },
+    {
+      "id": "conv_15",
+      "threadId": "957db7fa-db54-44e2-a34d-2dce6970f6fd",
+      "userId": "6a5f6a77a59874db36567a17",
+      "title": "New Chat",
+      "mode": "general",
+      "createdAt": "2026-07-21T17:38:01.044Z",
+      "updatedAt": "2026-07-21T17:38:15.592Z"
+    }
+  ],
+  "nextId": 29
+}

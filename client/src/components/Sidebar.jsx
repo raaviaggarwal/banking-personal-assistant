@@ -1,126 +1,56 @@
-const FILTERS = [
-  { key: 'all', label: 'All' },
-  { key: 'policy', label: 'Policy' },
-  { key: 'general', label: 'General' },
-];
-
 export default function Sidebar({
   conversations,
   activeId,
-  filter,
-  onFilterChange,
-  onNewPolicyChat,
-  onNewGeneralChat,
+  onNewChat,
   onSelect,
   onDelete,
   onManagePolicies,
+  onLogout,
 }) {
-  const filtered = filter === 'all'
-    ? conversations
-    : conversations.filter((c) => c.mode === filter);
 
   return (
     <aside
       style={{
         width: 260,
         minWidth: 260,
-        background: '#f8f9fa',
+        background: '#f7f7f8',
         borderRight: '1px solid #e5e7eb',
         display: 'flex',
         flexDirection: 'column',
         height: '100vh',
       }}
     >
-      <div
-        style={{
-          padding: '16px',
-          borderBottom: '1px solid #e5e7eb',
-        }}
-      >
-        <h1
+      <div style={{ padding: '12px' }}>
+        <button
+          onClick={onNewChat}
           style={{
-            fontSize: 18,
-            fontWeight: 600,
+            width: '100%',
+            padding: '10px 14px',
+            background: '#ffffff',
             color: '#1f2937',
-            marginBottom: 12,
+            border: '1px solid #d1d5db',
+            borderRadius: 8,
+            cursor: 'pointer',
+            fontSize: 13,
+            fontWeight: 500,
+            display: 'flex',
+            alignItems: 'center',
+            gap: 8,
+            transition: 'background 0.15s',
           }}
+          onMouseEnter={(e) => (e.currentTarget.style.background = '#f3f4f6')}
+          onMouseLeave={(e) => (e.currentTarget.style.background = '#ffffff')}
         >
-          DBomni
-        </h1>
-        <div style={{ display: 'flex', gap: 6 }}>
-          <button
-            onClick={onNewPolicyChat}
-            style={{
-              flex: 1,
-              padding: '8px 6px',
-              background: '#059669',
-              color: '#fff',
-              border: 'none',
-              borderRadius: 6,
-              cursor: 'pointer',
-              fontSize: 12,
-              fontWeight: 500,
-              transition: 'background 0.15s',
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = '#047857')}
-            onMouseLeave={(e) => (e.currentTarget.style.background = '#059669')}
-          >
-            + Policy
-          </button>
-          <button
-            onClick={onNewGeneralChat}
-            style={{
-              flex: 1,
-              padding: '8px 6px',
-              background: '#6366f1',
-              color: '#fff',
-              border: 'none',
-              borderRadius: 6,
-              cursor: 'pointer',
-              fontSize: 12,
-              fontWeight: 500,
-              transition: 'background 0.15s',
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = '#4f46e5')}
-            onMouseLeave={(e) => (e.currentTarget.style.background = '#6366f1')}
-          >
-            + General
-          </button>
-        </div>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+          New Chat
+        </button>
       </div>
 
-      <div
-        style={{
-          display: 'flex',
-          gap: 2,
-          padding: '8px 8px 0',
-        }}
-      >
-        {FILTERS.map((f) => (
-          <button
-            key={f.key}
-            onClick={() => onFilterChange(f.key)}
-            style={{
-              flex: 1,
-              padding: '6px 0',
-              border: 'none',
-              borderRadius: '6px 6px 0 0',
-              background: filter === f.key ? '#ffffff' : 'transparent',
-              color: filter === f.key ? '#1a73e8' : '#6b7280',
-              cursor: 'pointer',
-              fontSize: 12,
-              fontWeight: filter === f.key ? 600 : 400,
-              borderBottom: filter === f.key ? '2px solid #1a73e8' : '2px solid transparent',
-              transition: 'all 0.15s',
-            }}
-          >
-            {f.label}
-          </button>
-        ))}
-      </div>
-
-      <nav style={{ flex: 1, overflowY: 'auto', padding: '4px 8px 8px' }}>
-        {filtered.length === 0 ? (
+      <nav style={{ flex: 1, overflowY: 'auto', padding: '0 8px 8px' }}>
+        {conversations.length === 0 ? (
           <p
             style={{
               color: '#9ca3af',
@@ -129,20 +59,17 @@ export default function Sidebar({
               padding: '24px 8px',
             }}
           >
-            {filter === 'all'
-              ? 'No conversations yet.'
-              : `No ${filter} conversations yet.`}
+            No conversations yet.
           </p>
         ) : (
-          filtered.map((convo) => (
+          conversations.map((convo) => (
             <div
               key={convo.id}
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: 6,
                 padding: '8px 10px',
-                borderRadius: 6,
+                borderRadius: 8,
                 cursor: 'pointer',
                 marginBottom: 2,
                 background: convo.id === activeId ? '#e8f0fe' : 'transparent',
@@ -152,27 +79,24 @@ export default function Sidebar({
               onClick={() => onSelect(convo.id)}
               onMouseEnter={(e) => {
                 if (convo.id !== activeId)
-                  e.currentTarget.style.background = '#f0f1f3';
+                  e.currentTarget.style.background = '#e9e9eb';
               }}
               onMouseLeave={(e) => {
                 if (convo.id !== activeId)
                   e.currentTarget.style.background = 'transparent';
               }}
             >
-              <span
-                style={{
-                  fontSize: 10,
-                  fontWeight: 600,
-                  color: convo.mode === 'policy' ? '#059669' : '#6366f1',
-                  background: convo.mode === 'policy' ? '#d1fae5' : '#e0e7ff',
-                  padding: '2px 5px',
-                  borderRadius: 4,
-                  lineHeight: 1.3,
-                  flexShrink: 0,
-                }}
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                style={{ flexShrink: 0, marginRight: 8, opacity: 0.5 }}
               >
-                {convo.mode === 'policy' ? 'P' : 'G'}
-              </span>
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+              </svg>
               <span
                 style={{
                   fontSize: 13,
@@ -197,13 +121,20 @@ export default function Sidebar({
                   fontSize: 14,
                   padding: '2px 4px',
                   borderRadius: 4,
-                  visibility: convo.id === activeId ? 'visible' : 'hidden',
+                  opacity: convo.id === activeId ? 1 : 0,
                   lineHeight: 1,
                   flexShrink: 0,
+                  transition: 'opacity 0.1s',
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#ef4444')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = '#9ca3af')}
-                title="Delete conversation"
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = '#ef4444';
+                  e.currentTarget.style.opacity = '1';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = '#9ca3af';
+                  if (convo.id !== activeId) e.currentTarget.style.opacity = '0';
+                }}
+                title="Delete"
               >
                 ×
               </button>
@@ -212,31 +143,100 @@ export default function Sidebar({
         )}
       </nav>
 
-      <div style={{ padding: '8px', borderTop: '1px solid #e5e7eb' }}>
+      <div
+        style={{
+          padding: '12px',
+          borderTop: '1px solid #e5e7eb',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 4,
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 8,
+            padding: '6px 8px',
+            marginBottom: 4,
+          }}
+        >
+          <div
+            style={{
+              width: 26,
+              height: 26,
+              borderRadius: 6,
+              background: 'linear-gradient(135deg, #1a73e8 0%, #4f46e5 100%)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: '#ffffff',
+              fontSize: 13,
+              fontWeight: 700,
+              flexShrink: 0,
+            }}
+          >
+            D
+          </div>
+          <span style={{ fontSize: 13, fontWeight: 600, color: '#1f2937' }}>
+            DBomni
+          </span>
+        </div>
         <button
           onClick={onManagePolicies}
           style={{
             width: '100%',
-            padding: '8px 14px',
+            padding: '8px 10px',
             background: 'none',
             color: '#374151',
-            border: '1px solid #d1d5db',
+            border: 'none',
             borderRadius: 6,
             cursor: 'pointer',
             fontSize: 13,
-            fontWeight: 500,
-            transition: 'all 0.15s',
+            textAlign: 'left',
+            display: 'flex',
+            alignItems: 'center',
+            gap: 8,
+            transition: 'background 0.15s',
           }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background = '#f0f1f3';
-            e.currentTarget.style.borderColor = '#9ca3af';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = 'none';
-            e.currentTarget.style.borderColor = '#d1d5db';
-          }}
+          onMouseEnter={(e) => (e.currentTarget.style.background = '#e9e9eb')}
+          onMouseLeave={(e) => (e.currentTarget.style.background = 'none')}
         >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ opacity: 0.5 }}>
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
           Manage Policies
+        </button>
+        <button
+          onClick={onLogout}
+          style={{
+            width: '100%',
+            padding: '8px 10px',
+            background: 'none',
+            color: '#ef4444',
+            border: 'none',
+            borderRadius: 6,
+            cursor: 'pointer',
+            fontSize: 13,
+            textAlign: 'left',
+            display: 'flex',
+            alignItems: 'center',
+            gap: 8,
+            transition: 'background 0.15s',
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.background = '#fef2f2')}
+          onMouseLeave={(e) => (e.currentTarget.style.background = 'none')}
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ opacity: 0.6 }}>
+            <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4" />
+            <polyline points="16 17 21 12 16 7" />
+            <line x1="21" y1="12" x2="9" y2="12" />
+          </svg>
+          Logout
         </button>
       </div>
     </aside>

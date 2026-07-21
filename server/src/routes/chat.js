@@ -1,41 +1,27 @@
 import { Router } from 'express';
-import { streamChatCompletion, generateEmbedding } from '../services/nvidia.js';
+import { runPipe, createThread, appendMessages } from '../services/langbase.js';
 import { search, count } from '../services/vectorStore.js';
+import { getConversation, createConversation } from '../services/convStore.js';
 
 const router = Router();
-
-const GENERAL_SYSTEM_PROMPT =
-  'You are DBomni, a helpful and knowledgeable banking personal assistant. ' +
-  'You help with coding, general knowledge, questions, and everyday tasks. ' +
-  'Be concise, accurate, and professional in your responses.';
-
-const POLICY_SYSTEM_PROMPT =
-  'You are DBomni, a banking company policy assistant. ' +
-  'Answer questions about company policies based only on the provided policy context below. ' +
-  'If the policy excerpts do not contain enough information to answer, say so honestly. ' +
-  'Cite the source filename when referencing specific policies. ' +
-  'Be professional, clear, and concise.';
-
-function chunksToContext(results) {
-  if (!results || results.length === 0) return '';
-  let context = 'Relevant policy excerpts:\n\n';
-  for (const r of results) {
-    context += `[Source: ${r.metadata?.articleTitle || r.filename}]\n${r.text}\n\n`;
-  }
-  return context;
-}
-
-function buildSystemPrompt(mode, policyContext) {
-  if (mode !== 'policy') return GENERAL_SYSTEM_PROMPT;
-  return POLICY_SYSTEM_PROMPT + '\n\n' + policyContext;
-}
 
 function writeEvent(res, data) {
   res.write(`data: ${JSON.stringify(data)}\n\n`);
 }
 
+function parseSSELine(line) {
+  if (!line.startsWith('data: ')) return null;
+  const payload = line.slice(6).trim();
+  if (payload === '[DONE]') return { done: true };
+  try {
+    return JSON.parse(payload);
+  } catch {
+    return null;
+  }
+}
+
 router.post('/chat', async (req, res) => {
-  const { message, mode = 'general', history = [] } = req.body;
+  const { message, history = [], conversationId, userId } = req.body;
 
   if (!message || typeof message !== 'string') {
     return res.status(400).json({ error: 'message is required' });
@@ -48,7 +34,7 @@ router.post('/chat', async (req, res) => {
 
   let aborted = false;
   const cleanup = () => { aborted = true; };
-  req.on('close', cleanup);
+  res.on('close', cleanup);
 
   const timeout = setTimeout(() => {
     if (!aborted) {
@@ -60,42 +46,104 @@ router.post('/chat', async (req, res) => {
   }, 60000);
 
   try {
-    let policyContext = '';
-
-    if (mode === 'policy' && count() > 0) {
-      writeEvent(res, { status: 'searching', message: 'Searching policies...' });
-      const queryEmbedding = await generateEmbedding(message);
-      const results = search(queryEmbedding, 5);
-      policyContext = chunksToContext(results);
-    }
-
-    if (aborted) { res.end(); return; }
-
-    writeEvent(res, { status: 'streaming' });
-
-    const systemContent = buildSystemPrompt(mode, policyContext);
-    const messages = [
-      { role: 'system', content: systemContent },
-      ...history,
+    const msgUserId = userId || 'admin';
+    const allMessages = [
+      ...(history || []),
       { role: 'user', content: message },
     ];
 
-    for await (const chunk of streamChatCompletion(messages, { maxTokens: 2048 })) {
-      if (aborted) { res.end(); return; }
-      writeEvent(res, { content: chunk });
+    let context = '';
+    if (count() > 0) {
+      writeEvent(res, { status: 'searching', message: 'Searching policies...' });
+      const results = search(message, 5);
+      if (results.length > 0) {
+        for (const r of results) {
+          context += `[Source: ${r.filename}]\n${r.text}\n\n`;
+        }
+      }
     }
-    if (!aborted) {
-      writeEvent(res, { done: true });
-      res.end();
-    }
-  } catch (err) {
-    console.error('Chat stream error:', err);
+
     if (aborted) { res.end(); return; }
 
-    if (err.message?.includes('API key')) {
-      writeEvent(res, { error: 'NVIDIA API key is not configured or invalid.' });
-    } else if (err.status === 429) {
-      writeEvent(res, { error: 'Rate limit reached. Please wait a moment and try again.' });
+    let threadId = null;
+    let convId = conversationId;
+
+    if (convId) {
+      const existing = getConversation(convId);
+      if (existing) {
+        threadId = existing.threadId;
+      }
+    }
+
+    const response = await runPipe({ messages: allMessages, context });
+
+    if (aborted) { res.end(); return; }
+
+    if (!response.ok) {
+      const errText = await response.text();
+      throw new Error(`OpenRouter error ${response.status}: ${errText}`);
+    }
+
+    writeEvent(res, { status: 'streaming' });
+
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+    let accumulated = '';
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+      buffer = lines.pop() || '';
+
+      for (const line of lines) {
+        if (aborted) break;
+        const parsed = parseSSELine(line);
+        if (!parsed) continue;
+        if (parsed.done) break;
+        const content = parsed.choices?.[0]?.delta?.content || '';
+        if (content) {
+          accumulated += content;
+          writeEvent(res, { content });
+        }
+      }
+      if (aborted) break;
+    }
+
+    if (aborted) { res.end(); return; }
+
+    if (!accumulated) {
+      accumulated = "I wasn't able to generate a response. Please try asking your question again.";
+      writeEvent(res, { content: accumulated });
+    }
+
+    try {
+      if (!threadId) {
+        const thread = await createThread({ userId: msgUserId });
+        threadId = thread.id;
+        const conv = createConversation({ userId: msgUserId, threadId, mode });
+        convId = conv.id;
+        writeEvent(res, { saved: true, conversationId: convId });
+      }
+      await appendMessages(threadId, [
+        { role: 'user', content: message },
+        { role: 'assistant', content: accumulated },
+      ]);
+    } catch (err) {
+      console.error('[chat] failed to save messages:', err.message);
+    }
+
+    writeEvent(res, { done: true });
+    res.end();
+  } catch (err) {
+    console.error('[chat] error:', err);
+    if (aborted) { res.end(); return; }
+
+    if (err.message?.includes('API key') || err.message?.includes('api_key')) {
+      writeEvent(res, { error: 'OpenRouter API key is not configured or invalid.' });
     } else {
       writeEvent(res, { error: 'An error occurred while generating a response.' });
     }
@@ -103,7 +151,7 @@ router.post('/chat', async (req, res) => {
     res.end();
   } finally {
     clearTimeout(timeout);
-    req.off('close', cleanup);
+    res.off('close', cleanup);
   }
 });
 

@@ -326,13 +326,25 @@ export default function PolicyManager({ open, onClose }) {
                 style={{
                   flex: 1,
                   padding: '9px 14px',
-                  background: ingesting ? '#e5e7eb' : '#1a73e8',
+                  background: ingesting ? '#e5e7eb' : 'linear-gradient(135deg, #1a73e8 0%, #4f46e5 100%)',
                   color: ingesting ? '#9ca3af' : '#ffffff',
                   border: 'none',
                   borderRadius: 6,
                   cursor: ingesting ? 'default' : 'pointer',
                   fontSize: 13,
-                  fontWeight: 500,
+                  fontWeight: 600,
+                  transition: 'all 0.2s',
+                  boxShadow: ingesting ? 'none' : '0 2px 6px rgba(26,115,232,0.15)',
+                }}
+                onMouseEnter={(e) => {
+                  if (!ingesting) {
+                    e.currentTarget.style.boxShadow = '0 4px 10px rgba(26,115,232,0.25)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (!ingesting) {
+                    e.currentTarget.style.boxShadow = '0 2px 6px rgba(26,115,232,0.15)';
+                  }
                 }}
               >
                 {ingesting ? 'Scanning...' : 'Re-scan for new files'}
@@ -346,13 +358,21 @@ export default function PolicyManager({ open, onClose }) {
                 style={{
                   flex: 1,
                   padding: '9px 14px',
-                  background: '#059669',
+                  background: 'linear-gradient(135deg, #059669 0%, #10b981 100%)',
                   color: '#ffffff',
                   border: 'none',
                   borderRadius: 6,
                   cursor: 'pointer',
                   fontSize: 13,
-                  fontWeight: 500,
+                  fontWeight: 600,
+                  transition: 'all 0.2s',
+                  boxShadow: '0 2px 6px rgba(5,150,105,0.15)',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.boxShadow = '0 4px 10px rgba(5,150,105,0.25)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.boxShadow = '0 2px 6px rgba(5,150,105,0.15)';
                 }}
               >
                 + Add Policy

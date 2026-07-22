@@ -32,9 +32,11 @@ export default function ThinkingIndicator({ message }) {
           gap: 10,
           color: '#6b7280',
           fontSize: 13,
-          background: '#f8f9fa',
-          borderRadius: 8,
+          background: '#ffffff',
+          borderRadius: '12px 12px 12px 4px',
+          border: '1px solid #eef2f6',
           padding: '10px 16px',
+          boxShadow: '0 2px 12px rgba(0,0,0,0.02)',
         }}
       >
         <div className="thinking-dots" style={{ display: 'flex', gap: 4, alignItems: 'center' }}>

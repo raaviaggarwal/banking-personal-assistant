@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a73e8" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="32" height="32" rx="8" fill="url(#gradient)" />
+  
+  <!-- Bank Structure (White) -->
+  <g fill="#ffffff">
+    <!-- Roof -->
+    <path d="M6 13L16 6L26 13H6Z" />
+    <!-- Architrave -->
+    <rect x="7" y="14" width="18" height="2" rx="0.5" />
+    <!-- Columns -->
+    <rect x="9" y="17" width="2" height="6" rx="0.5" />
+    <rect x="15" y="17" width="2" height="6" rx="0.5" />
+    <rect x="21" y="17" width="2" height="6" rx="0.5" />
+    <!-- Base -->
+    <rect x="6" y="24" width="20" height="2" rx="0.5" />
+  </g>
+  
+  <!-- AI Spark (Gold) -->
+  <path d="M23 5C23 6.65685 23.8431 7.5 25.5 7.5C23.8431 7.5 23 8.34315 23 10C23 8.34315 22.1569 7.5 20.5 7.5C22.1569 7.5 23 6.65685 23 5Z" fill="#facc15" />
+</svg>

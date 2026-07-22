@@ -299,16 +299,35 @@ export default function ChatInterface({ conversation, messages, onMessagesChange
               alignItems: 'center',
               justifyContent: 'center',
               flexDirection: 'column',
-              gap: 8,
+              gap: 12,
               color: '#6b7280',
               textAlign: 'center',
+              padding: '40px 20px',
             }}
           >
-            <p style={{ fontSize: 20, fontWeight: 600, color: '#1f2937' }}>
-              Ask me anything
+            <div
+              style={{
+                width: 56,
+                height: 56,
+                borderRadius: 16,
+                background: 'linear-gradient(135deg, #1a73e8 0%, #4f46e5 100%)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#ffffff',
+                fontSize: 24,
+                fontWeight: 700,
+                marginBottom: 8,
+                boxShadow: '0 4px 16px rgba(26,115,232,0.2)',
+              }}
+            >
+              D
+            </div>
+            <p style={{ fontSize: 22, fontWeight: 700, color: '#0f172a', marginBottom: 4 }}>
+              How can I help you today?
             </p>
-            <p style={{ fontSize: 13, maxWidth: 400 }}>
-              Company policies, coding help, general knowledge — I can help with it all.
+            <p style={{ fontSize: 14, color: '#64748b', maxWidth: 440, lineHeight: 1.6 }}>
+              Ask about company policies, request coding assistance, or chat about general knowledge. I'm here to assist.
             </p>
           </div>
         )}

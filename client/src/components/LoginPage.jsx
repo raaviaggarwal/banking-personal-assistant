@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { api } from '../api.js';
 
 export default function LoginPage({ onLogin }) {
+  const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -46,6 +48,33 @@ export default function LoginPage({ onLogin }) {
           border: '1px solid #eaeef2',
         }}
       >
+        <div style={{ display: 'flex', justifyContent: 'flex-start', marginBottom: 16 }}>
+          <button
+            onClick={() => navigate('/')}
+            style={{
+              background: 'none',
+              border: 'none',
+              color: '#64748b',
+              fontSize: 13,
+              fontWeight: 500,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 6,
+              transition: 'color 0.15s',
+              padding: 0,
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = '#1a73e8')}
+            onMouseLeave={(e) => (e.currentTarget.style.color = '#64748b')}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </svg>
+            Back to Home
+          </button>
+        </div>
+
         <div style={{ textAlign: 'center', marginBottom: 28 }}>
           <div
             style={{

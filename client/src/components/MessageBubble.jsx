@@ -19,11 +19,12 @@ export default function MessageBubble({ role, content }) {
             maxWidth: '70%',
             padding: '10px 16px',
             borderRadius: '12px 12px 4px 12px',
-            background: '#1a73e8',
+            background: 'linear-gradient(135deg, #1a73e8 0%, #4f46e5 100%)',
             color: '#ffffff',
             fontSize: 14,
             lineHeight: 1.6,
             wordBreak: 'break-word',
+            boxShadow: '0 2px 8px rgba(26,115,232,0.15)',
           }}
         >
           {content || (
@@ -70,9 +71,11 @@ export default function MessageBubble({ role, content }) {
           color: '#1f2937',
           wordBreak: 'break-word',
           minWidth: 0,
-          background: '#f8f9fa',
-          borderRadius: 8,
+          background: '#ffffff',
+          borderRadius: '12px 12px 12px 4px',
+          border: '1px solid #eef2f6',
           padding: '10px 16px',
+          boxShadow: '0 2px 12px rgba(0,0,0,0.02)',
         }}
       >
         {content ? (

@@ -26,22 +26,29 @@ export default function Sidebar({
           style={{
             width: '100%',
             padding: '10px 14px',
-            background: '#ffffff',
-            color: '#1f2937',
-            border: '1px solid #d1d5db',
+            background: 'linear-gradient(135deg, #1a73e8 0%, #4f46e5 100%)',
+            color: '#ffffff',
+            border: 'none',
             borderRadius: 8,
             cursor: 'pointer',
             fontSize: 13,
-            fontWeight: 500,
+            fontWeight: 600,
             display: 'flex',
             alignItems: 'center',
             gap: 8,
-            transition: 'background 0.15s',
+            transition: 'all 0.2s ease',
+            boxShadow: '0 2px 8px rgba(26,115,232,0.15)',
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.background = '#f3f4f6')}
-          onMouseLeave={(e) => (e.currentTarget.style.background = '#ffffff')}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'translateY(-1px)';
+            e.currentTarget.style.boxShadow = '0 4px 12px rgba(26,115,232,0.25)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'none';
+            e.currentTarget.style.boxShadow = '0 2px 8px rgba(26,115,232,0.15)';
+          }}
         >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <line x1="12" y1="5" x2="12" y2="19" />
             <line x1="5" y1="12" x2="19" y2="12" />
           </svg>
@@ -72,20 +79,28 @@ export default function Sidebar({
                 borderRadius: 8,
                 cursor: 'pointer',
                 marginBottom: 2,
-                background: convo.id === activeId ? '#e8f0fe' : 'transparent',
-                color: convo.id === activeId ? '#1a73e8' : '#374151',
-                transition: 'background 0.1s',
+                background: convo.id === activeId ? 'linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%)' : 'transparent',
+                color: convo.id === activeId ? '#4f46e5' : '#374151',
+                borderLeft: convo.id === activeId ? '3px solid #4f46e5' : '3px solid transparent',
+                paddingLeft: convo.id === activeId ? '7px' : '10px',
+                fontWeight: convo.id === activeId ? 600 : 500,
+                transition: 'all 0.15s ease',
               }}
               onClick={() => onSelect(convo.id)}
               onMouseEnter={(e) => {
-                if (convo.id !== activeId)
-                  e.currentTarget.style.background = '#e9e9eb';
+                if (convo.id !== activeId) {
+                  e.currentTarget.style.background = '#eef2ff';
+                  e.currentTarget.style.color = '#4f46e5';
+                }
               }}
               onMouseLeave={(e) => {
-                if (convo.id !== activeId)
+                if (convo.id !== activeId) {
                   e.currentTarget.style.background = 'transparent';
+                  e.currentTarget.style.color = '#374151';
+                }
               }}
             >
+
               <svg
                 width="14"
                 height="14"
@@ -197,12 +212,18 @@ export default function Sidebar({
             display: 'flex',
             alignItems: 'center',
             gap: 8,
-            transition: 'background 0.15s',
+            transition: 'all 0.15s ease',
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.background = '#e9e9eb')}
-          onMouseLeave={(e) => (e.currentTarget.style.background = 'none')}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = '#eef2ff';
+            e.currentTarget.style.color = '#4f46e5';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = 'none';
+            e.currentTarget.style.color = '#374151';
+          }}
         >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ opacity: 0.5 }}>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ opacity: 0.7 }}>
             <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
             <polyline points="14 2 14 8 20 8" />
             <line x1="16" y1="13" x2="8" y2="13" />
@@ -226,12 +247,18 @@ export default function Sidebar({
             display: 'flex',
             alignItems: 'center',
             gap: 8,
-            transition: 'background 0.15s',
+            transition: 'all 0.15s ease',
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.background = '#fef2f2')}
-          onMouseLeave={(e) => (e.currentTarget.style.background = 'none')}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = '#fef2f2';
+            e.currentTarget.style.color = '#ef4444';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = 'none';
+            e.currentTarget.style.color = '#ef4444';
+          }}
         >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ opacity: 0.6 }}>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ opacity: 0.8 }}>
             <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4" />
             <polyline points="16 17 21 12 16 7" />
             <line x1="21" y1="12" x2="9" y2="12" />

@@ -3,6 +3,7 @@ import { Langbase } from 'langbase';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { flattenPolicyJSON, chunkContent } from '../src/services/vectorStore.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const POLICIES_DIR = path.resolve(__dirname, '..', '..', 'data', 'policies');
@@ -18,40 +19,7 @@ if (!LANGBASE_API_KEY) {
 
 const langbase = new Langbase({ apiKey: LANGBASE_API_KEY });
 
-function flattenPolicyJSON(data, filename) {
-  let text = `Document: ${filename}\n`;
-  if (data.title) text += `Title: ${data.title}\n`;
-  if (data.documentRef) text += `Reference: ${data.documentRef}\n`;
-  if (data.lastUpdated) text += `Last Updated: ${data.lastUpdated}\n`;
-  if (data.description) text += `Description: ${data.description}\n`;
-  text += '\n';
-  if (data.sections) {
-    for (const [, section] of Object.entries(data.sections)) {
-      if (section.title) text += `## ${section.title}\n\n`;
-      if (section.articles) {
-        for (const article of section.articles) {
-          if (article.title) text += `### ${article.title}\n\n`;
-          if (article.content) text += `${article.content}\n\n`;
-        }
-      }
-    }
-  } else if (data.articles) {
-    for (const article of data.articles) {
-      if (article.title) text += `### ${article.title}\n\n`;
-      if (article.content) text += `${article.content}\n\n`;
-    }
-  }
-  return text;
-}
 
-function chunkContent(text, maxLen = 800) {
-  if (text.length <= maxLen) return [text];
-  const chunks = [];
-  for (let i = 0; i < text.length; i += maxLen - 100) {
-    chunks.push(text.slice(i, i + maxLen));
-  }
-  return chunks;
-}
 
 async function main() {
   console.log('=== Langbase Setup ===\n');

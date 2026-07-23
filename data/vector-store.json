@@ -2,241 +2,667 @@
   {
     "id": 0,
     "filename": "code_of_conduct_ethics.json",
-    "text": "Document: code_of_conduct_ethics.json\nTitle: Code of Conduct & Ethics\nReference: COMP-POL-002\nDescription: Core ethics, gifts & hospitality thresholds, Personal Account Dealing (PAD), and Whistleblowing.\n\n### Gifts & Entertainment Disclosure and Pre-Approval Thresholds\n\nCore Principles: Integrity, Client Interest, Market Conduct, Confidentiality, Accountability.\nGifts & Hospitality Disclosure & Approval Thresholds:\n• Gift received from client/vendor: Disclosure > GBP 50 | Pre-Approval > GBP 150.\n• Entertainment received (meals/events): Disclosure > GBP 100 | Pre-Approval > GBP 300.\n• Gift or entertainment given to client: Disclosure > GBP 100 | Pre-Approval > GBP 500.\n• Gifts to/from Public Officials: Disclosure ANY value | Pre-Approval MANDATORY for any value.\nNote: Cash or cash equivalen",
-    "metadata": {
-      "documentRef": "code_of_conduct_ethics.json"
-    }
+    "text": "Document: code_of_conduct_ethics.json\nTitle: Code of Conduct & Ethics\nReference: COMP-POL-002\nDescription: Core ethics, gifts & hospitality thresholds, Personal Account Dealing (PAD), and Whistleblowing.\n\ncode_of_conduct\nCode of Conduct & Ethics\naward\nCOMP-POL-002\nCore ethics, gifts & hospitality thresholds, Personal Account Dealing (PAD), and Whistleblowing.\ngifts-hospitality-thresholds\nGifts & Entertainment Disclosure and Pre-Approval Thresholds\ngifts\nhospitality\nentertainment\nthreshold\npre-approval\npublic official\ndisclosure\nconflicts\nCore Principles: Integrity, Client Interest, Market Conduct, Confidentiality, Accountability.\nGifts & Hospitality Disclosure & Approval Thresholds:\n• Gift received from client/vendor: Disclosure > GBP 50 | Pre-Approval > GBP 150.\n•",
+    "metadata": {}
   },
   {
     "id": 1,
     "filename": "code_of_conduct_ethics.json",
-    "text": "Officials: Disclosure ANY value | Pre-Approval MANDATORY for any value.\nNote: Cash or cash equivalent gifts are strictly prohibited. Log all gifts in the Gifts & Hospitality Register on Policy Hub.\n\n### Personal Account Dealing (PAD), Outside Interests & Whistleblowing\n\nPersonal Account Dealing (PAD):\n• All personal securities trades must be pre-cleared in the PAD module.\n• Minimum holding period: 30 calendar days. No trading while in possession of MNPI or on Restricted/Insider lists.\nOutside Business Interests & Relationships:\n• External directorships, trusteeships, or family business roles require prior approval from Manager & Compliance in Workday.\n• Personal relationships with colleagues affecting reporting/appraisal lines must be declared to HR.\nSpeak-Up (Whistleblowing) Line:\n• Repor",
-    "metadata": {
-      "documentRef": "code_of_conduct_ethics.json"
-    }
+    "text": " Entertainment received (meals/events): Disclosure > GBP 100 | Pre-Approval > GBP 300.\n• Gift or entertainment given to client: Disclosure > GBP 100 | Pre-Approval > GBP 500.\n• Gifts to/from Public Officials: Disclosure ANY value | Pre-Approval MANDATORY for any value.\nNote: Cash or cash equivalent gifts are strictly prohibited. Log all gifts in the Gifts & Hospitality Register on Policy Hub.\n2026-01-01\npad-whistleblowing-outside-interests\nPersonal Account Dealing (PAD), Outside Interests & Whistleblowing\npad\npersonal account dealing\ninsider trading\nmnpi\nwhistleblowing\nspeak up\noutside business\nrelationship\nPersonal Account Dealing (PAD):\n• All personal securities trades must be pre-cleared in the PAD module.\n• Minimum holding period: 30 calendar days. ",
+    "metadata": {}
   },
   {
     "id": 2,
     "filename": "code_of_conduct_ethics.json",
-    "text": " affecting reporting/appraisal lines must be declared to HR.\nSpeak-Up (Whistleblowing) Line:\n• Report misconduct or policy breaches via Line Manager, HR, Compliance Mailbox, or the 24/7 confidential/anonymous Speak-Up Line. Retaliation is strictly prohibited.\n\n",
-    "metadata": {
-      "documentRef": "code_of_conduct_ethics.json"
-    }
+    "text": "Log all gifts in the Gifts & Hospitality Register on Policy Hub.\n2026-01-01\npad-whistleblowing-outside-interests\nPersonal Account Dealing (PAD), Outside Interests & Whistleblowing\npad\npersonal account dealing\ninsider trading\nmnpi\nwhistleblowing\nspeak up\noutside business\nrelationship\nPersonal Account Dealing (PAD):\n• All personal securities trades must be pre-cleared in the PAD module.\n• Minimum holding period: 30 calendar days. No trading while in possession of MNPI or on Restricted/Insider lists.\nOutside Business Interests & Relationships:\n• External directorships, trusteeships, or family business roles require prior approval from Manager & Compliance in Workday.\n• Personal relationships with colleagues affecting reporting/appraisal lines must be declared to HR.\nS",
+    "metadata": {}
   },
   {
     "id": 3,
-    "filename": "compliance_aml_kyc.json",
-    "text": "Document: compliance_aml_kyc.json\nTitle: Compliance & AML / KYC\nReference: COMP-POL-003\nDescription: Client Due Diligence (CDD), risk ratings, Enhanced Due Diligence (EDD), SARs, and sanctions.\n\n### Client Due Diligence (CDD) Risk Ratings & Review Frequency\n\nClient Due Diligence (CDD) Review Schedule:\n• Low Risk Clients: Review every 5 years (Approval: Relationship Manager + KYC Analyst).\n• Standard Risk Clients: Review every 3 years (Approval: Relationship Manager + Team Head).\n• High Risk Clients: Review annually (Approval: Team Head + Compliance / MLRO delegate).\n• Politically Exposed Persons (PEPs): Review annually (Approval: Senior Management + MLRO).\n• Prohibited / Restricted: Relationships strictly not permitted.\nEnhanced Due Diligence (EDD): Mandatory for High Risk, PEPs, Higher-Ri",
-    "metadata": {
-      "documentRef": "compliance_aml_kyc.json"
-    }
+    "filename": "code_of_conduct_ethics.json",
+    "text": "No trading while in possession of MNPI or on Restricted/Insider lists.\nOutside Business Interests & Relationships:\n• External directorships, trusteeships, or family business roles require prior approval from Manager & Compliance in Workday.\n• Personal relationships with colleagues affecting reporting/appraisal lines must be declared to HR.\nSpeak-Up (Whistleblowing) Line:\n• Report misconduct or policy breaches via Line Manager, HR, Compliance Mailbox, or the 24/7 confidential/anonymous Speak-Up Line. Retaliation is strictly prohibited.\n2026-01-01\n",
+    "metadata": {}
   },
   {
     "id": 4,
-    "filename": "compliance_aml_kyc.json",
-    "text": "ships strictly not permitted.\nEnhanced Due Diligence (EDD): Mandatory for High Risk, PEPs, Higher-Risk Country List jurisdictions, and complex trust/foundation structures. Requires verified source of wealth/funds documentary evidence and senior management approval prior to onboarding.\n\n### KYC Documentation, Transaction Monitoring, SARs & Sanctions\n\nRequired KYC Documentation:\n• Certified ID for all account holders, beneficial owners (25%+), and authorised signatories.\n• Proof of address dated within the last 3 months.\n• Legal entities: Certificate of incorporation, register of directors/shareholders, tax self-certification (CRS/FATCA).\nSuspicious Activity Reports (SARs) & Tipping Off:\n• Unusual activity must be reported via an internal SAR in the Compliance Case Management tool without de",
-    "metadata": {
-      "documentRef": "compliance_aml_kyc.json"
-    }
+    "filename": "code_of_conduct_ethics.json",
+    "text": "Retaliation is strictly prohibited.\n2026-01-01\n",
+    "metadata": {}
   },
   {
     "id": 5,
-    "filename": "compliance_aml_kyc.json",
-    "text": "sual activity must be reported via an internal SAR in the Compliance Case Management tool without delay.\n• Tipping Off: Informing a client or third party that a SAR was filed is a criminal offence.\nSanctions & Record Retention:\n• Real-time screening of all payment transactions. Escalation of matches to Sanctions team.\n• Record Retention: KYC, transaction, and SAR filings must be retained for a minimum of 5 years post-relationship.\n\n",
-    "metadata": {
-      "documentRef": "compliance_aml_kyc.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "Document: Combined_summary.json\nTitle: DBIS | Combined Final Summary\n\nDBIS | Combined Final Summary\nTranscribed from photographed pages (Sections 1, 3–9). Section 2 was not among the photos provided. A few system/tool names in the dense reference tables were hard to read in the source photos; cross-check those against the original where accuracy is critical.\n1\nThis is Deutsche Bank\nDeutsche Bank was founded in 1870 in Berlin as a specialist bank for financing foreign trade and promoting German exports.\nThe bank has a strong position in Germany and Europe and operates across North America, Asia and key emerging markets.\nDeutsche Bank operates through Corporate Bank, Investment Bank, Private Bank and DWS, supported by global operations and delivery capabilities.\nT",
+    "metadata": {}
   },
   {
     "id": 6,
-    "filename": "corporate_overview.json",
-    "text": "Document: corporate_overview.json\n\n## Careers & Talent\n\n### Global Graduate Programme 2026 Applications\n\nApplications are open for the Amberleigh Private Bank Global Graduate Programme 2026. Training, mentorship, and analyst opportunities exist across Corporate Bank, Investment Advisory, Private Wealth Management, Technology, and Risk. Apply online at amberleigh.com/careers.\n\n### Technology & Software Engineering Hubs\n\nAmberleigh Private Bank continues to hire software engineers, data scientists, cloud architects, and cyber security specialists across global tech centers in Frankfurt, London, New York, Pune, and Bucharest.\n\n## Investor Relations & Financials\n\n### Q1 2026 Financial Results: Record Profit of €2.2 Billion\n\nAmberleigh Private Bank reported record financial results for Q1 2026 ",
-    "metadata": {
-      "documentRef": "corporate_overview.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "A few system/tool names in the dense reference tables were hard to read in the source photos; cross-check those against the original where accuracy is critical.\n1\nThis is Deutsche Bank\nDeutsche Bank was founded in 1870 in Berlin as a specialist bank for financing foreign trade and promoting German exports.\nThe bank has a strong position in Germany and Europe and operates across North America, Asia and key emerging markets.\nDeutsche Bank operates through Corporate Bank, Investment Bank, Private Bank and DWS, supported by global operations and delivery capabilities.\nThe Deutsche Bank logo is a square with a diagonal slash, symbolizing stability and dynamic growth, reliability, progress and unity.\nT",
+    "metadata": {}
   },
   {
     "id": 7,
-    "filename": "corporate_overview.json",
-    "text": "ecord Profit of €2.2 Billion\n\nAmberleigh Private Bank reported record financial results for Q1 2026 with post-tax profit rising 8% year-on-year to a quarterly record of €2.2 billion on net revenues of €8.7 billion. CET1 capital ratio was 13.8%.\n\n### Investor Relations Calendar 2026\n\nKey IR Calendar Dates: July 29, 2026 - Q2 2026 Results Release; October 28, 2026 - Q3 2026 Results Release. Reports and webcasts are available at investor-relations.amberleigh.com.\n\n## Contact Directories\n\n### Amberleigh Private Bank Group Headquarters & Emergency Hotlines\n\nGroup Headquarters: Amberleigh Private Bank AG, Taunusanlage 12, 60325 Frankfurt am Main, Germany. Telephone: +49 69 910-00. Email: press@amberleigh.com (Press) or ir@amberleigh.com (Investor Relations).\nInternal Helplines:\n• Ask HR Service ",
-    "metadata": {
-      "documentRef": "corporate_overview.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "he bank's purpose is to support clients' lasting success and financial security at home and abroad.\nThe vision is to be the Global Hausbank: the European champion and first choice for clients.\nThe strategy focuses on a sharpened business model, targeted growth, disciplined resource allocation and excess capital returns over time.\n\"With deep dedication\" captures the bank's long-term client commitment, deep expertise and more than 150 years of experience.\nFor DB IS, this purpose means maintaining financial security through accurate data, timely settlement, strong controls, clear escalation and reliable client outcomes.\nActing responsibly, thinking commercially, taking initiative and working collaboratively.\nO",
+    "metadata": {}
   },
   {
     "id": 8,
-    "filename": "corporate_overview.json",
-    "text": "erleigh.com (Press) or ir@amberleigh.com (Investor Relations).\nInternal Helplines:\n• Ask HR Service Desk: Workday / HR Hub\n• IT Service Desk Hotline: 24/7 internal IT hotline\n• Card Blocking Line: +49 1805 021 021 (available 24/7 for lost/stolen cards)\n• EAP Confidential Line: 24/7 hotline via HR Hub.\n• Security Operations Centre (SOC) 24/7 Hotline: Report security incidents / lost devices.\n\n",
-    "metadata": {
-      "documentRef": "corporate_overview.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "wnership, quality-first execution, risk awareness, evidence discipline and proactive stakeholder engagement.\n3\nSecurities Market and Investment Banking Basics\nSecurities are tradable financial instruments with economic value, issued by companies or governments to raise capital and traded by investors.\nMain securities include equities, debt instruments, derivatives and hybrids. Equities represent ownership, debt represents borrowing, derivatives derive value from an underlying asset, and hybrids combine features.\nThe Primary Market issues new securities; the Secondary Market enables trading of existing securities and provides liquidity.\nKey market participants include issuers, investors, brokers, stock exchanges, custodians, depositories and regulators.\nI",
+    "metadata": {}
   },
   {
     "id": 9,
-    "filename": "expense_travel_policy.json",
-    "text": "Document: expense_travel_policy.json\nTitle: Expense & Travel Policy\nReference: FIN-POL-008\nDescription: Business expense standards, air/rail travel entitlements, approval thresholds, and meal caps.\n\n### Expense Approval Thresholds & General Principles\n\nGeneral Principles:\n• Claims must be submitted in the Expense system within 30 days of incurring the cost. Claims past 90 days require Finance Director approval and may be treated as taxable income.\n• Itemised original receipts are required for all expenses over GBP 25 (card statements are insufficient).\n• Claims must never be split into smaller amounts to circumvent approval limits.\nApproval Thresholds:\n• Up to GBP 500: Line Manager approval.\n• GBP 500 - GBP 2,500: Line Manager + Department Head approval.\n• Above GBP 2,500: Department Head ",
-    "metadata": {
-      "documentRef": "expense_travel_policy.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "Equities represent ownership, debt represents borrowing, derivatives derive value from an underlying asset, and hybrids combine features.\nThe Primary Market issues new securities; the Secondary Market enables trading of existing securities and provides liquidity.\nKey market participants include issuers, investors, brokers, stock exchanges, custodians, depositories and regulators.\nInvestment Banking supports capital raising, advisory, risk management, financing, origination and liquidity services.\nFront Office\nClient-facing activities such as sales, service and advisory.\nInitiates revenue-generating client activity.\nMiddle Office\nRisk management, transaction processing and technology oversight.\nConnects client activity with controlled execution.\nBack Office\nS",
+    "metadata": {}
   },
   {
     "id": 10,
-    "filename": "expense_travel_policy.json",
-    "text": "\n• GBP 500 - GBP 2,500: Line Manager + Department Head approval.\n• Above GBP 2,500: Department Head + Finance Business Partner approval.\n• Client Entertainment > GBP 500/head: Department Head + Compliance (Gifts & Hospitality Register).\n\n### Air Travel, Rail, Hotel, and Ground Transport Policy\n\nTravel Booking: All travel must be booked through the Travel Management Company (TMC) portal.\nFlight Entitlements:\n• Flights under 6 hours: Economy Class.\n• Flights 6 - 9 hours: Premium Economy Class.\n• Flights over 9 hours: Business Class.\n• Managing Director (MD) and above: Business Class for any flight duration.\nRail & Ground Transport: Standard Class rail is default (First Class allowed if journey exceeds 3 hours or for confidential work with manager approval). Taxis/ride-hailing reimbursable ou",
-    "metadata": {
-      "documentRef": "expense_travel_policy.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "ettlement, clearing, confirmations, records, compliance and admin support.\nEnsures operational completion and control.\nISIN\n12-character security identifier.\nGlobal security identification.\nSecurities setup and processing.\nWKN\n6-digit German security code.\nGerman/European securities identifier.\nWKN creation and static data.\nCustodian\nSafeguards client securities.\nCustody, tax, settlement support.\nReconciliation and safekeeping.\nDepository\nHolds securities electronically.\nMarket settlement infrastructure.\nPositions and transfers.\nOTC\nTrading outside formal exchanges.\nLess standardized trading.\nNeeds strong controls.\n4\nTrade Services\nTrade Services manages the full transaction lifecycle from capture and execution through confirmation, clearing and final settlement.\nT",
+    "metadata": {}
   },
   {
     "id": 11,
-    "filename": "expense_travel_policy.json",
-    "text": " exceeds 3 hours or for confidential work with manager approval). Taxis/ride-hailing reimbursable outside public transport hours or with heavy client materials.\nHotel Accommodation: Booked via TMC portal subject to city nightly rate caps.\nMileage Rates: GBP 0.45 per mile for the first 10,000 miles in a tax year; GBP 0.25 per mile thereafter. Commuting is not reimbursable.\n\n### Daily Meal Caps, Client Entertainment, and Non-Reimbursable Items\n\nDaily Meal Caps (per person, inclusive of tax/service, exclusive of alcohol):\n• Breakfast: Domestic GBP 15 | International GBP 20\n• Lunch: Domestic GBP 20 | International GBP 30\n• Dinner: Domestic GBP 40 | International GBP 60\nClient Entertainment: Must have genuine business purpose. Claims must log names, organisations of attendees, and meeting purpo",
-    "metadata": {
-      "documentRef": "expense_travel_policy.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "he team handles trades and non-trades. Trades involve voluntary exchange of value; non-trades include transfers, gifts, inheritance, free-of-payment movements and other instructions.\nCore focus areas include instruction accuracy, rejected instruction repair, settlement matching, failed trade resolution, confirmations, regulatory reporting and risk prevention.\nInx Non-Trades\nInitiates non-trade transfers.\nManual instructions, PRAF initiation, delivery/receipt, security locks, worthless securities.\nEE2, Orinoco, BURT, Message View, CASCADA, XACT.\nInx Systems\nHandles rejected instructions.\nInput/modification of online instructions and reclaims to responsible teams.\nDMS, DB Smart, Easyway, Message View, CASCADA, XACT.\nSettlement Match & Fails\nMatches and resolves unmatched/failed trades.\nI",
+    "metadata": {}
   },
   {
     "id": 12,
-    "filename": "expense_travel_policy.json",
-    "text": " have genuine business purpose. Claims must log names, organisations of attendees, and meeting purpose.\nNon-Reimbursable Items:\n• Mini-bar, in-room movies, personal entertainment.\n• Traffic fines, parking fines, penalty fares.\n• Travel insurance for personal trip extensions.\n• Spa, gym, or wellness billed to hotel room.\n• Unapproved First Class flights or family member expenses.\nCorporate Card: Must be used exclusively for business expenses. Statements reconciled monthly in Expense system.\n\n### Expense & Travel FAQs\n\nExpense & Travel FAQs:\n• Lost receipt: A signed Missing Receipt Declaration can be used for claims under GBP 25. Above GBP 25 requires approver discretion with Finance sign-off.\n• Working lunch with colleague: Internal working meals are NOT reimbursable except during approved ",
-    "metadata": {
-      "documentRef": "expense_travel_policy.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "Trades involve voluntary exchange of value; non-trades include transfers, gifts, inheritance, free-of-payment movements and other instructions.\nCore focus areas include instruction accuracy, rejected instruction repair, settlement matching, failed trade resolution, confirmations, regulatory reporting and risk prevention.\nInx Non-Trades\nInitiates non-trade transfers.\nManual instructions, PRAF initiation, delivery/receipt, security locks, worthless securities.\nEE2, Orinoco, BURT, Message View, CASCADA, XACT.\nInx Systems\nHandles rejected instructions.\nInput/modification of online instructions and reclaims to responsible teams.\nDMS, DB Smart, Easyway, Message View, CASCADA, XACT.\nSettlement Match & Fails\nMatches and resolves unmatched/failed trades.\nI",
+    "metadata": {}
   },
   {
     "id": 13,
-    "filename": "expense_travel_policy.json",
-    "text": "\n• Working lunch with colleague: Internal working meals are NOT reimbursable except during approved offsite events.\n• Delayed flight extra costs: Reasonable additional costs directly caused by flight delays are reimbursable; keep documentation.\n• Loyalty points: Personal loyalty points from business travel may be retained, provided booking choices do not increase cost to the Bank.\n\n",
-    "metadata": {
-      "documentRef": "expense_travel_policy.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "nvestigates missing/mismatched instructions, follows up with counterparties, avoids BUY-IN risk.\nDMS, DB Smart, Easyway, XACT, CASCADA.\nSettlement Confirmation\nApplies custodian confirmations in EE2.\nRepairs transactions, cleans rejected confirmations, releases holdings when required.\nXACT, Message View, Cascade, EE2, Easyway, Pilot II.\nRegistered Shares\nHandles registration/deregistration.\nReconciles registered shares and supports voting rights for AGMs.\nEE2, CASCADA, Message View, DMS.\nCancellation & Correction\nAmends/cancels client orders.\nChanges account, shares, settlement dates, calculates fees and corrects statements.\nDMS, DB Smart, FORSS, NOS, COSMOS, XACT.\nLT, Cash & Dispo\nBooks location transfer, payments and short-position balancing.\nR",
+    "metadata": {}
   },
   {
     "id": 14,
-    "filename": "hr_policy_handbook.json",
-    "text": "Document: hr_policy_handbook.json\nTitle: HR Policy & Employment Terms\nReference: HR-POL-001\nDescription: Leave entitlements, working hours, performance ratings, notice periods, and HR escalation matrix.\n\n### Employment Classifications, Notice Periods & Working Hours\n\nEmployment Classifications & Notice Periods:\n• Permanent Full Time / Part Time: 6 months probation | 3 months notice period.\n• Fixed-Term Contract (6-24 mos): 3 months probation | 1 month notice period.\n• Graduate / Intern: N/A probation | 2 weeks notice period.\nWorking Hours & Hybrid Policy:\n• Standard working week is 40 hours (9:00 - 17:30, Mon-Fri).\n• Hybrid Working: Minimum 3 days per week in the office. Permanent remote work outside country of employment requires HR, Legal, and Tax sign-off.\nOvertime: Non-exempt staff mus",
-    "metadata": {
-      "documentRef": "hr_policy_handbook.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "ealignment, MT payments, disposition balancing.\nEE2, TKN, Outlook, Orinoco.\nHRM Validation\nValidates high-risk media orders.\nValidates instructions, callbacks, routes to Fachbereich; critical deadlines.\nEE2, BURT, NOS, COSMOS.\nTrade Investigation & Fees\nInvestigates TME/Konto 2 breaks and custodian fees.\nBreak resolution, P&L sheets, Bundesbank reporting, custodian/transaction fees.\nTributum, TLM, XACT, Pilot II, Abacus, FORSS, IPP.\nMiFIR\nRegulatory reporting under Article 26.\nPre/post matching, manual amendments, missing information reclamation and BaFin reporting.\nEE2, BURT, Mailbox, TRE.\n5\nAsset Services\nAsset Services manages corporate action events, shareholder information, client instructions, income processing, reconciliation and FX-related activities.\nC",
+    "metadata": {}
   },
   {
     "id": 15,
-    "filename": "hr_policy_handbook.json",
-    "text": "k outside country of employment requires HR, Legal, and Tax sign-off.\nOvertime: Non-exempt staff must record overtime in timesheets with prior manager approval.\n\n### Leave Entitlements & Carry-Over Rules\n\nLeave Entitlements (Requested via Workday):\n• Annual Leave: 25 working days per calendar year. Carry-over max 5 days into Q1 of following year.\n• Sick Leave: Up to 20 days on full pay per rolling 12 months. Self-certify up to 3 days; medical certificate required beyond.\n• Primary Carer Parental Leave: 16 weeks paid + statutory entitlement.\n• Secondary Carer Parental Leave: 4 weeks paid.\n• Compassionate Leave: Up to 5 days paid per event.\n• Study Leave: Up to 5 days paid (subject to L&D approval).\n• Sabbatical: Unpaid 1-6 months (minimum 3 years service required).\n\n### Performance Rating S",
-    "metadata": {
-      "documentRef": "hr_policy_handbook.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "orporate actions may be mandatory, mandatory with options or voluntary. They can affect shareholder entitlements, capital structure and investor choices.\nReconciliation ensures that cash, stock, position, trade and corporate action information remains accurate across custodians, brokers, fund managers and internal systems.\nCA Instructions\nCaptures customer decisions.\nVoluntary and mandatory-with-option instructions captured in WPM/EE2 before event deadlines.\nDMS, DB Smart DSS, EE2, IPP Emerald, RRE, CAWFM.\nCA Disclosure\nDiscloses shareholder details.\nName, ISIN, holding date and shares disclosed to agents such as Nasdaq, IHS Markit and MUFG.\nDMS, COMPES, EE2, CAWFM, Papyrus, CA Neu, Message View.\nClient Information Translation\nCreates client letters.\nL",
+    "metadata": {}
   },
   {
     "id": 16,
-    "filename": "hr_policy_handbook.json",
-    "text": "oval).\n• Sabbatical: Unpaid 1-6 months (minimum 3 years service required).\n\n### Performance Rating Scale, Grievance & Disciplinary Matrix\n\nPerformance Ratings (Workday Talent):\n• Exceptional: Consistently exceeds expectations.\n• Strong: Meets and frequently exceeds expectations.\n• Solid: Meets expectations.\n• Development Needed: Meets some expectations; formal development plan required.\n• Unsatisfactory: Managed via Performance Improvement Plan (PIP).\nGrievances & Escalation Response Times:\n• Payroll discrepancy: Ask HR Service Desk (2 working days)\n• Leave balance query: Workday / Ask HR (1 working day)\n• Benefits enrolment: Benefits Team via HR Hub (3 working days)\n• Formal Grievance: HR Advisory via Grievance Portal (3 working days to acknowledge)\n• Harassment / Discrimination: Speak-Up",
-    "metadata": {
-      "documentRef": "hr_policy_handbook.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "They can affect shareholder entitlements, capital structure and investor choices.\nReconciliation ensures that cash, stock, position, trade and corporate action information remains accurate across custodians, brokers, fund managers and internal systems.\nCA Instructions\nCaptures customer decisions.\nVoluntary and mandatory-with-option instructions captured in WPM/EE2 before event deadlines.\nDMS, DB Smart DSS, EE2, IPP Emerald, RRE, CAWFM.\nCA Disclosure\nDiscloses shareholder details.\nName, ISIN, holding date and shares disclosed to agents such as Nasdaq, IHS Markit and MUFG.\nDMS, COMPES, EE2, CAWFM, Papyrus, CA Neu, Message View.\nClient Information Translation\nCreates client letters.\nLetters for warrants, convertible bonds and reverse convertible bonds to support client decisions.\nD",
+    "metadata": {}
   },
   {
     "id": 17,
-    "filename": "hr_policy_handbook.json",
-    "text": "dvisory via Grievance Portal (3 working days to acknowledge)\n• Harassment / Discrimination: Speak-Up Line or HR Advisory (24 hours to acknowledge)\n\n",
-    "metadata": {
-      "documentRef": "hr_policy_handbook.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "MS, DB Smart DSS, EE2, IPP Emerald, RRE, CAWFM.\nCA Reconciliation\nReconciles CA cash/stock breaks.\nSkontrierung, FX securing, open trades/positions and closure before impacted trading.\nTLM, Jira Burt, Pilot II, CAWFM, Easymatch.\nIncome Reconciliation\nReconciles income-related breaks.\nInterest, dividend and redemption income; amount paid to clients equals received amount.\nAbacus, PBC One Line, DMS, TLM, EE2, Jira Burt.\nFX Reconciliation\nPre-reconciles non-EUR/FX breaks.\nTax and FX instructions, non-EUR payments and pay-date readiness.\nDMS, COMPES, EE2, CAWFM, Papyrus, CA Neu, Message View.\nCash and Security\nCompares cash/securities transactions, positions and balances.\nEnsures accuracy and consistency.\nTrade\nMatches fund manager and broker trade details.\nC",
+    "metadata": {}
   },
   {
     "id": 18,
-    "filename": "infosec_data_privacy.json",
-    "text": "Document: infosec_data_privacy.json\nTitle: Information Security & Data Privacy\nReference: ISEC-POL-005\nDescription: Data classification, password standards, MFA, GDPR privacy principles, and security incident reporting.\n\n### Data Classification Tiers & Handling Standards\n\nData Classification Tiers:\n1. Public: Approved for external release (press releases, public rates).\n2. Internal: For internal Bank use only (memos, org charts). No external distribution.\n3. Confidential: Sensitive business data (client portfolios, deal terms). Minimum control: Encryption at rest and in transit, access logging.\n4. Restricted: Highest sensitivity (client identity documents, MNPI, credentials). Minimum control: Encryption, need-to-know access, DLP monitoring.\nAccess Management: Granted strictly on need-to-kn",
-    "metadata": {
-      "documentRef": "infosec_data_privacy.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "hecks security, quantity, price and settlement date.\nPosition\nCompares fund manager positions with custodian/broker records.\nChecks security, quantity and value.\nCorporate Action\nCompares CA details across custodian/broker/fund manager.\nChecks type, record date, ex-date and entitlement.\n6\nTax Services\nTax Services provides end-to-end tax support to German clients eligible for tax reduction or exemption on European and U.S. securities under DTAA and other tax requirements.\nThe scope includes tax reclaim, tax relief, QI reporting, substitute certificates, compensation tax processing, stock reconciliation and reports processing.\nTS2 and TP11 are part of Trade Services but operate under the Tax Services umbrella in the presented framework.\nInternational Tax Reclaim & Relief\nS",
+    "metadata": {}
   },
   {
     "id": 19,
-    "filename": "infosec_data_privacy.json",
-    "text": ": Encryption, need-to-know access, DLP monitoring.\nAccess Management: Granted strictly on need-to-know basis via IAM. Access reviewed quarterly (UAR). Revoked within 24 hours of exit (immediately for involuntary termination).\n\n### Password Standards, MFA & Remote Access Controls\n\nPassword & Authentication Controls:\n• Minimum Password Length: 14 characters.\n• Multi-Factor Authentication (MFA): Mandatory for all remote access and privileged (admin) accounts.\n• Password History: Last 12 passwords cannot be reused.\n• Account Lockout: Locked after 5 failed attempts within 15 minutes.\n• Session Timeout: 15 minutes of inactivity for systems handling Confidential or Restricted data.\nAcceptable Use & Remote Work: Use Bank devices for business. Personal email or unsanctioned cloud storage (personal ",
-    "metadata": {
-      "documentRef": "infosec_data_privacy.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "securities under DTAA and other tax requirements.\nThe scope includes tax reclaim, tax relief, QI reporting, substitute certificates, compensation tax processing, stock reconciliation and reports processing.\nTS2 and TP11 are part of Trade Services but operate under the Tax Services umbrella in the presented framework.\nInternational Tax Reclaim & Relief\nSupports German taxpayers.\n11 European countries, 100k–135k annual reclaim forms, five currencies, approx. EUR 15m FX.\nTax Manager, DMS, DB Smart DSS, Tributum, EE2, COSMOS, XACT, TLM, NOS, Orinoco, Tributum.\nSubstitute Certificate TS10\nProcesses tax certificate requests.\nOriginal/replacement annual tax certificates and annual statements for complex transactions.\nDB Smart DSS, DMS, EE2 Tool, NOS-Menue.\nQI Reporting\nUS tax compliance.\nU",
+    "metadata": {}
   },
   {
     "id": 20,
-    "filename": "infosec_data_privacy.json",
-    "text": " Remote Work: Use Bank devices for business. Personal email or unsanctioned cloud storage (personal Dropbox/Gmail) to store/send Restricted data is strictly prohibited. Remote workers must connect via approved VPN / Zero Trust and lock screens when unattended.\n\n### Data Privacy Rights (GDPR) & SOC Incident Reporting\n\nData Privacy Principles (GDPR):\n• Processing must follow lawfulness, purpose limitation, data minimisation, accuracy, storage limitation, and integrity.\n• Data Subject Rights: Any request (access, rectification, erasure) must be forwarded to the Data Privacy Office within 24 hours.\nSecurity Incident Reporting (Report to Security Operations Centre / SOC 24/7 Hotline):\n• Suspected Phishing / Malware: Report immediately to SOC.\n• Lost or Stolen Device: Report within 1 hour to SOC",
-    "metadata": {
-      "documentRef": "infosec_data_privacy.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "EUR 15m FX.\nTax Manager, DMS, DB Smart DSS, Tributum, EE2, COSMOS, XACT, TLM, NOS, Orinoco, Tributum.\nSubstitute Certificate TS10\nProcesses tax certificate requests.\nOriginal/replacement annual tax certificates and annual statements for complex transactions.\nDB Smart DSS, DMS, EE2 Tool, NOS-Menue.\nQI Reporting\nUS tax compliance.\nUS tax forms, withholding, reporting, remittance, reduced withholding and client confidentiality.\nNOS-Menue, EE2, Pilot II, FORSS, Rejects, Manager, Abacus.\nTP11 Stock Reconciliation\nAdministers internal cash/stock accounts.\nNetting, matching, P&L on shares, error/fraction account, Bundesbank reporting.\nOrinoco, Tributum.\nTS2 Reports\nReports short positions/negative balances.\nMonitors captures, clarifies implausible entries.\nNOS-Menue, EE2.\nC",
+    "metadata": {}
   },
   {
     "id": 21,
-    "filename": "infosec_data_privacy.json",
-    "text": " Phishing / Malware: Report immediately to SOC.\n• Lost or Stolen Device: Report within 1 hour to SOC + IT Service Desk for remote wipe.\n• Confirmed Personal Data Breach: Report immediately to Data Privacy Office + SOC + MLRO.\n• Unauthorised Restricted Access: Report immediately to SOC + Data Owner.\nNote: Do NOT use unapproved AI tools or browser extensions for Confidential/Restricted data.\n\n",
-    "metadata": {
-      "documentRef": "infosec_data_privacy.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "ompensation Tax Processing\nCalculates German Abgeltungsteuer.\nSecurity purchase details, cancellations, donation matching, loss compensation and year-end tasks.\nEE2, Tributum.\n7\nChief Divisional Services\nCDS supports Trade Processing, Asset Services and Tax Processing through Data Maintenance, Kursinfo, Neutral Control, Investigations, BISO and Policy.\nThe stream provides security setup, price maintenance, stock/cash reconciliation, investigation of open items, reporting, access governance and policy tracking.\nStatic Data Maintenance\nCreates WKNs and activates/amends securities.\nWKN generation, new security activation, static data amendments in EE2; deadlines 15-60 minutes.\nEE2, Euroclear, WM Daten; 07:00–19:00 CET; 100% German.\nKursinfo\nMaintains securities and forex prices.\nU",
+    "metadata": {}
   },
   {
     "id": 22,
-    "filename": "medical_health_benefits.json",
-    "text": "Document: medical_health_benefits.json\nTitle: Medical & Health Benefits\nReference: HR-POL-006\nDescription: Health insurance plan tiers, dental & vision cover, sick pay schedule, and EAP support.\n\n### Medical Insurance Tiers, Deductibles, and Enrolment\n\nEligibility & Enrolment: Permanent employees eligible from date of hire; fixed-term contractors (6+ months) eligible from 2nd month. Enrol during November Annual Enrolment or within 30 days of a qualifying life event in Workday Benefits module.\nPlan Tiers:\n1. Essential Tier: 0% employee contribution (100% Bank-funded). Deductible: GBP 500 individual / GBP 1,000 family. Max out-of-pocket: GBP 2,500.\n2. Standard Tier: 15% employee contribution. Deductible: GBP 250 individual / GBP 500 family. Max out-of-pocket: GBP 1,500.\n3. Premium Tier: 30% ",
-    "metadata": {
-      "documentRef": "medical_health_benefits.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "pdates DB system prices, provides historical prices and daily forex prices to internal departments.\nEE2, Bloomberg, Webgateway, Börsenzeitung, WM Daten.\nNeutral Control OC2/OC12\nReconciles stock and cash positions.\nMatches stock/cash transactions in Easymatch, flags unclear items and reports open/reconciled balances.\nEE2, DB Smart, DMS Report, CARO, RIK, Easymatch.\nInvestigations OC9/OC10/CEP2\nTracks and investigates open items.\nManual closing, missing transactions, unallocated stock/cash, RAISE, client and status reports.\nEE2, TLM, Easymatch, Pilot, JASPER, CARO, CAWFM.\nBISO\nMonitors user access rights.\nApprovals, recertification of profiles/roles and access governance.\nControl-oriented compliance activity.\nPolicy\nTracks DB/DBIS policy updates.\nI",
+    "metadata": {}
   },
   {
     "id": 23,
-    "filename": "medical_health_benefits.json",
-    "text": "Deductible: GBP 250 individual / GBP 500 family. Max out-of-pocket: GBP 1,500.\n3. Premium Tier: 30% employee contribution. Deductible: GBP 0. Max out-of-pocket: GBP 750 (includes single-room hospitalisation & expanded international network).\nCoverage: All tiers include hospitalisation, outpatient, prescription drugs, maternity care, and mental health. Pre-existing conditions are covered from Day 1.\n\n### Employee Assistance Programme (EAP) & Sick Leave Pay Schedule\n\nEmployee Assistance Programme (EAP):\n• Free 24/7 confidential phone and web portal access for employees and household members.\n• Up to 8 confidential counselling sessions per issue per year (mental health, family, legal, financial). Usage is completely anonymous and not shared with managers.\nSick Leave & Absence Pay Schedule:\n• ",
-    "metadata": {
-      "documentRef": "medical_health_benefits.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "nforms owners about organizational changes in frameworks/policies.\nGovernance and policy maintenance.\n8\nAuxiliary Activities\nAuxiliary Activities are included as a dedicated section because they enable the primary operations to run smoothly, securely and sustainably.\nGerman Akademie\nPAN India initiative for non-German speakers where German language training is provided for A1 level without additional cost. It builds communication capability for Germany-facing processes. Sponsor: Mohammad Rizwan. Lead: Damanpreet Kochhar. Coordinators: Puneet Malhotra and Shaifali Tuli. Locations include Jaipur, Bangalore, Pune and Mumbai.\nLearning and Development\nDesigns, delivers and evaluates learning programs to improve skills, knowledge and performance. ",
+    "metadata": {}
   },
   {
     "id": 24,
-    "filename": "medical_health_benefits.json",
-    "text": "). Usage is completely anonymous and not shared with managers.\nSick Leave & Absence Pay Schedule:\n• Absences >3 days require a medical certificate; notify manager before start time in Workday.\n• Weeks 1 - 4: Full Pay\n• Weeks 5 - 12: Full Pay (subject to Occupational Health engagement)\n• Weeks 13 - 26: Half Pay (topped up by statutory/insured benefit)\n• Beyond 26 weeks: Statutory pay / Income Protection Insurance.\n\n### Dental, Vision, Health Screenings, and Fertility Cover\n\nDental & Vision Add-Ons (Selectable during Annual Enrolment):\n• Dental Cover (GBP 12/month): 2 free check-ups/year; 50% co-pay on restorative work up to GBP 1,000/year.\n• Vision Cover (GBP 6/month): Free annual eye test; GBP 150 allowance toward glasses or lenses.\nHealth Screenings & Flu Shots: Free annual preventive scr",
-    "metadata": {
-      "documentRef": "medical_health_benefits.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "Locations include Jaipur, Bangalore, Pune and Mumbai.\nLearning and Development\nDesigns, delivers and evaluates learning programs to improve skills, knowledge and performance. L&D identifies learning gaps and creates targeted initiatives for employee growth.\nAccess Team\nEnsures only authorized individuals have required access, manages grants/revocations, monitors access logs and supports entitlement integrity and security protocols.\nAsset Management Team\nManages business assets and arranges assets for new joiners, supporting onboarding, readiness and continuity of operations.\nWomen of Worth\nFlagship inclusion program focused on mentorship, skill development, networking, overcoming workplace challenges and positioning women for leadership.\nT",
+    "metadata": {}
   },
   {
     "id": 25,
-    "filename": "medical_health_benefits.json",
-    "text": "BP 150 allowance toward glasses or lenses.\nHealth Screenings & Flu Shots: Free annual preventive screening for Standard/Premium tiers; subsidised autumn flu shots on-site for all tiers.\nParental & Fertility Support: Standard and Premium tiers include up to GBP 5,000 lifetime allowance toward fertility treatment and adoption costs, plus returner coaching.\nLeavers & Retirees: Cover continuation up to 3 months via COBRA-equivalent option. Retirees (10+ years service at retirement age) eligible for Retiree Medical Plan.\n\n",
-    "metadata": {
-      "documentRef": "medical_health_benefits.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "L&D identifies learning gaps and creates targeted initiatives for employee growth.\nAccess Team\nEnsures only authorized individuals have required access, manages grants/revocations, monitors access logs and supports entitlement integrity and security protocols.\nAsset Management Team\nManages business assets and arranges assets for new joiners, supporting onboarding, readiness and continuity of operations.\nWomen of Worth\nFlagship inclusion program focused on mentorship, skill development, networking, overcoming workplace challenges and positioning women for leadership.\nThese functions strengthen language readiness, learning maturity, secure access, onboarding experience, employee engagement and inclusive leadership across DB IS.\n9\nCompliance, Policies and Final Takeaways\nP",
+    "metadata": {}
   },
   {
     "id": 26,
-    "filename": "onboarding_guide.json",
-    "text": "Document: onboarding_guide.json\nTitle: New Joiner Onboarding\nReference: HR-GDE-009\nDescription: First weeks checklist, portal quick-reference map, mandatory training, and buddy system.\n\n### Internal Systems & Portals Quick Reference Map\n\nAmberleigh Private Bank Core Internal Portals:\n• Workday: Request leave, check payslips, update personal details, view org charts, enrol in benefits, track probation.\n• Ask HR: Submit general HR questions to the HR Service Desk.\n• IT Service Desk Portal: Report IT issues, request devices, order hardware, and request building access pass extensions.\n• Policy Hub: Access the HR Policy Handbook, Code of Conduct & Ethics, and business unit policies.\n• Expense System: Submit and track business expense claims within 30 days.\n• Learning Hub: Complete mandatory co",
-    "metadata": {
-      "documentRef": "onboarding_guide.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "ersonal Account Dealing / OBI\nEmployees and related parties must follow policy and must not assume exclusions.\nRead and understand the policy before investing or declaring activities.\nRed Flag exposure if breached.\nAuthorized Communication\nPrivate channels such as WhatsApp, WeChat, Telegram or Facebook Messenger are prohibited for business communication.\nUse approved DB channels only.\nSupports data confidentiality.\nMandatory Training\nComplete modules before the deadline.\nMore than 30 days delay may result in Red Flag.\nProtects responsible information.\nData Security\nDB emails/documents must not be forwarded to personal accounts.\nPersonal email for home printing is not a valid exception.\nEmployee responsibility.\nRed Flag Policy\nB",
+    "metadata": {}
   },
   {
     "id": 27,
-    "filename": "onboarding_guide.json",
-    "text": "stem: Submit and track business expense claims within 30 days.\n• Learning Hub: Complete mandatory compliance training (Code of Conduct, AML/CTF, InfoSec).\n• Compliance Advisory Mailbox / Speak-Up Line: Raise compliance concerns or report ethics violations anonymously.\n• Risk Event System: Report and understand risk escalation for an operational incident.\n\n### First Week & Day 1 Checklist for New Joiners\n\nBefore Day 1: You will receive a Welcome Email 1 week prior with start location, reporting time, and dress code. Pre-employment screening must be finalized. Your IT account and device are provisioned automatically via Workday.\nDay 1: Report to Reception to meet your assigned Buddy or HR Onboarding representative. Collect building access pass, verify right-to-work, and attend New Joiner Ori",
-    "metadata": {
-      "documentRef": "onboarding_guide.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "reaches of Red Flag policies, procedures or controls must not be forwarded to the deadline.\nTreat compliance breaches with urgency.\nControls and accountability.\nClient Purpose\nDB exists to support clients' lasting success and financial security.\nView every task through risk, timeliness and client impact.\nControl Discipline\nIKS, documentation, access reviews, policy adherence and escalation are central.\nDo it right, evidence it clearly and escalate early.\nProcess Connectivity\nStatic data, trades, corporate actions, tax, reconciliation and investigations are linked.\nUnderstand upstream and downstream impact.\nSkill Readiness\nGerman language, system knowledge, securities basics and compliance awareness matter.\nKeep learning and ask early.\nCollaboration\nT",
+    "metadata": {}
   },
   {
     "id": 28,
-    "filename": "onboarding_guide.json",
-    "text": "arding representative. Collect building access pass, verify right-to-work, and attend New Joiner Orientation.\nFirst Week Checklist:\n1. Complete Day 1 compliance training on Learning Hub within 10 working days.\n2. Set up Multi-Factor Authentication (MFA) for Bank systems.\n3. Meet line manager for 30/60/90-day objectives.\n4. Review HR Policy Handbook and Code of Conduct on Policy Hub.\n5. Enrol in medical/health benefits via Workday within 30 days of start date.\n6. Set up Personal Account Dealing (PAD) profile before trading personal securities.\n\n### Buddy System, Line Manager, and Probation Milestones\n\nBuddy & Manager: Every new joiner is assigned a Buddy (an experienced colleague outside your reporting line for informal questions) and a Line Manager (responsible for formal onboarding, objec",
-    "metadata": {
-      "documentRef": "onboarding_guide.json"
-    }
+    "filename": "Combined_summary.json",
+    "text": "eams work with DBIS, Front Office, Middle Office, custodians, counterparties and internal departments.\nClear ownership improves resolution speed.\nThis combined version brings together the detailed Module 1 foundation and the process-specific decks into one 10-page induction-ready reference. It is suitable as a concise handout for new joiners or a refresher for operations stakeholders.\n",
+    "metadata": {}
   },
   {
     "id": 29,
+    "filename": "Combined_summary.json",
+    "text": "It is suitable as a concise handout for new joiners or a refresher for operations stakeholders.\n",
+    "metadata": {}
+  },
+  {
+    "id": 30,
+    "filename": "compliance_aml_kyc.json",
+    "text": "Document: compliance_aml_kyc.json\nTitle: Compliance & AML / KYC\nReference: COMP-POL-003\nDescription: Client Due Diligence (CDD), risk ratings, Enhanced Due Diligence (EDD), SARs, and sanctions.\n\ncompliance_aml\nCompliance & AML / KYC\nshield-alert\nCOMP-POL-003\nClient Due Diligence (CDD), risk ratings, Enhanced Due Diligence (EDD), SARs, and sanctions.\ncdd-risk-ratings-review\nClient Due Diligence (CDD) Risk Ratings & Review Frequency\naml\nkyc\ncdd\nrisk rating\npep\npolitically exposed person\nlow risk\nhigh risk\nreview frequency\nClient Due Diligence (CDD) Review Schedule:\n• Low Risk Clients: Review every 5 years (Approval: Relationship Manager + KYC Analyst).\n• Standard Risk Clients: Review every 3 years (Approval: Relationship Manager + Team Head).\n•",
+    "metadata": {}
+  },
+  {
+    "id": 31,
+    "filename": "compliance_aml_kyc.json",
+    "text": " High Risk Clients: Review annually (Approval: Team Head + Compliance / MLRO delegate).\n• Politically Exposed Persons (PEPs): Review annually (Approval: Senior Management + MLRO).\n• Prohibited / Restricted: Relationships strictly not permitted.\nEnhanced Due Diligence (EDD): Mandatory for High Risk, PEPs, Higher-Risk Country List jurisdictions, and complex trust/foundation structures. Requires verified source of wealth/funds documentary evidence and senior management approval prior to onboarding.\n2026-01-01\nkyc-docs-sar-sanctions\nKYC Documentation, Transaction Monitoring, SARs & Sanctions\nkyc docs\nproof of address\nsar\nsuspicious activity\ntipping off\nsanctions\nrecord retention\n5 years\nRequired KYC Documentation:\n•",
+    "metadata": {}
+  },
+  {
+    "id": 32,
+    "filename": "compliance_aml_kyc.json",
+    "text": "Requires verified source of wealth/funds documentary evidence and senior management approval prior to onboarding.\n2026-01-01\nkyc-docs-sar-sanctions\nKYC Documentation, Transaction Monitoring, SARs & Sanctions\nkyc docs\nproof of address\nsar\nsuspicious activity\ntipping off\nsanctions\nrecord retention\n5 years\nRequired KYC Documentation:\n• Certified ID for all account holders, beneficial owners (25%+), and authorised signatories.\n• Proof of address dated within the last 3 months.\n• Legal entities: Certificate of incorporation, register of directors/shareholders, tax self-certification (CRS/FATCA).\nSuspicious Activity Reports (SARs) & Tipping Off:\n• Unusual activity must be reported via an internal SAR in the Compliance Case Management tool without delay.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 33,
+    "filename": "compliance_aml_kyc.json",
+    "text": " Tipping Off: Informing a client or third party that a SAR was filed is a criminal offence.\nSanctions & Record Retention:\n• Real-time screening of all payment transactions. Escalation of matches to Sanctions team.\n• Record Retention: KYC, transaction, and SAR filings must be retained for a minimum of 5 years post-relationship.\n2026-01-01\n",
+    "metadata": {}
+  },
+  {
+    "id": 34,
+    "filename": "compliance_aml_kyc.json",
+    "text": "Escalation of matches to Sanctions team.\n• Record Retention: KYC, transaction, and SAR filings must be retained for a minimum of 5 years post-relationship.\n2026-01-01\n",
+    "metadata": {}
+  },
+  {
+    "id": 35,
+    "filename": "corporate_overview.json",
+    "text": "Document: corporate_overview.json\n\nCareers & Talent\nuser-check\nGlobal job opportunities, Graduate Programmes, and engineering hubs.\ngraduate-program-2026\nGlobal Graduate Programme 2026 Applications\ngraduate\ninternship\nanalyst\nstudent\napply\ncareers\njobs\nhiring\nApplications are open for the Amberleigh Private Bank Global Graduate Programme 2026. Training, mentorship, and analyst opportunities exist across Corporate Bank, Investment Advisory, Private Wealth Management, Technology, and Risk. Apply online at amberleigh.com/careers.\n2026-07-01\ntechnology-roles\nTechnology & Software Engineering Hubs\ntechnology\nit jobs\nsoftware engineer\ndeveloper\ncloud\nai\npune\nfrankfurt\nlondon\nA",
+    "metadata": {}
+  },
+  {
+    "id": 36,
+    "filename": "corporate_overview.json",
+    "text": "Apply online at amberleigh.com/careers.\n2026-07-01\ntechnology-roles\nTechnology & Software Engineering Hubs\ntechnology\nit jobs\nsoftware engineer\ndeveloper\ncloud\nai\npune\nfrankfurt\nlondon\nAmberleigh Private Bank continues to hire software engineers, data scientists, cloud architects, and cyber security specialists across global tech centers in Frankfurt, London, New York, Pune, and Bucharest.\n2026-06-15\nInvestor Relations & Financials\ntrending-up\nFinancial performance, quarterly earnings, dividend policy, and shareholder disclosures.\nq1-results-2026\nQ1 2026 Financial Results: Record Profit of €2.2 Billion\nq1\nearnings\nprofit\nresults\nnet income\nfinancial performance\nrevenue\nA",
+    "metadata": {}
+  },
+  {
+    "id": 37,
+    "filename": "corporate_overview.json",
+    "text": "mberleigh Private Bank reported record financial results for Q1 2026 with post-tax profit rising 8% year-on-year to a quarterly record of €2.2 billion on net revenues of €8.7 billion. CET1 capital ratio was 13.8%.\n2026-04-29\nfinancial-calendar\nInvestor Relations Calendar 2026\ncalendar\ndates\nagm\nearnings release\nq2 results\nKey IR Calendar Dates: July 29, 2026 - Q2 2026 Results Release; October 28, 2026 - Q3 2026 Results Release. Reports and webcasts are available at investor-relations.amberleigh.com.\n2026-07-01\nContact Directories\nmail\nGlobal headquarters, HR helplines, IT support desk, and emergency lines.\ncorporate-headquarters\nAmberleigh Private Bank Group Headquarters & Emergency Hotlines\nheadquarters\naddress\nfrankfurt\ngermany\nphone number\nmain office\nemergency\nG",
+    "metadata": {}
+  },
+  {
+    "id": 38,
+    "filename": "corporate_overview.json",
+    "text": "Reports and webcasts are available at investor-relations.amberleigh.com.\n2026-07-01\nContact Directories\nmail\nGlobal headquarters, HR helplines, IT support desk, and emergency lines.\ncorporate-headquarters\nAmberleigh Private Bank Group Headquarters & Emergency Hotlines\nheadquarters\naddress\nfrankfurt\ngermany\nphone number\nmain office\nemergency\nGroup Headquarters: Amberleigh Private Bank AG, Taunusanlage 12, 60325 Frankfurt am Main, Germany. Telephone: +49 69 910-00. Email: press@amberleigh.com (Press) or ir@amberleigh.com (Investor Relations).\nInternal Helplines:\n• Ask HR Service Desk: Workday / HR Hub\n• IT Service Desk Hotline: 24/7 internal IT hotline\n• Card Blocking Line: +49 1805 021 021 (available 24/7 for lost/stolen cards)\n• EAP Confidential Line: 24/7 hotline via HR Hub.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 39,
+    "filename": "corporate_overview.json",
+    "text": "Email: press@amberleigh.com (Press) or ir@amberleigh.com (Investor Relations).\nInternal Helplines:\n• Ask HR Service Desk: Workday / HR Hub\n• IT Service Desk Hotline: 24/7 internal IT hotline\n• Card Blocking Line: +49 1805 021 021 (available 24/7 for lost/stolen cards)\n• EAP Confidential Line: 24/7 hotline via HR Hub.\n• Security Operations Centre (SOC) 24/7 Hotline: Report security incidents / lost devices.\n2026-01-01\n",
+    "metadata": {}
+  },
+  {
+    "id": 40,
+    "filename": "expense_travel_policy.json",
+    "text": "Document: expense_travel_policy.json\nTitle: Expense & Travel Policy\nReference: FIN-POL-008\nDescription: Business expense standards, air/rail travel entitlements, approval thresholds, and meal caps.\n\nexpenses_travel\nExpense & Travel Policy\ncredit-card\nFIN-POL-008\nBusiness expense standards, air/rail travel entitlements, approval thresholds, and meal caps.\nexpense-approval-thresholds\nExpense Approval Thresholds & General Principles\nexpense\napproval\nthreshold\nreceipt\nclaim\nlimit\nfinance director\n30 days\nGeneral Principles:\n• Claims must be submitted in the Expense system within 30 days of incurring the cost. Claims past 90 days require Finance Director approval and may be treated as taxable income.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 41,
+    "filename": "expense_travel_policy.json",
+    "text": "Claims past 90 days require Finance Director approval and may be treated as taxable income.\n• Itemised original receipts are required for all expenses over GBP 25 (card statements are insufficient).\n• Claims must never be split into smaller amounts to circumvent approval limits.\nApproval Thresholds:\n• Up to GBP 500: Line Manager approval.\n• GBP 500 - GBP 2,500: Line Manager + Department Head approval.\n• Above GBP 2,500: Department Head + Finance Business Partner approval.\n• Client Entertainment > GBP 500/head: Department Head + Compliance (Gifts & Hospitality Register).\n2026-01-01\ntravel-booking-entitlements\nAir Travel, Rail, Hotel, and Ground Transport Policy\ntravel\nflight\nair travel\neconomy\nbusiness class\nhotel\nrail\ntaxi\ntmc\nmileage\nT",
+    "metadata": {}
+  },
+  {
+    "id": 42,
+    "filename": "expense_travel_policy.json",
+    "text": "ravel Booking: All travel must be booked through the Travel Management Company (TMC) portal.\nFlight Entitlements:\n• Flights under 6 hours: Economy Class.\n• Flights 6 - 9 hours: Premium Economy Class.\n• Flights over 9 hours: Business Class.\n• Managing Director (MD) and above: Business Class for any flight duration.\nRail & Ground Transport: Standard Class rail is default (First Class allowed if journey exceeds 3 hours or for confidential work with manager approval). Taxis/ride-hailing reimbursable outside public transport hours or with heavy client materials.\nHotel Accommodation: Booked via TMC portal subject to city nightly rate caps.\nMileage Rates: GBP 0.45 per mile for the first 10,000 miles in a tax year; GBP 0.25 per mile thereafter. Commuting is not reimbursable.\n2026-01-01\nm",
+    "metadata": {}
+  },
+  {
+    "id": 43,
+    "filename": "expense_travel_policy.json",
+    "text": "Taxis/ride-hailing reimbursable outside public transport hours or with heavy client materials.\nHotel Accommodation: Booked via TMC portal subject to city nightly rate caps.\nMileage Rates: GBP 0.45 per mile for the first 10,000 miles in a tax year; GBP 0.25 per mile thereafter. Commuting is not reimbursable.\n2026-01-01\nmeals-entertainment-nonreimbursable\nDaily Meal Caps, Client Entertainment, and Non-Reimbursable Items\nmeals\nbreakfast\nlunch\ndinner\nentertainment\nnon-reimbursable\ncorporate card\ndaily cap\nDaily Meal Caps (per person, inclusive of tax/service, exclusive of alcohol):\n• Breakfast: Domestic GBP 15 | International GBP 20\n• Lunch: Domestic GBP 20 | International GBP 30\n• Dinner: Domestic GBP 40 | International GBP 60\nClient Entertainment: Must have genuine business purpose. ",
+    "metadata": {}
+  },
+  {
+    "id": 44,
+    "filename": "expense_travel_policy.json",
+    "text": "Commuting is not reimbursable.\n2026-01-01\nmeals-entertainment-nonreimbursable\nDaily Meal Caps, Client Entertainment, and Non-Reimbursable Items\nmeals\nbreakfast\nlunch\ndinner\nentertainment\nnon-reimbursable\ncorporate card\ndaily cap\nDaily Meal Caps (per person, inclusive of tax/service, exclusive of alcohol):\n• Breakfast: Domestic GBP 15 | International GBP 20\n• Lunch: Domestic GBP 20 | International GBP 30\n• Dinner: Domestic GBP 40 | International GBP 60\nClient Entertainment: Must have genuine business purpose. Claims must log names, organisations of attendees, and meeting purpose.\nNon-Reimbursable Items:\n• Mini-bar, in-room movies, personal entertainment.\n• Traffic fines, parking fines, penalty fares.\n• Travel insurance for personal trip extensions.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 45,
+    "filename": "expense_travel_policy.json",
+    "text": "Claims must log names, organisations of attendees, and meeting purpose.\nNon-Reimbursable Items:\n• Mini-bar, in-room movies, personal entertainment.\n• Traffic fines, parking fines, penalty fares.\n• Travel insurance for personal trip extensions.\n• Spa, gym, or wellness billed to hotel room.\n• Unapproved First Class flights or family member expenses.\nCorporate Card: Must be used exclusively for business expenses. Statements reconciled monthly in Expense system.\n2026-01-01\nexpense-faqs\nExpense & Travel FAQs\nexpense faq\nlost receipt\nworking lunch\ndelayed flight\nloyalty points\nExpense & Travel FAQs:\n• Lost receipt: A signed Missing Receipt Declaration can be used for claims under GBP 25. Above GBP 25 requires approver discretion with Finance sign-off.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 46,
+    "filename": "expense_travel_policy.json",
+    "text": "Above GBP 25 requires approver discretion with Finance sign-off.\n• Working lunch with colleague: Internal working meals are NOT reimbursable except during approved offsite events.\n• Delayed flight extra costs: Reasonable additional costs directly caused by flight delays are reimbursable; keep documentation.\n• Loyalty points: Personal loyalty points from business travel may be retained, provided booking choices do not increase cost to the Bank.\n2026-01-01\n",
+    "metadata": {}
+  },
+  {
+    "id": 47,
+    "filename": "hr_policy_handbook.json",
+    "text": "Document: hr_policy_handbook.json\nTitle: HR Policy & Employment Terms\nReference: HR-POL-001\nDescription: Leave entitlements, working hours, performance ratings, notice periods, and HR escalation matrix.\n\nhr_policies\nHR Policy & Employment Terms\nuser-check\nHR-POL-001\nLeave entitlements, working hours, performance ratings, notice periods, and HR escalation matrix.\nemployment-terms-notice-working-hours\nEmployment Classifications, Notice Periods & Working Hours\nnotice period\nworking hours\nfull time\npart time\nfixed term\nhybrid\nremote work\nprobation\nEmployment Classifications & Notice Periods:\n• Permanent Full Time / Part Time: 6 months probation | 3 months notice period.\n• Fixed-Term Contract (6-24 mos): 3 months probation | 1 month notice period.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 48,
+    "filename": "hr_policy_handbook.json",
+    "text": " Graduate / Intern: N/A probation | 2 weeks notice period.\nWorking Hours & Hybrid Policy:\n• Standard working week is 40 hours (9:00 - 17:30, Mon-Fri).\n• Hybrid Working: Minimum 3 days per week in the office. Permanent remote work outside country of employment requires HR, Legal, and Tax sign-off.\nOvertime: Non-exempt staff must record overtime in timesheets with prior manager approval.\n2026-01-01\nleave-entitlements-schedule\nLeave Entitlements & Carry-Over Rules\nvacation\nannual leave\nsick leave\nmaternity\npaternity\nparental leave\nsabbatical\nstudy leave\ncompassionate\nLeave Entitlements (Requested via Workday):\n• Annual Leave: 25 working days per calendar year. Carry-over max 5 days into Q1 of following year.\n• Sick Leave: Up to 20 days on full pay per rolling 12 months. ",
+    "metadata": {}
+  },
+  {
+    "id": 49,
+    "filename": "hr_policy_handbook.json",
+    "text": "Carry-over max 5 days into Q1 of following year.\n• Sick Leave: Up to 20 days on full pay per rolling 12 months. Self-certify up to 3 days; medical certificate required beyond.\n• Primary Carer Parental Leave: 16 weeks paid + statutory entitlement.\n• Secondary Carer Parental Leave: 4 weeks paid.\n• Compassionate Leave: Up to 5 days paid per event.\n• Study Leave: Up to 5 days paid (subject to L&D approval).\n• Sabbatical: Unpaid 1-6 months (minimum 3 years service required).\n2026-01-01\nperformance-management-grievance\nPerformance Rating Scale, Grievance & Disciplinary Matrix\nperformance\nrating\npip\ngrievance\ndisciplinary\nescalation matrix\nresponse time\npayroll\nPerformance Ratings (Workday Talent):\n• Exceptional: Consistently exceeds expectations.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 50,
+    "filename": "hr_policy_handbook.json",
+    "text": "Self-certify up to 3 days; medical certificate required beyond.\n• Primary Carer Parental Leave: 16 weeks paid + statutory entitlement.\n• Secondary Carer Parental Leave: 4 weeks paid.\n• Compassionate Leave: Up to 5 days paid per event.\n• Study Leave: Up to 5 days paid (subject to L&D approval).\n• Sabbatical: Unpaid 1-6 months (minimum 3 years service required).\n2026-01-01\nperformance-management-grievance\nPerformance Rating Scale, Grievance & Disciplinary Matrix\nperformance\nrating\npip\ngrievance\ndisciplinary\nescalation matrix\nresponse time\npayroll\nPerformance Ratings (Workday Talent):\n• Exceptional: Consistently exceeds expectations.\n• Strong: Meets and frequently exceeds expectations.\n• Solid: Meets expectations.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 51,
+    "filename": "hr_policy_handbook.json",
+    "text": " Development Needed: Meets some expectations; formal development plan required.\n• Unsatisfactory: Managed via Performance Improvement Plan (PIP).\nGrievances & Escalation Response Times:\n• Payroll discrepancy: Ask HR Service Desk (2 working days)\n• Leave balance query: Workday / Ask HR (1 working day)\n• Benefits enrolment: Benefits Team via HR Hub (3 working days)\n• Formal Grievance: HR Advisory via Grievance Portal (3 working days to acknowledge)\n• Harassment / Discrimination: Speak-Up Line or HR Advisory (24 hours to acknowledge)\n2026-01-01\n",
+    "metadata": {}
+  },
+  {
+    "id": 52,
+    "filename": "infosec_data_privacy.json",
+    "text": "Document: infosec_data_privacy.json\nTitle: Information Security & Data Privacy\nReference: ISEC-POL-005\nDescription: Data classification, password standards, MFA, GDPR privacy principles, and security incident reporting.\n\ninfosec_privacy\nInformation Security & Data Privacy\nlock\nISEC-POL-005\nData classification, password standards, MFA, GDPR privacy principles, and security incident reporting.\ndata-classification-handling\nData Classification Tiers & Handling Standards\ninfosec\nclassification\npublic\ninternal\nconfidential\nrestricted\nmnpi\nencryption\ndlp\nData Classification Tiers:\n1. Public: Approved for external release (press releases, public rates).\n2. Internal: For internal Bank use only (memos, org charts). No external distribution.\n3. ",
+    "metadata": {}
+  },
+  {
+    "id": 53,
+    "filename": "infosec_data_privacy.json",
+    "text": "Internal: For internal Bank use only (memos, org charts). No external distribution.\n3. Confidential: Sensitive business data (client portfolios, deal terms). Minimum control: Encryption at rest and in transit, access logging.\n4. Restricted: Highest sensitivity (client identity documents, MNPI, credentials). Minimum control: Encryption, need-to-know access, DLP monitoring.\nAccess Management: Granted strictly on need-to-know basis via IAM. Access reviewed quarterly (UAR). Revoked within 24 hours of exit (immediately for involuntary termination).\n2026-01-01\npassword-authentication-standards\nPassword Standards, MFA & Remote Access Controls\npassword\nmfa\nlockout\nsession timeout\nauthentication\nremote access\nbyod\nvpn\nPassword & Authentication Controls:\n• Minimum Password Length: 14 characters.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 54,
+    "filename": "infosec_data_privacy.json",
+    "text": "Revoked within 24 hours of exit (immediately for involuntary termination).\n2026-01-01\npassword-authentication-standards\nPassword Standards, MFA & Remote Access Controls\npassword\nmfa\nlockout\nsession timeout\nauthentication\nremote access\nbyod\nvpn\nPassword & Authentication Controls:\n• Minimum Password Length: 14 characters.\n• Multi-Factor Authentication (MFA): Mandatory for all remote access and privileged (admin) accounts.\n• Password History: Last 12 passwords cannot be reused.\n• Account Lockout: Locked after 5 failed attempts within 15 minutes.\n• Session Timeout: 15 minutes of inactivity for systems handling Confidential or Restricted data.\nAcceptable Use & Remote Work: Use Bank devices for business. ",
+    "metadata": {}
+  },
+  {
+    "id": 55,
+    "filename": "infosec_data_privacy.json",
+    "text": "Personal email or unsanctioned cloud storage (personal Dropbox/Gmail) to store/send Restricted data is strictly prohibited. Remote workers must connect via approved VPN / Zero Trust and lock screens when unattended.\n2026-01-01\nprivacy-gdpr-incident-reporting\nData Privacy Rights (GDPR) & SOC Incident Reporting\ngdpr\nprivacy\ndata subject rights\nsoc\nincident\nphishing\nbreach\nlost device\nhotline\nData Privacy Principles (GDPR):\n• Processing must follow lawfulness, purpose limitation, data minimisation, accuracy, storage limitation, and integrity.\n• Data Subject Rights: Any request (access, rectification, erasure) must be forwarded to the Data Privacy Office within 24 hours.\nSecurity Incident Reporting (Report to Security Operations Centre / SOC 24/7 Hotline):\n•",
+    "metadata": {}
+  },
+  {
+    "id": 56,
+    "filename": "infosec_data_privacy.json",
+    "text": "Remote workers must connect via approved VPN / Zero Trust and lock screens when unattended.\n2026-01-01\nprivacy-gdpr-incident-reporting\nData Privacy Rights (GDPR) & SOC Incident Reporting\ngdpr\nprivacy\ndata subject rights\nsoc\nincident\nphishing\nbreach\nlost device\nhotline\nData Privacy Principles (GDPR):\n• Processing must follow lawfulness, purpose limitation, data minimisation, accuracy, storage limitation, and integrity.\n• Data Subject Rights: Any request (access, rectification, erasure) must be forwarded to the Data Privacy Office within 24 hours.\nSecurity Incident Reporting (Report to Security Operations Centre / SOC 24/7 Hotline):\n• Suspected Phishing / Malware: Report immediately to SOC.\n• Lost or Stolen Device: Report within 1 hour to SOC + IT Service Desk for remote wipe.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 57,
+    "filename": "infosec_data_privacy.json",
+    "text": " Confirmed Personal Data Breach: Report immediately to Data Privacy Office + SOC + MLRO.\n• Unauthorised Restricted Access: Report immediately to SOC + Data Owner.\nNote: Do NOT use unapproved AI tools or browser extensions for Confidential/Restricted data.\n2026-01-01\n",
+    "metadata": {}
+  },
+  {
+    "id": 58,
+    "filename": "medical_health_benefits.json",
+    "text": "Document: medical_health_benefits.json\nTitle: Medical & Health Benefits\nReference: HR-POL-006\nDescription: Health insurance plan tiers, dental & vision cover, sick pay schedule, and EAP support.\n\nmedical_health\nMedical & Health Benefits\nshield\nHR-POL-006\nHealth insurance plan tiers, dental & vision cover, sick pay schedule, and EAP support.\nmedical-plan-tiers\nMedical Insurance Tiers, Deductibles, and Enrolment\nmedical\nhealth insurance\ntiers\nessential\nstandard\npremium\ndeductible\nout of pocket\nenrolment\nEligibility & Enrolment: Permanent employees eligible from date of hire; fixed-term contractors (6+ months) eligible from 2nd month. Enrol during November Annual Enrolment or within 30 days of a qualifying life event in Workday Benefits module.\nPlan Tiers:\n1. ",
+    "metadata": {}
+  },
+  {
+    "id": 59,
+    "filename": "medical_health_benefits.json",
+    "text": "Enrol during November Annual Enrolment or within 30 days of a qualifying life event in Workday Benefits module.\nPlan Tiers:\n1. Essential Tier: 0% employee contribution (100% Bank-funded). Deductible: GBP 500 individual / GBP 1,000 family. Max out-of-pocket: GBP 2,500.\n2. Standard Tier: 15% employee contribution. Deductible: GBP 250 individual / GBP 500 family. Max out-of-pocket: GBP 1,500.\n3. Premium Tier: 30% employee contribution. Deductible: GBP 0. Max out-of-pocket: GBP 750 (includes single-room hospitalisation & expanded international network).\nCoverage: All tiers include hospitalisation, outpatient, prescription drugs, maternity care, and mental health. Pre-existing conditions are covered from Day 1.\n2026-01-01\neap-occupational-health-wellbeing\nE",
+    "metadata": {}
+  },
+  {
+    "id": 60,
+    "filename": "medical_health_benefits.json",
+    "text": "Pre-existing conditions are covered from Day 1.\n2026-01-01\neap-occupational-health-wellbeing\nEmployee Assistance Programme (EAP) & Sick Leave Pay Schedule\neap\ncounselling\nsick leave\nsick pay\noccupational health\nmental health\nlong term absence\nEmployee Assistance Programme (EAP):\n• Free 24/7 confidential phone and web portal access for employees and household members.\n• Up to 8 confidential counselling sessions per issue per year (mental health, family, legal, financial). Usage is completely anonymous and not shared with managers.\nSick Leave & Absence Pay Schedule:\n• Absences >3 days require a medical certificate; notify manager before start time in Workday.\n• Weeks 1 - 4: Full Pay\n• Weeks 5 - 12: Full Pay (subject to Occupational Health engagement)\n•",
+    "metadata": {}
+  },
+  {
+    "id": 61,
+    "filename": "medical_health_benefits.json",
+    "text": "Usage is completely anonymous and not shared with managers.\nSick Leave & Absence Pay Schedule:\n• Absences >3 days require a medical certificate; notify manager before start time in Workday.\n• Weeks 1 - 4: Full Pay\n• Weeks 5 - 12: Full Pay (subject to Occupational Health engagement)\n• Weeks 13 - 26: Half Pay (topped up by statutory/insured benefit)\n• Beyond 26 weeks: Statutory pay / Income Protection Insurance.\n2026-01-01\ndental-vision-parental-support\nDental, Vision, Health Screenings, and Fertility Cover\ndental\nvision\nhealth screening\nflu vaccine\nfertility\nparental\nretirees\nDental & Vision Add-Ons (Selectable during Annual Enrolment):\n• Dental Cover (GBP 12/month): 2 free check-ups/year; 50% co-pay on restorative work up to GBP 1,000/year.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 62,
+    "filename": "medical_health_benefits.json",
+    "text": " Vision Cover (GBP 6/month): Free annual eye test; GBP 150 allowance toward glasses or lenses.\nHealth Screenings & Flu Shots: Free annual preventive screening for Standard/Premium tiers; subsidised autumn flu shots on-site for all tiers.\nParental & Fertility Support: Standard and Premium tiers include up to GBP 5,000 lifetime allowance toward fertility treatment and adoption costs, plus returner coaching.\nLeavers & Retirees: Cover continuation up to 3 months via COBRA-equivalent option. Retirees (10+ years service at retirement age) eligible for Retiree Medical Plan.\n2026-01-01\n",
+    "metadata": {}
+  },
+  {
+    "id": 63,
+    "filename": "medical_health_benefits.json",
+    "text": "Retirees (10+ years service at retirement age) eligible for Retiree Medical Plan.\n2026-01-01\n",
+    "metadata": {}
+  },
+  {
+    "id": 64,
     "filename": "onboarding_guide.json",
-    "text": " reporting line for informal questions) and a Line Manager (responsible for formal onboarding, objectives, and probation reviews). Check Workday Inbox or Ask HR for your assigned Buddy.\nProbation Period: Permanent employees serve a 6-month probation period; fixed-term contracts serve 3 months.\nFirst 90 Days Milestones:\n• Day 10: Complete all mandatory training on Learning Hub.\n• Day 30: Benefits enrolment deadline in Workday & initial objectives agreed with manager.\n• Week 4-6: First informal check-in with line manager.\n• Month 3: Mid-probation review with Line Manager & HR.\n\n",
-    "metadata": {
-      "documentRef": "onboarding_guide.json"
-    }
+    "text": "Document: onboarding_guide.json\nTitle: New Joiner Onboarding\nReference: HR-GDE-009\nDescription: First weeks checklist, portal quick-reference map, mandatory training, and buddy system.\n\nonboarding\nNew Joiner Onboarding\nbriefcase\nHR-GDE-009\nFirst weeks checklist, portal quick-reference map, mandatory training, and buddy system.\nonboarding-portals-map\nInternal Systems & Portals Quick Reference Map\nportal\nworkday\nask hr\nit service desk\npolicy hub\nexpense system\nlearning hub\nrisk event\nsystem\nlogin\naccess\nAmberleigh Private Bank Core Internal Portals:\n• Workday: Request leave, check payslips, update personal details, view org charts, enrol in benefits, track probation.\n• Ask HR: Submit general HR questions to the HR Service Desk.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 65,
+    "filename": "onboarding_guide.json",
+    "text": " IT Service Desk Portal: Report IT issues, request devices, order hardware, and request building access pass extensions.\n• Policy Hub: Access the HR Policy Handbook, Code of Conduct & Ethics, and business unit policies.\n• Expense System: Submit and track business expense claims within 30 days.\n• Learning Hub: Complete mandatory compliance training (Code of Conduct, AML/CTF, InfoSec).\n• Compliance Advisory Mailbox / Speak-Up Line: Raise compliance concerns or report ethics violations anonymously.\n• Risk Event System: Report and understand risk escalation for an operational incident.\n2026-01-01\nonboarding-first-week-checklist\nFirst Week & Day 1 Checklist for New Joiners\nfirst day\nfirst week\nchecklist\nday 1\nwelcome email\nbuddy\nmfa\norientation\npad\nB",
+    "metadata": {}
+  },
+  {
+    "id": 66,
+    "filename": "onboarding_guide.json",
+    "text": "efore Day 1: You will receive a Welcome Email 1 week prior with start location, reporting time, and dress code. Pre-employment screening must be finalized. Your IT account and device are provisioned automatically via Workday.\nDay 1: Report to Reception to meet your assigned Buddy or HR Onboarding representative. Collect building access pass, verify right-to-work, and attend New Joiner Orientation.\nFirst Week Checklist:\n1. Complete Day 1 compliance training on Learning Hub within 10 working days.\n2. Set up Multi-Factor Authentication (MFA) for Bank systems.\n3. Meet line manager for 30/60/90-day objectives.\n4. Review HR Policy Handbook and Code of Conduct on Policy Hub.\n5. Enrol in medical/health benefits via Workday within 30 days of start date.\n6. ",
+    "metadata": {}
+  },
+  {
+    "id": 67,
+    "filename": "onboarding_guide.json",
+    "text": "Enrol in medical/health benefits via Workday within 30 days of start date.\n6. Set up Personal Account Dealing (PAD) profile before trading personal securities.\n2026-01-01\nonboarding-buddy-probation\nBuddy System, Line Manager, and Probation Milestones\nbuddy\nmanager\nprobation\n6 months\nreview\ncheck-in\nmilestones\n90 days\nBuddy & Manager: Every new joiner is assigned a Buddy (an experienced colleague outside your reporting line for informal questions) and a Line Manager (responsible for formal onboarding, objectives, and probation reviews). Check Workday Inbox or Ask HR for your assigned Buddy.\nProbation Period: Permanent employees serve a 6-month probation period; fixed-term contracts serve 3 months.\nFirst 90 Days Milestones:\n• Day 10: Complete all mandatory training on Learning Hub.\n•",
+    "metadata": {}
+  },
+  {
+    "id": 68,
+    "filename": "onboarding_guide.json",
+    "text": "Check Workday Inbox or Ask HR for your assigned Buddy.\nProbation Period: Permanent employees serve a 6-month probation period; fixed-term contracts serve 3 months.\nFirst 90 Days Milestones:\n• Day 10: Complete all mandatory training on Learning Hub.\n• Day 30: Benefits enrolment deadline in Workday & initial objectives agreed with manager.\n• Week 4-6: First informal check-in with line manager.\n• Month 3: Mid-probation review with Line Manager & HR.\n2026-01-01\n",
+    "metadata": {}
+  },
+  {
+    "id": 69,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Document: SOP_Banking_Operations_Master_Dataset.json\nTitle: GLOBAL BANKING OPERATIONS SOP MANUAL\n\nGLOBAL BANKING OPERATIONS SOP MANUAL\n1\nGLOBAL BANKING OPERATIONS SOP MANUAL\nEnd-to-End Operational Workflows for Static Data (CDS), Asset Servicing, Trade Settlement Lifecycle,\nand Tax Processing\nDocument ID: SOP-OPS-\nGLOBAL-2026-V4\nEffective Date: July 1, 2026Target Division: Global\nMarket Operations\nSecurity Class: Strictly\nConfidential\nPrimary Systems: SWIFT\nISO 15022/20022, XENTIS,\nWM-Daten, Telekurs\nMarket Infrastructure:\nClearstream, Euroclear,\nDTC, CBF\nGovernance Rule: Dual\nControl (4-Eyes Principle)\nAudit Cycle: Annual /\nCSDR Compliant\nOPERATIONAL DATASET NOTICE: This Standard Operating Procedure (SOP) manual serves as a granular execution\nb",
+    "metadata": {}
+  },
+  {
+    "id": 70,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "lueprint for institutional middle-office and back-office banking operations. Every section details exact system inputs, screen\ncodes, field validations, Maker-Checker authorization protocols, exception matrices, and SWIFT message structures. Analysts\nmust follow these procedures without deviation. \nMODULE 1: CDS, KURSINFO & STATIC DATA MANAGEMENT (SOP-SDM-001)\n1.1 Neutral Control & Security Master Creation Workflow\nThe Security Master Database (SMDB) is the core golden source for all financial instrument static data. Incorrect instrument\nattributes directly trigger downstream settlement failures, inaccurate tax withholdings, and miscalculated corporate action\nentitlements. \nHIGH OPERATIONAL RISK: Inaccurate day-count convention (e.g., ACT/360 vs 30/360) or incorrect coupon frequency setup\nc",
+    "metadata": {}
+  },
+  {
+    "id": 71,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nHIGH OPERATIONAL RISK: Inaccurate day-count convention (e.g., ACT/360 vs 30/360) or incorrect coupon frequency setup\ncauses multi-million EUR interest payment discrepancies across trading books. Neutral Control verification must be completed\nprior to system trade execution. \nDetailed Execution Steps (Instrument Creation):\nMAKER (L1 ANALYST)Receive Request & Data Ingestion: Log into Core Operations Suite (UI-SMDB-101). Open new\nticket. Input primary identifier: ISIN (ISO 6166), WKN (German Securities Identification), SEDOL, or CUSIP. \nMAKER (L1 ANALYST)Primary Data Scrubbing: Cross-reference automated feeds from WM-Daten (VFA/GV1), \nBloomberg (DES page), and official Issuer Prospectus. Populate field-level security attributes as detailed in Table 1.1\nbelow. \nM",
+    "metadata": {}
+  },
+  {
+    "id": 72,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Populate field-level security attributes as detailed in Table 1.1\nbelow. \nMAKER (L1 ANALYST)Tax & Regulatory Classification: Assign Capital Gains Tax flag, German KapESt eligibility, MiFID II\n/ MiFIR Complex Instrument indicator, CFI Code (ISO 10962), and FISN (ISO 18774). \nCHECKER (L2 NEUTRAL CONTROL SUPERVISOR)Neutral Control Verification: Access Pending Queue (UI-SMDB-\nAPPROVE). Independently verify entered attributes against the legally binding Final Terms Prospectus PDF attached to the\nrecord. Verify that instrument coupon dates do not fall on non-clearing bank holidays (TARGET2, US FedWire, CHAPS). \nSYSTEMAutomated Validation & Broadcast: Upon L2 electronic sign-off, system generates STATUS::RELEASED,\na",
+    "metadata": {}
+  },
+  {
+    "id": 73,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nSYSTEMAutomated Validation & Broadcast: Upon L2 electronic sign-off, system generates STATUS::RELEASED,\nassigns internal Instrument ID, and broadcasts updates via Kafka topic staticdata.instrument.master to trading\nengines and settlement modules within 300ms. \n1. \n2. \n3. \n4. \n5. \nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 1 of 8\n2\nField Attribute System Code Validation Rule & Format Discrepancy Action\nISIN Code FLD_ISIN 12-character alphanumeric (2 alpha country\n+ 9 alpha-num + 1 check digit via Luhn\nalgorithm).\nReject ticket immediately if check\ndigit fails. Contact WM-Daten desk.\nDay Count Rule FLD_DCC Strict dropdown: ACT/360, 30/360, \nACT/ACT-ISDA, ACT/365.\nVerify against Prospectus Section 3\n(\"Interest Computation\"). Overrides\nrequire Head of Ops sign-off.\nM",
+    "metadata": {}
+  },
+  {
+    "id": 74,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Contact WM-Daten desk.\nDay Count Rule FLD_DCC Strict dropdown: ACT/360, 30/360, \nACT/ACT-ISDA, ACT/365.\nVerify against Prospectus Section 3\n(\"Interest Computation\"). Overrides\nrequire Head of Ops sign-off.\nMinimum\nDenomination\nFLD_MINDEN Numeric value in issue currency (e.g.,\n100,000 EUR for wholesale Eurobonds).\nTrades below MIN_DENOM must be\nflagged for regulatory breach and\nsettlement block.\nInterest Payment\nFrequency\nFLD_COUP_FREQDropdown: Annual (1), Semi-Annual (2),\nQuarterly (4), Monthly (12), Zero Coupon\n(0).\nMust align exact payment calendar\ndates with TARGET2 holiday\nschedule.\n1.2 Kursinfo: Market Price & FX Feed Maintenance\nKursinfo governs the daily automated ingestion, tolerance checking, manual override, and downstream distribution of valuation\np",
+    "metadata": {}
+  },
+  {
+    "id": 75,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Overrides\nrequire Head of Ops sign-off.\nMinimum\nDenomination\nFLD_MINDEN Numeric value in issue currency (e.g.,\n100,000 EUR for wholesale Eurobonds).\nTrades below MIN_DENOM must be\nflagged for regulatory breach and\nsettlement block.\nInterest Payment\nFrequency\nFLD_COUP_FREQDropdown: Annual (1), Semi-Annual (2),\nQuarterly (4), Monthly (12), Zero Coupon\n(0).\nMust align exact payment calendar\ndates with TARGET2 holiday\nschedule.\n1.2 Kursinfo: Market Price & FX Feed Maintenance\nKursinfo governs the daily automated ingestion, tolerance checking, manual override, and downstream distribution of valuation\nprices (Equities, Fixed Income, Derivatives) and Foreign Exchange (FX) spot/forward rates required for end-of-day mark-to-\nmarket, collateral valuation, and NAV calculations. \nD",
+    "metadata": {}
+  },
+  {
+    "id": 76,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "aily Execution Schedule & Process Flow:\n17:30 CET (Batch 1 - European Closing): Ingestion of Clearstream/WM-Daten and Reuters closing prices. System\nexecutes automated tolerance algorithms.\n22:00 CET (Batch 2 - Americas Closing): Ingestion of US Market feeds and Bloomberg BVAL / IDC pricing feeds.\nPrice Outlier Tolerance Rules:\nEquities & ETFs: Any price variation > ±5.00% versus previous business day close triggers immediate staging flag \nFLAG_PRICE_OUTLIER.\nFixed Income (Bonds): Any clean price movement > ±2.50% or yield shift > 25 basis points triggers \nFLAG_YIELD_SPIKE.\nFX Cross Rates: Any exchange rate movement > ±1.50% triggers FLAG_FX_DEV.\nSTEP-BY-STEP MANUAL PRICE OVERRIDE PROCEDURE:\nOpen Kursinfo Monitoring Dashboard (UI-KURS-302) filter by status STAGED_TOLERANCE_BREACH.\nI",
+    "metadata": {}
+  },
+  {
+    "id": 77,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "System\nexecutes automated tolerance algorithms.\n22:00 CET (Batch 2 - Americas Closing): Ingestion of US Market feeds and Bloomberg BVAL / IDC pricing feeds.\nPrice Outlier Tolerance Rules:\nEquities & ETFs: Any price variation > ±5.00% versus previous business day close triggers immediate staging flag \nFLAG_PRICE_OUTLIER.\nFixed Income (Bonds): Any clean price movement > ±2.50% or yield shift > 25 basis points triggers \nFLAG_YIELD_SPIKE.\nFX Cross Rates: Any exchange rate movement > ±1.50% triggers FLAG_FX_DEV.\nSTEP-BY-STEP MANUAL PRICE OVERRIDE PROCEDURE:\nOpen Kursinfo Monitoring Dashboard (UI-KURS-302) filter by status STAGED_TOLERANCE_BREACH.\nInspect secondary sources: Reuters 3000, Bloomberg Terminal (ALLX / BVAL), or official Stock Exchange bulletin.\nI",
+    "metadata": {}
+  },
+  {
+    "id": 78,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "f feed price is confirmed valid (e.g., corporate news / market rally), click [Confirm Feed Price] and attach source\nscreenshot.\nIf feed price is erroneous (stale data from vendor), select [Manual Price Override]. Input validated price, select source\n( SRC_MANUAL_BROKER_QUOTE), attach broker quote PDF/email, and submit for L2 approval.\nL2 Supervisor reviews audit trail in UI-KURS-AUTH and performs 4-Eyes release prior to 23:00 CET valuation deadline.\n1.3 Counterparty Static Data & Standard Settlement Instructions (SSI)\nStandard  Settlement  Instructions  (SSIs)  contain  depository,  custodian,  and  Nostro  account  details  for  counterparties.\nMaintenance of SSI static data requires strict verification to eliminate fraud and delivery errors. \n• \n• \n• \n◦ \n◦ \n◦ \n1. \n2. \n3. \n4. \n5. \nC",
+    "metadata": {}
+  },
+  {
+    "id": 79,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Input validated price, select source\n( SRC_MANUAL_BROKER_QUOTE), attach broker quote PDF/email, and submit for L2 approval.\nL2 Supervisor reviews audit trail in UI-KURS-AUTH and performs 4-Eyes release prior to 23:00 CET valuation deadline.\n1.3 Counterparty Static Data & Standard Settlement Instructions (SSI)\nStandard  Settlement  Instructions  (SSIs)  contain  depository,  custodian,  and  Nostro  account  details  for  counterparties.\nMaintenance of SSI static data requires strict verification to eliminate fraud and delivery errors. \n• \n• \n• \n◦ \n◦ \n◦ \n1. \n2. \n3. \n4. \n5. \nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 2 of 8\n3\nWorkflow Phase Operational Action & System Screen Required Evidence / Controls\n1. ",
+    "metadata": {}
+  },
+  {
+    "id": 80,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 2 of 8\n3\nWorkflow Phase Operational Action & System Screen Required Evidence / Controls\n1. Request & Ingestion Receive SWIFT MT599, authenticated SSI sheet, or\nOmgeo ALERT update. Open screen UI-SSI-201.\nSWIFT Authenticated Header or\nSigned Client Instruction.\n2. LEI & BIC VerificationVerify Legal Entity Identifier (LEI) against GLEIF\ndatabase. Validate BIC code against SWIFT Directory.\nActive LEI status check; BIC match\non SWIFT RefData.\n3. Dual Call-Back\nVerification\nMANDATORY: Call counterparty operations desk on\nindependent telephone number (from bank directory, NOT\nSSI document). Confirm full settlement chain (Account\nwith Institution 57A, Beneficiary 58A).\nDocument Call Log: Date, Time,\nP",
+    "metadata": {}
+  },
+  {
+    "id": 81,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Confirm full settlement chain (Account\nwith Institution 57A, Beneficiary 58A).\nDocument Call Log: Date, Time,\nPhone Number, Counterparty Officer\nName, Call ID.\n4. L2 System Approval L2 Checker verifies call log, compares SWIFT tags,\napproves record in UI-SSI-500. Status becomes \nSSI_ACTIVE.\nDual-control e-signature audit record\nlogged.\nMODULE 2: END-TO-END TRADE LIFECYCLE & SETTLEMENT PROCESSING\n(SOP-SETT-002)\n2.1 Trade Capture, Allocation & Pre-Settlement Matching\nThe  trade  lifecycle  spans  execution,  capture,  allocation,  matching,  instruction  generation,  settlement,  and  reconciliation.\nStraight-Through Processing (STP) is enforced for 95%+ of volume; manual intervention is restricted to exception queues. \nStep-by-Step Processing Pipeline:\nT",
+    "metadata": {}
+  },
+  {
+    "id": 82,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Status becomes \nSSI_ACTIVE.\nDual-control e-signature audit record\nlogged.\nMODULE 2: END-TO-END TRADE LIFECYCLE & SETTLEMENT PROCESSING\n(SOP-SETT-002)\n2.1 Trade Capture, Allocation & Pre-Settlement Matching\nThe  trade  lifecycle  spans  execution,  capture,  allocation,  matching,  instruction  generation,  settlement,  and  reconciliation.\nStraight-Through Processing (STP) is enforced for 95%+ of volume; manual intervention is restricted to exception queues. \nStep-by-Step Processing Pipeline:\nTrade Ingestion (T+0 Execution Day): Trades enter core system (XENTIS/FO-GATEWAY) via FIX Protocol (ISO 15022\nconverted) or broker feeds. Trades automatically pass through static data validation (ISIN existence, open trading books,\ncounterparty credit line check). \nB",
+    "metadata": {}
+  },
+  {
+    "id": 83,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Trades automatically pass through static data validation (ISIN existence, open trading books,\ncounterparty credit line check). \nBlock Allocation Processing: For institutional funds, block trades executed at fund group level are allocated to individual\nsub-fund portfolios based on electronic allocation instructions (MT515 or CTM allocation message). System validates that\nallocated quantity sum equals master block quantity. \nPre-Settlement Matching (SWIFT MT518 / MT509): System automatically transmits SWIFT MT518 (Confirmation) to\ncounterparty or matching utility (DTCC CTM). System compares inbound counterparty MT518/MT509 message against\ninternal trade record. \nMatching Attribute SWIFT Tag / Field Matching Tolerance Failure Resolution\nTrade Date / Settle Date :98A::TRAD / :\n98A::SETT\nZ",
+    "metadata": {}
+  },
+  {
+    "id": 84,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nMatching Attribute SWIFT Tag / Field Matching Tolerance Failure Resolution\nTrade Date / Settle Date :98A::TRAD / :\n98A::SETT\nZero Tolerance (Exact Match)Amend internal record if broker trade\nrecap confirms error.\nNominal / Quantity :36B::SETT Zero Tolerance (Exact Match)Contact Front Office for partial fill or\nmis-booking check.\nNet Settlement Amount :19A::SETT Tolerance: ≤ €2.00 (Currency\nRounding)\nAccept rounding difference if within\nlimit; otherwise raise broker query.\nPlace of Settlement (PSET):95P::PSET Zero Tolerance (Exact BIC\nMatch)\nUpdate local instruction route to\nmatch counterparty depository.\n2.2 SWIFT Settlement Instruction Generation (MT540 - MT543)\nUpon successful pre-settlement matching, the settlement engine automatically constructs and transmits outbound SWIFT ISO\n1",
+    "metadata": {}
+  },
+  {
+    "id": 85,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "5022 Category 5 settlement instructions to domestic CSDs (e.g., Clearstream Frankfurt - CBF, DTC) or ICSDs (Euroclear\nBank, Clearstream Luxembourg). \n1. \n2. \n3. \nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 3 of 8\n4\nSWIFT MESSAGE SELECTION MATRIX:\nMT540 = Receive Free of Payment (RFOP) — Non-trade / Collateral / Stock Loan.\nMT541 = Receive Against Payment (RVP) — Securities Purchase / Cash Debit.\nMT542 = Deliver Free of Payment (DFOP) — Transfer Out / Collateral Return.\nMT543 = Deliver Against Payment (DVP) — Securities Sale / Cash Credit.\nField-Level Outbound SWIFT Structure Reference:\nSWIFT Tag Field Name Example Format & Data Mandatory Validation\n:20C::SEME Sender Reference :SEME//TRAD202607210089Unique alphanumeric key generated\nby core engine.\n:",
+    "metadata": {}
+  },
+  {
+    "id": 86,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 3 of 8\n4\nSWIFT MESSAGE SELECTION MATRIX:\nMT540 = Receive Free of Payment (RFOP) — Non-trade / Collateral / Stock Loan.\nMT541 = Receive Against Payment (RVP) — Securities Purchase / Cash Debit.\nMT542 = Deliver Free of Payment (DFOP) — Transfer Out / Collateral Return.\nMT543 = Deliver Against Payment (DVP) — Securities Sale / Cash Credit.\nField-Level Outbound SWIFT Structure Reference:\nSWIFT Tag Field Name Example Format & Data Mandatory Validation\n:20C::SEME Sender Reference :SEME//TRAD202607210089Unique alphanumeric key generated\nby core engine.\n:23G: Function of Message NEWM (New) / CANC (Cancel) Must be NEWM for initial setup.\n:35B: Instrument Identification ISIN DE0001102580\nGovt Bond 1.00% 2030\nI",
+    "metadata": {}
+  },
+  {
+    "id": 87,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "SIN structure format check.\n:95a::PSET Place of Settlement :95P::PSET//CSTRDEFF\n(Clearstream Frankfurt)\nMust match target CSD BIC code.\n:97A::SAFE Safekeeping Account :97A::SAFE//65432109 Must match internal client depot\naccount number.\n2.3 Non-Trade Operations & Internal Depot Movements\nNon-trade operations encompass free-of-payment transfers, collateral rehypothecation, fund unit creations/redemptions, and\ninternal depot rebalancing. These movements bypass execution venues but require full settlement authorization. \nOPERATIONAL PROTOCOL FOR NON-TRADE MOVEMENTS:\nInitiate instruction in UI-NTRD-100. Select movement code: MOV_COLLATERAL, MOV_INTERNAL_REBAL, or \nMOV_FOP_TRANSFER.\nAttach mandatory support documentation (e.g., Collateral Management Agreement, Transfer Request Form signed by\nA",
+    "metadata": {}
+  },
+  {
+    "id": 88,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Select movement code: MOV_COLLATERAL, MOV_INTERNAL_REBAL, or \nMOV_FOP_TRANSFER.\nAttach mandatory support documentation (e.g., Collateral Management Agreement, Transfer Request Form signed by\nAuthorized Signatory).\nSystem verifies that source depot has sufficient unencumbered inventory (AVAILABLE_QTY >= TRANSFER_QTY).\nL2 Supervisor conducts 4-Eyes verification against client mandate and authorizes release.\n2.4 Exception & Failed Trade Resolution (CSDR Compliance)\nSettlement failure monitoring relies on real-time processing of inbound **SWIFT MT548 (Settlement Status & Processing\nAdvice)** messages. Under the EU Central Securities Depositories Regulation (CSDR), failing trades incur daily mandatory\ncash penalties and potential compulsory buy-in procedures. \n• \n• \n• \n• \n1. \n2. \n3. \n4. \nC",
+    "metadata": {}
+  },
+  {
+    "id": 89,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Under the EU Central Securities Depositories Regulation (CSDR), failing trades incur daily mandatory\ncash penalties and potential compulsory buy-in procedures. \n• \n• \n• \n• \n1. \n2. \n3. \n4. \nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 4 of 8\n5\nMT548 Status Reason Code Root Cause Explanation Mandatory Action Steps\nNMAT SSIR Settlement Details / SSI Mismatch\n(Counterparty delivering to wrong depot).\nExtract MT548 narrative. Contact\nCounterparty MO. Issue MT542/543\ncancellation and re-instruct with\ncorrected SSI.\nPENDF LACK Lack of Securities / Position Shortage at\nlocal depository.\nTrigger immediate Securities Lending\n/ Borrowing request to borrow stock,\nor pull position from secondary depot.\nP",
+    "metadata": {}
+  },
+  {
+    "id": 90,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Issue MT542/543\ncancellation and re-instruct with\ncorrected SSI.\nPENDF LACK Lack of Securities / Position Shortage at\nlocal depository.\nTrigger immediate Securities Lending\n/ Borrowing request to borrow stock,\nor pull position from secondary depot.\nPENDF MONY Insufficient Cash Funds at Custodian / CSD.Escalate to Treasury Desk for\nintraday liquidity transfer or Nostro\nconcentration wire.\nPENDF CLBR Counterparty Failing / On Hold. Issue official SWIFT MT599 chase\nmessage to counterparty settlement\ndesk every 2 hours until resolution.\nCSDR PENALTY & BUY-IN CONTROL RULES:\n1. Daily Cash Penalty Assessment: Calculated daily by CSD from Intended Settlement Date ($SD$) until actual settlement\ndate. Penalty rates: Sovereign Bonds (0.10 bps), Corporate Bonds (0.25 bps), Liquid Equities (1.00 bps).\n2",
+    "metadata": {}
+  },
+  {
+    "id": 91,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Penalty rates: Sovereign Bonds (0.10 bps), Corporate Bonds (0.25 bps), Liquid Equities (1.00 bps).\n2. Buy-In Execution Window: If trade remains failing at $SD + 4$ business days (Liquid Equities) or $SD + 7$ business days\n(Bonds/Illiquid), Settlement Desk must issue mandatory Buy-In Notice to failing counterparty and engage Buy-In Agent. \n2.5 Nostro & Depot Reconciliation Operations\nReconciliation ensures that physical inventory held at custodians matches internal core ledger balances. \nDepot Reconciliation (Stock Rec): Ingestion of **SWIFT MT535 (Statement of Holdings)** daily at 06:00 CET. Automated\nengine compares MT535 balances against core inventory (XENTIS_DEPOT_BAL). Breaks are logged in UI-REC-535.\nN",
+    "metadata": {}
+  },
+  {
+    "id": 92,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Breaks are logged in UI-REC-535.\nNostro Reconciliation (Cash Rec): Ingestion of **SWIFT MT940 (End of Day Statement)** / **MT950**. System matches\nindividual cash movements against ledger cash journal entries. Unmatched cash lines trigger break tickets.\nBreak Category SLA Threshold Investigation Procedure Escalation Level\nStock Difference 24 Hours ($T+1$) Cross-check pending trades,\nunsettled corporate action deliveries,\nor unbooked stock transfers.\nL2 Operations Manager\nUnmatched Cash\nCredit\n48 Hours ($T+2$) Query Custodian via MT592 for\nsender details. Check for unnotified\ncoupon/dividend proceeds.\nHead of Asset Servicing\nNostro Cash\nOverdraft\nImmediate (Same Day)Identify failing delivery trade or\nunexpected fee debit. Arrange\nintraday funding wire.\nHead of Operations & Treasury\nM",
+    "metadata": {}
+  },
+  {
+    "id": 93,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Check for unnotified\ncoupon/dividend proceeds.\nHead of Asset Servicing\nNostro Cash\nOverdraft\nImmediate (Same Day)Identify failing delivery trade or\nunexpected fee debit. Arrange\nintraday funding wire.\nHead of Operations & Treasury\nMODULE 3: ASSET SERVICING & CORPORATE ACTIONS OPERATIONS (SOP-\nAST-003)\n3.1 Corporate Action Event Announcement & Golden Record Creation\nAsset Servicing manages Mandatory and Voluntary Corporate Actions across global markets. The fundamental principle is\ncreating a singular **Golden Record** by synthesizing multi-source market data feeds to eliminate single-provider risk. \n• \n• \nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 5 of 8\n6\nData Scrubbing & Golden Record Synthesis Steps:\nA",
+    "metadata": {}
+  },
+  {
+    "id": 94,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\n• \n• \nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 5 of 8\n6\nData Scrubbing & Golden Record Synthesis Steps:\nAUTOMATED INGESTION System ingests corporate action notifications via **SWIFT MT564**, **WM-Daten (ED/KD/FD)**,\n**Bloomberg (CACS)**, and **Telekurs (FinancialID)**. \nMAKER (ASSET SERVICING ANALYST) Open Event Scrubbing Workbench (UI-CA-101). System highlights field\ndiscrepancies across data vendors in RED. \nMAKER (ASSET SERVICING ANALYST) Apply Data Source Precedence Hierarchy Rule (Table 3.1) to resolve discrepancies.\nManually verify against official Issuer Gazette or Direct Custodian Agent notice where required. \nCHECKER (ASSET SERVICING L2) Review synthesized Golden Record attributes (Ex-Date, Record Date, Payment Date,\nG",
+    "metadata": {}
+  },
+  {
+    "id": 95,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nCHECKER (ASSET SERVICING L2) Review synthesized Golden Record attributes (Ex-Date, Record Date, Payment Date,\nGross Rate, Option Elements) and approve record creation (STATUS::GOLDEN_RECORD_CONFIRMED). \nMarket / Asset Class Primary Source (Tier 1) Secondary Source (Tier 2)Tertiary Source (Tier 3)\nDACH Equities & BondsWM-Daten (Corporate Actions\nFeed)\nClearstream Frankfurt / KVVBloomberg CACS\nUS & Canadian SecuritiesDTCC / Direct Custodian\n(BNY/Citi)\nBloomberg CACS Refinitiv Corporate Actions\nEurobonds / ICSD IssuesEuroclear Bank / Clearstream\nLux\nSix Financial (Telekurs) Bloomberg CACS\n3.2 Voluntary Corporate Action Instruction Management\nVoluntary events (e.g., Tender Offers, Rights Issues, Dividend Options - DVOP) require soliciting elections from ultimate\nb",
+    "metadata": {}
+  },
+  {
+    "id": 96,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nMarket / Asset Class Primary Source (Tier 1) Secondary Source (Tier 2)Tertiary Source (Tier 3)\nDACH Equities & BondsWM-Daten (Corporate Actions\nFeed)\nClearstream Frankfurt / KVVBloomberg CACS\nUS & Canadian SecuritiesDTCC / Direct Custodian\n(BNY/Citi)\nBloomberg CACS Refinitiv Corporate Actions\nEurobonds / ICSD IssuesEuroclear Bank / Clearstream\nLux\nSix Financial (Telekurs) Bloomberg CACS\n3.2 Voluntary Corporate Action Instruction Management\nVoluntary events (e.g., Tender Offers, Rights Issues, Dividend Options - DVOP) require soliciting elections from ultimate\nbeneficial owners, aggregating instructions, and transmitting formatted execution instructions to custodians prior to market cut-\noff times. \nC",
+    "metadata": {}
+  },
+  {
+    "id": 97,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "RITICAL CUT-OFF CONTROL: Missing a voluntary event deadline results in default option execution (frequently default\ncash or lapse of rights), creating significant financial liability. Internal cut-off times must be strictly set ahead of custodian cut-\noffs. \nVoluntary Event Execution Timeline & Workflow:\nTimeline Milestone Operational Task & System Action Control Output\nEvent Setup ($T-15$\nDays)\nBroadcast MT564 Corporate Action Notification to all portfolio\nmanagers / underlying clients holding settled stock on Ex-Date.\nSpecify Internal Client Cut-Off Date.\nMT564 Notification Log; Delivery\nreceipt confirmation.\nInternal Cut-Off ($T-2$\nDays)\nClient Election Deadline: System aggregates incoming client\nelections via portal or MT565. Uninstructed positions default to\nIssuer Default Option.\nU",
+    "metadata": {}
+  },
+  {
+    "id": 98,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nVoluntary Event Execution Timeline & Workflow:\nTimeline Milestone Operational Task & System Action Control Output\nEvent Setup ($T-15$\nDays)\nBroadcast MT564 Corporate Action Notification to all portfolio\nmanagers / underlying clients holding settled stock on Ex-Date.\nSpecify Internal Client Cut-Off Date.\nMT564 Notification Log; Delivery\nreceipt confirmation.\nInternal Cut-Off ($T-2$\nDays)\nClient Election Deadline: System aggregates incoming client\nelections via portal or MT565. Uninstructed positions default to\nIssuer Default Option.\nUI-CA-565 Aggregated Election\nSummary Report.\nCustodian Cut-Off\n($T-1$ Day)\nTransmit aggregated electronic **SWIFT MT565 (Corporate\nAction Instruction)** to ICSD/Custodian. System tracks SWIFT\nstatus (ACK / NACK).\nMT565 Transmission Log with\np",
+    "metadata": {}
+  },
+  {
+    "id": 99,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Uninstructed positions default to\nIssuer Default Option.\nUI-CA-565 Aggregated Election\nSummary Report.\nCustodian Cut-Off\n($T-1$ Day)\nTransmit aggregated electronic **SWIFT MT565 (Corporate\nAction Instruction)** to ICSD/Custodian. System tracks SWIFT\nstatus (ACK / NACK).\nMT565 Transmission Log with\npositive ACK header.\nExecution / Payment\n($T+0$)\nProcess MT566 (Confirmation). Debit/credit stock and cash\ninventory based on elected option parameters.\nEntitlement Balance Verification\n( UI-CA-RECON).\n3.3 Income & Dividend Distribution Processing\nIncome processing handles mandatory cash payments (Cash Dividends - DVCA, Bond Coupons - INTR, Capital Gains\nDistributions). \n1. \n2. \n3. \n4. \nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 6 of 8\n7\nE",
+    "metadata": {}
+  },
+  {
+    "id": 100,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 6 of 8\n7\nENTITLEMENT CALCULATION FORMULA & MANUFACTURED DIVIDENDS:\n$$ ext{Gross Entitlement} = ext{Settled Position at Record Date Close} imes ext{Gross Event Rate}$$ Market Rule for Trades\nSpanning Ex-Date: Trades executed prior to Ex-Date but settling after Record Date entitle the buyer to the dividend. If seller\nreceives payment, system triggers automated Market Claim / Claims Transformation generating MT544/MT546 adjustment\ninstructions under market practice guidelines. \nMODULE 4: GLOBAL OPERATIONAL TAX SERVICES (SOP-TAX-004)\n4.1 Client Onboarding & Tax Documentation Maintenance\nOperational Tax Services govern client tax documentation, relief at source, withholding tax reclaims, and annual FATCA / CRS\nr",
+    "metadata": {}
+  },
+  {
+    "id": 101,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nMODULE 4: GLOBAL OPERATIONAL TAX SERVICES (SOP-TAX-004)\n4.1 Client Onboarding & Tax Documentation Maintenance\nOperational Tax Services govern client tax documentation, relief at source, withholding tax reclaims, and annual FATCA / CRS\nregulatory reporting. Incomplete or expired tax documentation requires applying maximum statutory withholding tax rates. \nRequired Tax Documentation Matrix:\nClient Entity Type Mandatory Tax Forms Validity Period System Tax Code\nUS Individual / Entity Form W-9 (Request for TIN) Indefinite (unless change in\ncircumstances)\nTAX_US_DOMESTIC\nNon-US Beneficial Owner\n(Indiv.)\nForm W-8BEN + Certificate of Tax\nResidence\n3 Full Calendar Years TAX_W8_INDIV\nNon-US Corporate / EntityForm W-8BEN-E + GIIN Number\n(FATCA Verification)\n3 Full Calendar Years TAX_W8_CORP\nG",
+    "metadata": {}
+  },
+  {
+    "id": 102,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nRequired Tax Documentation Matrix:\nClient Entity Type Mandatory Tax Forms Validity Period System Tax Code\nUS Individual / Entity Form W-9 (Request for TIN) Indefinite (unless change in\ncircumstances)\nTAX_US_DOMESTIC\nNon-US Beneficial Owner\n(Indiv.)\nForm W-8BEN + Certificate of Tax\nResidence\n3 Full Calendar Years TAX_W8_INDIV\nNon-US Corporate / EntityForm W-8BEN-E + GIIN Number\n(FATCA Verification)\n3 Full Calendar Years TAX_W8_CORP\nGerman Resident InvestorNV-Bescheinigung (Non-\nAssessment) or Freistellungsauftrag\nMax 3 Years / Annual TAX_DE_EXEMPT\n4.2 Relief at Source (RAS) Processing\nRelief at Source allows eligible non-resident investors to benefit from reduced Withholding Tax (WHT) rates under applicable\nD",
+    "metadata": {}
+  },
+  {
+    "id": 103,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "ouble Taxation Treaties (DTT) directly on income payment date, bypassing lengthier post-payment reclaim processes. \nMAKER (TAX ANALYST) Verify client's DTT eligibility in Tax Master (UI-TAX-100). Cross-check country of tax residence\nagainst local market treaty tables (e.g., US-Germany Treaty: reduced 15% rate on dividend income). \nMAKER (TAX ANALYST) Compile breakdown of underlying eligible positions 5 business days prior to Income Record Date.\nGenerate **Tax Relief Breakdown File**. \nCHECKER (TAX SUPERVISOR) Audit breakdown against validated W-8 / Form 6166 documents. Electronic sign-off in UI-\nTAX-RELIEF. \nSYSTEM Transmit electronic Tax Breakdown file via authenticated secure channel to Paying Agent / Custodian. Custodian\napplies treaty rate at payment execution. \nG",
+    "metadata": {}
+  },
+  {
+    "id": 104,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nSYSTEM Transmit electronic Tax Breakdown file via authenticated secure channel to Paying Agent / Custodian. Custodian\napplies treaty rate at payment execution. \nGERMAN WITHHOLDING TAX (KapESt) CALCULATION EXAMPLE:\nStandard German Statutory Tax: 25.00% Capital Gains Tax (KapESt) + 5.50% Solidarity Surcharge (Soli) = 26.375% Effective\nGross Withholding.\nUnder US-German Double Tax Treaty (Relief at Source): Approved Treaty Rate = 15.00%.\nNet Adjustment: System blocks 11.375% statutory deduction upon custodian instruction verification. \n1. \n2. \n3. \n4. \nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 7 of 8\n8\n4.3 Post-Payment Tax Reclaim Operations\nWhere Relief at Source was not applied due to missing documentation prior to payment date, clients may file a formal post-\np",
+    "metadata": {}
+  },
+  {
+    "id": 105,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 7 of 8\n8\n4.3 Post-Payment Tax Reclaim Operations\nWhere Relief at Source was not applied due to missing documentation prior to payment date, clients may file a formal post-\npayment Tax Reclaim with the local tax authority (e.g., German Federal Central Tax Office - BZSt, French DGFiP, Swiss\nESTV). \nReclaim Phase Operational Action Details Required Artifacts\n1. Identification Identify un-relieved income events in UI-TAX-501\nwhere Statutory Tax > Treaty Tax Rate. Calculate\nrecoverable reclaim amount.\nIncome Credit Advice; Tax Voucher\nstatement.\n2. Dossier AssemblyAssemble official Tax Certificate (e.g., German \nSteuerbescheinigung), Form 6166 (US Certificate of\nResidence), and Power of Attorney (PoA).\nC",
+    "metadata": {}
+  },
+  {
+    "id": 106,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Dossier AssemblyAssemble official Tax Certificate (e.g., German \nSteuerbescheinigung), Form 6166 (US Certificate of\nResidence), and Power of Attorney (PoA).\nCertified Tax Certificate original PDF +\nPhysical Forms.\n3. Filing SubmissionSubmit physical/electronic claim package to foreign Tax\nAuthority within statutory statute of limitations (e.g., 4\nyears for Germany, 3 years for France).\nRegistered Mail Receipt / Portal Reference\nID.\n4. Reclaim Tracking &\nCash Booking\nMonitor pending reclaim pipeline\n( STATUS::PENDING_TAX_AUTH). Upon receipt of\nrefund funds into Nostro account, match credit against\noutstanding tax reclaim ledger item and credit client\naccount.\nMT940 Cash Receipt; Tax Refund Credit\nAdvice.\n4.4 FATCA, CRS & Annual Tax Regulatory Reporting\nG",
+    "metadata": {}
+  },
+  {
+    "id": 107,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Upon receipt of\nrefund funds into Nostro account, match credit against\noutstanding tax reclaim ledger item and credit client\naccount.\nMT940 Cash Receipt; Tax Refund Credit\nAdvice.\n4.4 FATCA, CRS & Annual Tax Regulatory Reporting\nGlobal tax compliance requires automated extraction, validation, XML schema generation, and reporting to tax authorities\nunder foreign account reporting regimes. \nUS Chapter 4 FATCA / Qualified Intermediary (QI) Reporting: Generate annual **IRS Form 1042-S** for all US-source\nincome payments made to non-US persons. Validate aggregate payment data against Custodian 1042-S receipts. Submit\nelectronic file via IRS FIRE (File Information Returns Electronically) portal prior to March 15 deadline. \nC",
+    "metadata": {}
+  },
+  {
+    "id": 108,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Submit\nelectronic file via IRS FIRE (File Information Returns Electronically) portal prior to March 15 deadline. \nCommon Reporting Standard (CRS) / AEOI Reporting: Extract reportable accounts (foreign tax residency holders) from\nCore CRM. System compiles reporting elements (Account Balance at Dec 31, Gross Interest, Dividends, Gross Sales\nProceeds) into local XML schema (e.g., BZSt Online Portal XML format). Submit to local competent authority by May 31. \nREGULATORY AUDIT & RECONCILIATION CONTROL: Prior to annual tax filing submission, the Head of Operational Tax\nmust execute 100% reconciliation between: 1. General Ledger Gross Tax Deductions.\n2. Custodian Tax Breakdown Statements.\n3. Aggregated Client 1042-S / CRS Reporting Files.\nA",
+    "metadata": {}
+  },
+  {
+    "id": 109,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "Aggregated Client 1042-S / CRS Reporting Files.\nAny unexplained balance discrepancy > €100.00 halts automated filing transmission and requires manual reconciliation sign-\noff. \n• \n• \nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 8 of 8\n",
+    "metadata": {}
+  },
+  {
+    "id": 110,
+    "filename": "SOP_Banking_Operations_Master_Dataset.json",
+    "text": "\n• \n• \nCONFIDENTIAL — GLOBAL BANKING OPERATIONS OPERATIONAL DATASET Page 8 of 8\n",
+    "metadata": {}
   }
 ]

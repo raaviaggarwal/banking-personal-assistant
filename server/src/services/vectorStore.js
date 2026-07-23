@@ -16,26 +16,63 @@ export function addChunks(entries) {
     metadata: e.metadata || {},
   }));
   chunks.push(...newChunks);
+  resetIdfCache();
   save();
   return newChunks;
 }
 
 function tokenize(text) {
-  return text.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(Boolean);
+  return text.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean);
+}
+
+function computeIDF() {
+  const docCount = chunks.length;
+  if (docCount === 0) return {};
+  const df = {};
+  for (const c of chunks) {
+    const tokens = new Set(tokenize(c.text));
+    for (const t of tokens) {
+      df[t] = (df[t] || 0) + 1;
+    }
+  }
+  const idf = {};
+  for (const [t, count] of Object.entries(df)) {
+    idf[t] = Math.log((docCount + 1) / (count + 1)) + 1;
+  }
+  return idf;
+}
+
+let _idfCache = null;
+
+function getIdf() {
+  if (!_idfCache) _idfCache = computeIDF();
+  return _idfCache;
+}
+
+export function resetIdfCache() {
+  _idfCache = null;
 }
 
 export function search(query, topK = 5) {
   const queryTokens = tokenize(query);
   if (queryTokens.length === 0) return [];
 
+  const idf = getIdf();
+
   const scored = chunks.map((c) => {
-    const textTokens = tokenize(c.text);
-    const matches = queryTokens.filter((t) => textTokens.includes(t)).length;
-    return { ...c, score: matches / queryTokens.length };
+    const textTokens = new Set(tokenize(c.text));
+    let matchSum = 0;
+    let totalSum = 0;
+    for (const t of queryTokens) {
+      const w = idf[t] || 1;
+      totalSum += w;
+      if (textTokens.has(t)) matchSum += w;
+    }
+    return { ...c, score: totalSum > 0 ? matchSum / totalSum : 0 };
   });
 
   scored.sort((a, b) => b.score - a.score);
-  return scored.slice(0, topK).filter((c) => c.score > 0);
+  return scored.slice(0, topK).filter((c) => c.score > 0.04);
 }
 
 export function getFiles() {
@@ -83,6 +120,18 @@ export function load() {
   }
 }
 
+function extractTextRecursive(obj, depth = 0) {
+  if (depth > 20) return '';
+  if (typeof obj === 'string') return obj + '\n';
+  if (typeof obj === 'number' || typeof obj === 'boolean') return String(obj) + '\n';
+  if (typeof obj !== 'object' || obj === null) return '';
+  let result = '';
+  for (const val of Object.values(obj)) {
+    result += extractTextRecursive(val, depth + 1);
+  }
+  return result;
+}
+
 export function flattenPolicyJSON(data, filename) {
   let text = `Document: ${filename}\n`;
   if (data.title) text += `Title: ${data.title}\n`;
@@ -90,30 +139,25 @@ export function flattenPolicyJSON(data, filename) {
   if (data.lastUpdated) text += `Last Updated: ${data.lastUpdated}\n`;
   if (data.description) text += `Description: ${data.description}\n`;
   text += '\n';
-  if (data.sections) {
-    for (const [, section] of Object.entries(data.sections)) {
-      if (section.title) text += `## ${section.title}\n\n`;
-      if (section.articles) {
-        for (const article of section.articles) {
-          if (article.title) text += `### ${article.title}\n\n`;
-          if (article.content) text += `${article.content}\n\n`;
-        }
-      }
-    }
-  } else if (data.articles) {
-    for (const article of data.articles) {
-      if (article.title) text += `### ${article.title}\n\n`;
-      if (article.content) text += `${article.content}\n\n`;
-    }
-  }
+  text += extractTextRecursive(data);
   return text;
 }
 
 export function chunkContent(text, maxLen = 800) {
   if (text.length <= maxLen) return [text];
   const chunks = [];
-  for (let i = 0; i < text.length; i += maxLen - 100) {
-    chunks.push(text.slice(i, i + maxLen));
+  let start = 0;
+  while (start < text.length) {
+    let end = Math.min(start + maxLen, text.length);
+    if (end < text.length) {
+      const boundary = text.lastIndexOf('. ', end);
+      const newline = text.lastIndexOf('\n', end);
+      const splitAt = Math.max(boundary, newline);
+      if (splitAt > start) end = splitAt + 2;
+    }
+    chunks.push(text.slice(start, end));
+    const overlap = text.lastIndexOf('. ', Math.min(start + maxLen - 100, end - 1));
+    start = (overlap > start) ? overlap + 2 : end;
   }
   return chunks;
 }

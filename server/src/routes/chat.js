@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { runPipe, createThread, appendMessages } from '../services/langbase.js';
-import { search, count } from '../services/vectorStore.js';
+import { search, count, getFiles } from '../services/vectorStore.js';
 import { getConversation, createConversation } from '../services/convStore.js';
 
 const router = Router();
@@ -54,11 +54,18 @@ router.post('/chat', async (req, res) => {
 
     let context = '';
     if (count() > 0) {
-      writeEvent(res, { status: 'searching', message: 'Searching policies...' });
-      const results = search(message, 5);
-      if (results.length > 0) {
-        for (const r of results) {
-          context += `[Source: ${r.filename}]\n${r.text}\n\n`;
+      const listPattern = /\b(list|show|what|which)\b.*\b(source|document|policy|policies|file|all)\b|\b(all|available)\b.*\b(polic|document|source|file)\b/i;
+      if (listPattern.test(message)) {
+        const allFiles = getFiles();
+        const fileList = allFiles.map((f) => `• ${f}`).join('\n');
+        context = `Available source documents:\n${fileList}\n\n`;
+      } else {
+        writeEvent(res, { status: 'searching', message: 'Searching policies...' });
+        const results = search(message, 5);
+        if (results.length > 0) {
+          for (const r of results) {
+            context += `[Source: ${r.filename}]\n${r.text}\n\n`;
+          }
         }
       }
     }
@@ -124,7 +131,7 @@ router.post('/chat', async (req, res) => {
       if (!threadId) {
         const thread = await createThread({ userId: msgUserId });
         threadId = thread.id;
-        const conv = createConversation({ userId: msgUserId, threadId, mode });
+        const conv = createConversation({ userId: msgUserId, threadId, mode: 'chat' });
         convId = conv.id;
         writeEvent(res, { saved: true, conversationId: convId });
       }
